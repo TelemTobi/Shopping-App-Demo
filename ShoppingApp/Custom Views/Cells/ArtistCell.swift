@@ -40,9 +40,9 @@ class ArtistCell: UICollectionViewCell {
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: contentView.frame.size.width).isActive = true
+        imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
     }
     
     private func setTitleLabel() {

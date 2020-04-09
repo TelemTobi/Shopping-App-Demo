@@ -12,7 +12,7 @@ class ShopCollectionView: UICollectionViewController {
     
     var selectedGenre: Int! {
         willSet {
-            let header = collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 1)) as! ShopSectionHeader
+            let header = collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 0)) as! ShopSectionHeader
             header.title = "Top \(musicGenres[newValue].0) Albums"
         }
     }
@@ -25,7 +25,8 @@ class ShopCollectionView: UICollectionViewController {
     
     func setUpElements() {
         collectionView.backgroundColor = .none
-        collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.id)
+        collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.smallCellID)
+        collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.bigCellID)
         collectionView.register(ArtistCell.self, forCellWithReuseIdentifier: ArtistCell.id)
         collectionView.register(ShopSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ShopSectionHeader.id)
         collectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: true, scrollPosition: .left)
@@ -40,12 +41,17 @@ class ShopCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.section == 2 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistCell.id, for: indexPath) as! ArtistCell
+        switch indexPath.section {
+        case 0:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.smallCellID, for: indexPath) as! AlbumCell
+            cell.fontSize = 16
             return cell
-            
-        } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.id, for: indexPath) as! AlbumCell
+        case 1:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.bigCellID, for: indexPath) as! AlbumCell
+            cell.fontSize = 18
+            return cell
+        default:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistCell.id, for: indexPath) as! ArtistCell
             return cell
         }
     }
@@ -58,9 +64,9 @@ class ShopCollectionView: UICollectionViewController {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ShopSectionHeader.id, for: indexPath) as! ShopSectionHeader
         switch indexPath.section {
         case 0:
-            header.title = "New Releases"
-        case 1:
             header.title = "Top Pop Albums"
+        case 1:
+            header.title = "New Releases"
         case 2:
             header.title = "Shop by Artist"
         default:

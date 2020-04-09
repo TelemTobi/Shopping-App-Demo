@@ -17,9 +17,9 @@ class GenreCell: UICollectionViewCell {
     private var bottomLine: UIView!
     
     var genre: (String, UIImage)! {
-        didSet {
-            imageView.image = genre.1
-            titleLabel.text = genre.0
+        willSet {
+            imageView.image = newValue.1
+            titleLabel.text = newValue.0
         }
     }
     

@@ -105,14 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				7D5876AB243A4D4F00480884 /* Support */,
-				7D5876D7243CDED400480884 /* Managers */,
 				7D5876A7243A4D0D00480884 /* Utilities */,
+				7D5876D7243CDED400480884 /* Managers */,
 				7D5876AA243A4D2500480884 /* Models */,
 				7D5876A8243A4D1300480884 /* Custom Views */,
 				7D5876A9243A4D1B00480884 /* View Controllers */,
 				7D5876A6243A4CF700480884 /* Extentions */,
 				7D5876AE243A839100480884 /* Assests */,
-				7D58769A243A447E00480884 /* Info.plist */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
@@ -166,6 +165,7 @@
 		7D5876AB243A4D4F00480884 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				7D58769A243A447E00480884 /* Info.plist */,
 				7D58768C243A447D00480884 /* AppDelegate.swift */,
 				7D58768E243A447D00480884 /* SceneDelegate.swift */,
 			);
@@ -490,7 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 765F9357QN;
-				INFOPLIST_FILE = ShoppingApp/Info.plist;
+				INFOPLIST_FILE = ShoppingApp/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 765F9357QN;
-				INFOPLIST_FILE = ShoppingApp/Info.plist;
+				INFOPLIST_FILE = ShoppingApp/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

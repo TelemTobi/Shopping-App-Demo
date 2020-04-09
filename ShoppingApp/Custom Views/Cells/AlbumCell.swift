@@ -10,11 +10,19 @@ import UIKit
 
 class AlbumCell: UICollectionViewCell {
     
-    static let id = "AlbumCollectionViewCell"
+    static let bigCellID = "AlbumBigCell"
+    static let smallCellID = "AlbumSmallCell"
     
     private var imageView: UIImageView!
     private var titleLabel: UILabel!
     private var artistLabel: UILabel!
+    
+    var fontSize: CGFloat! {
+        didSet {
+            titleLabel.font = .Jura(ofSize: fontSize, weight: "Bold")
+            artistLabel.font = .Jura(ofSize: fontSize - 4, weight: "Medium")
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,12 +49,14 @@ class AlbumCell: UICollectionViewCell {
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0).isActive = true
+        imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
     }
     
     private func setTitleLabel() {
         titleLabel = UILabel()
+        titleLabel.contentMode = .center
         titleLabel.font = .Jura(ofSize: 18, weight: "Bold")
         titleLabel.textColor = .primaryColor
         titleLabel.textAlignment = .left
@@ -74,4 +84,18 @@ class AlbumCell: UICollectionViewCell {
         artistLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -4).isActive = true
         artistLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4).isActive = true
     }
+//
+//    private func setStackView() {
+//        let stackView = UIStackView(arrangedSubviews: [titleLabel, artistLabel])
+//        stackView.axis = .vertical
+//        stackView.distribution = .fillProportionally
+//        stackView.alignment = .fill
+//        contentView.addSubview(stackView)
+//
+//        stackView.translatesAutoresizingMaskIntoConstraints = false
+//        stackView.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 4).isActive = true
+//        stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4).isActive = true
+//        stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -4).isActive = true
+//        stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4).isActive = true
+//    }
 }

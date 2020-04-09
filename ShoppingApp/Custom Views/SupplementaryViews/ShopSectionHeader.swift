@@ -15,8 +15,8 @@ class ShopSectionHeader: UICollectionReusableView {
     private var viewAllButton: UIButton!
     
     var title: String? {
-        didSet {
-            titleLabel.text = title
+        willSet {
+            titleLabel.text = newValue
         }
     }
     
@@ -38,7 +38,7 @@ class ShopSectionHeader: UICollectionReusableView {
     
     func setUpTitleLabel() {
         titleLabel = UILabel()
-        titleLabel.font = .Jura(ofSize: 26, weight: "Bold")
+        titleLabel.font = .Jura(ofSize: 24, weight: "Bold")
         titleLabel.text = "Section Header"
         titleLabel.contentMode = .bottomLeft
         titleLabel.textColor = .primaryColor

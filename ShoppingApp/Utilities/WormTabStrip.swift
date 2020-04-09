@@ -208,7 +208,6 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
         resetHeightOfWorm()
         worm.frame.size.width = Width * 0.8 / 3
         worm.backgroundColor = eyStyle.WormColor
-        
     }
     
     private func buildContent(){
