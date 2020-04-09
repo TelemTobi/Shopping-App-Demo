@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2162902428E4EA51583120B4 /* Pods_ShoppingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C104DDA3652BBDB92565C1 /* Pods_ShoppingApp.framework */; };
 		7D58768D243A447D00480884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768C243A447D00480884 /* AppDelegate.swift */; };
 		7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768E243A447D00480884 /* SceneDelegate.swift */; };
 		7D587691243A447D00480884 /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587690243A447D00480884 /* TabsController.swift */; };
@@ -62,7 +61,6 @@
 		7D58771E243E108D00480884 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7D587720243E6BB900480884 /* LayoutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsManager.swift; sourceTree = "<group>"; };
 		7D587723243E730F00480884 /* ShopSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSectionHeader.swift; sourceTree = "<group>"; };
-		A5C104DDA3652BBDB92565C1 /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7244B8F971DB976240C28E5 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.release.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,22 +69,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2162902428E4EA51583120B4 /* Pods_ShoppingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06955DAD043B1A517B50B248 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7D5876C1243A8C5A00480884 /* WormTabStrip */,
-				A5C104DDA3652BBDB92565C1 /* Pods_ShoppingApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		46B1963017F1E30C730C74F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +90,6 @@
 				7D58768B243A447D00480884 /* ShoppingApp */,
 				7D58768A243A447D00480884 /* Products */,
 				46B1963017F1E30C730C74F3 /* Pods */,
-				06955DAD043B1A517B50B248 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				7D5876A4243A477300480884 /* Constants.swift */,
+				7D5876C2243A8C8900480884 /* WormTabStrip.swift */,
+				7D5876C3243A8C8900480884 /* WormTabStripView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -199,15 +188,6 @@
 				7D5876C6243A8CF400480884 /* Jura */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		7D5876C1243A8C5A00480884 /* WormTabStrip */ = {
-			isa = PBXGroup;
-			children = (
-				7D5876C2243A8C8900480884 /* WormTabStrip.swift */,
-				7D5876C3243A8C8900480884 /* WormTabStripView.swift */,
-			);
-			name = WormTabStrip;
 			sourceTree = "<group>";
 		};
 		7D5876C6243A8CF400480884 /* Jura */ = {
