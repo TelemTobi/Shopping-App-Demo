@@ -11,6 +11,7 @@ import UIKit
 protocol ShopDelegate {
     func didSelectGenre(_ genre: Int)
 }
+
 class ShopController: UIViewController {
     
     var genresCollectionView: GenresCollectionView!
@@ -32,6 +33,7 @@ class ShopController: UIViewController {
         let layout = LayoutsManager.shared.genresLayout()
         genresCollectionView = GenresCollectionView(collectionViewLayout: layout)
         genresCollectionView.shopDelegate = self
+        
         addChild(genresCollectionView)
         genresCollectionView.didMove(toParent: self)
         view.addSubview(genresCollectionView.view)
@@ -63,6 +65,7 @@ class ShopController: UIViewController {
 
 extension ShopController: ShopDelegate {
     func didSelectGenre(_ genre: Int) {
+        
         shopCollectionView.selectedGenre = genre
     }
 }

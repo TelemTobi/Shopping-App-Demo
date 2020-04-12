@@ -8,14 +8,7 @@
 
 import UIKit
 
-class ShopCollectionView: UICollectionViewController {
-    
-    var selectedGenre: Int! {
-        willSet {
-            let header = collectionView.supplementaryView(forElementKind: UICollectionView.elementKindSectionHeader, at: IndexPath(item: 0, section: 0)) as! ShopSectionHeader
-            header.title = "Top \(musicGenres[newValue].0) Albums"
-        }
-    }
+class BrowseCollectionView: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +22,6 @@ class ShopCollectionView: UICollectionViewController {
         collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.bigCellID)
         collectionView.register(ArtistCell.self, forCellWithReuseIdentifier: ArtistCell.id)
         collectionView.register(ShopSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ShopSectionHeader.id)
-        collectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: true, scrollPosition: .left)
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -37,7 +29,7 @@ class ShopCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        8
+        6
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -64,13 +56,11 @@ class ShopCollectionView: UICollectionViewController {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ShopSectionHeader.id, for: indexPath) as! ShopSectionHeader
         switch indexPath.section {
         case 0:
-            header.title = "Top Pop Albums"
+            header.title = "Most Popular Albums"
         case 1:
             header.title = "New Releases"
-        case 2:
-            header.title = "Shop by Artist"
         default:
-            break
+            header.title = "Shop by Artist"
         }
         return header
     }

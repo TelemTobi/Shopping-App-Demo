@@ -41,7 +41,7 @@ public struct WormTabStripStylePropertyies {
     
     var kHeightOfWorm:CGFloat = 3
     
-    var kHeightOfWormForBubble:CGFloat = 35
+    var kHeightOfWormForBubble:CGFloat = 38
     
     var kHeightOfDivider:CGFloat = 2
     
@@ -70,8 +70,8 @@ public struct WormTabStripStylePropertyies {
      fonts
      ************/
     // font size of tabs
-    var tabItemDefaultFont: UIFont = .Jura(ofSize: 16, weight: "Medium")
-    var tabItemSelectedFont: UIFont = .Jura(ofSize: 16, weight: "Bold")
+    var tabItemDefaultFont: UIFont = .Jura(ofSize: 18, weight: "Medium")
+    var tabItemSelectedFont: UIFont = .Jura(ofSize: 18, weight: "Bold")
     
     /*****
      colors
@@ -155,6 +155,8 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
         checkAndJustify()
         selectTabAt(index: currentTabIndex)
         setTabStyle()
+        
+        bringSubviewToFront(topScrollView)
     }
     
     private func validate(){
@@ -174,10 +176,16 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     
     // add top scroll view to the view stack which will contain the all the tabs
     private func addTopScrollView(){
-        topScrollView.frame = CGRect(x: 0,y: 0, width:Width,height:eyStyle.kHeightOfTopScrollView)
+//        topScrollView.frame = CGRect(x: 0,y: 90, width:Width,height:eyStyle.kHeightOfTopScrollView)
         topScrollView.backgroundColor = eyStyle.topScrollViewBackgroundColor
         topScrollView.showsHorizontalScrollIndicator = false
         self.addSubview(topScrollView)
+        
+        topScrollView.translatesAutoresizingMaskIntoConstraints = false
+        topScrollView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        topScrollView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        topScrollView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        topScrollView.heightAnchor.constraint(equalToConstant: eyStyle.kHeightOfTopScrollView).isActive = true
     }
     // add divider between the top scroll view and content scroll view
     private func addDivider(){
@@ -187,12 +195,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     }
     // add content scroll view to the view stack which will hold mian  views such like table view ...
     private func addContentScrollView(){
-        if eyStyle.isHideTopScrollView {
-            //rootScrollView = UIScrollView(frame: CGRectMake(0,0,Width,Height))
-            contentScrollView.frame =  CGRect(x:0,y:0,width:Width,height:Height);
-        }else{
-            contentScrollView.frame = CGRect(x:0,y: eyStyle.kHeightOfTopScrollView+eyStyle.kHeightOfDivider,width:Width, height:Height-eyStyle.kHeightOfTopScrollView-eyStyle.kHeightOfDivider)
-        }
+        contentScrollView.frame =  CGRect(x:0,y:0,width:Width,height:Height - eyStyle.kHeightOfTopScrollView)
         contentScrollView.backgroundColor = eyStyle.contentScrollViewBackgroundColor
         contentScrollView.isPagingEnabled = true
         contentScrollView.delegate = self
@@ -206,7 +209,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     private func addWorm(){
         topScrollView.addSubview(worm)
         resetHeightOfWorm()
-        worm.frame.size.width = Width * 0.8 / 3
+        worm.frame.size.width = 0
         worm.backgroundColor = eyStyle.WormColor
     }
     
@@ -244,7 +247,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
         
         tab.label.textColor = eyStyle.tabItemDefaultColor
         tab.frame.origin.x = XOffset
-        tab.frame.origin.y = 0
+        tab.frame.origin.y = 4
 
         tab.isUserInteractionEnabled = true
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.tabPress(sender:)))
@@ -318,7 +321,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
         adjustTopScrollViewsContentOffsetX(tab: tab)
         centerCurrentlySelectedWorm(tab: tab)
         
-        worm.frame.size.width = tab.frame.size.width + 4
+        worm.frame.size.width = tab.frame.size.width + 12
     }
     
     /*******
@@ -331,8 +334,8 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     }
     
     private func slideWormToTabPosition(tab:WormTabStripView){
-        self.worm.frame.origin.x = tab.frame.origin.x
-        self.worm.frame.size.width = tab.frame.size.width + 4
+        self.worm.frame.origin.x = tab.frame.origin.x - 4
+        self.worm.frame.size.width = tab.frame.size.width + 12
     }
     /*********************
         if the tab was at position of only half of it was showing up,
@@ -510,7 +513,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
         if eyStyle.wormStyel == .LINE {
                 worm.frame.origin.y = eyStyle.kHeightOfTopScrollView - eyStyle.kHeightOfWorm
         }else{
-                worm.frame.origin.y = (eyStyle.kHeightOfTopScrollView-worm.frame.size.height)/2
+                worm.frame.origin.y = 10
         }
         
         
@@ -530,7 +533,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
             worm.frame.size.height = eyStyle.kHeightOfWorm
             
         }else{
-            worm.frame.origin.y = (eyStyle.kHeightOfTopScrollView - eyStyle.kHeightOfWormForBubble)/2
+            worm.frame.origin.y = 10
             worm.frame.size.height = eyStyle.kHeightOfWormForBubble
         }
         worm.layer.cornerRadius = worm.frame.size.height/2

@@ -23,7 +23,7 @@
 		7D5876CF243A8D0000480884 /* Jura-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D5876CA243A8D0000480884 /* Jura-SemiBold.ttf */; };
 		7D5876D0243A8D0000480884 /* Jura-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D5876CB243A8D0000480884 /* Jura-Light.ttf */; };
 		7D5876D3243B278D00480884 /* MandatoryPlaything.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D5876D2243B278D00480884 /* MandatoryPlaything.ttf */; };
-		7D5876DD243CE09B00480884 /* ShopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5876DC243CE09B00480884 /* ShopCollectionView.swift */; };
+		7D5876DD243CE09B00480884 /* BrowseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5876DC243CE09B00480884 /* BrowseCollectionView.swift */; };
 		7D5876E0243CE28700480884 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5876DF243CE28700480884 /* AlbumCell.swift */; };
 		7D5876E2243CE2C100480884 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5876E1243CE2C100480884 /* ArtistCell.swift */; };
 		7D5876E6243D319100480884 /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5876E5243D319100480884 /* GenreCell.swift */; };
@@ -31,6 +31,15 @@
 		7D58771F243E108D00480884 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58771E243E108D00480884 /* UIView.swift */; };
 		7D587721243E6BB900480884 /* LayoutsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587720243E6BB900480884 /* LayoutsManager.swift */; };
 		7D587724243E730F00480884 /* ShopSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587723243E730F00480884 /* ShopSectionHeader.swift */; };
+		7D8EA6602442746400146B46 /* BrowseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA65F2442746400146B46 /* BrowseController.swift */; };
+		7D8EA662244275AD00146B46 /* ShopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA661244275AD00146B46 /* ShopCollectionView.swift */; };
+		7D8EA6642442FE4400146B46 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6632442FE4400146B46 /* UIViewController.swift */; };
+		7D8EA668244345B000146B46 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA667244345B000146B46 /* UISearchBar.swift */; };
+		7D8EA66A244383F200146B46 /* SearchCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA669244383F200146B46 /* SearchCollectionView.swift */; };
+		7D8EA66D244384C600146B46 /* ArtistTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA66C244384C600146B46 /* ArtistTableCell.swift */; };
+		7D8EA66F244384CD00146B46 /* AlbumTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA66E244384CD00146B46 /* AlbumTableCell.swift */; };
+		7D8EA6722443875900146B46 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6712443875900146B46 /* SearchTableView.swift */; };
+		7D8EA6742443967900146B46 /* SearchSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6732443967900146B46 /* SearchSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +62,7 @@
 		7D5876CA243A8D0000480884 /* Jura-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jura-SemiBold.ttf"; sourceTree = "<group>"; };
 		7D5876CB243A8D0000480884 /* Jura-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jura-Light.ttf"; sourceTree = "<group>"; };
 		7D5876D2243B278D00480884 /* MandatoryPlaything.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MandatoryPlaything.ttf; sourceTree = "<group>"; };
-		7D5876DC243CE09B00480884 /* ShopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionView.swift; sourceTree = "<group>"; };
+		7D5876DC243CE09B00480884 /* BrowseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCollectionView.swift; sourceTree = "<group>"; };
 		7D5876DF243CE28700480884 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		7D5876E1243CE2C100480884 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
 		7D5876E5243D319100480884 /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
@@ -61,6 +70,15 @@
 		7D58771E243E108D00480884 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7D587720243E6BB900480884 /* LayoutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsManager.swift; sourceTree = "<group>"; };
 		7D587723243E730F00480884 /* ShopSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSectionHeader.swift; sourceTree = "<group>"; };
+		7D8EA65F2442746400146B46 /* BrowseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseController.swift; sourceTree = "<group>"; };
+		7D8EA661244275AD00146B46 /* ShopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionView.swift; sourceTree = "<group>"; };
+		7D8EA6632442FE4400146B46 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		7D8EA667244345B000146B46 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
+		7D8EA669244383F200146B46 /* SearchCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionView.swift; sourceTree = "<group>"; };
+		7D8EA66C244384C600146B46 /* ArtistTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableCell.swift; sourceTree = "<group>"; };
+		7D8EA66E244384CD00146B46 /* AlbumTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableCell.swift; sourceTree = "<group>"; };
+		7D8EA6712443875900146B46 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
+		7D8EA6732443967900146B46 /* SearchSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSectionHeader.swift; sourceTree = "<group>"; };
 		B7244B8F971DB976240C28E5 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.release.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +140,8 @@
 				7D58771E243E108D00480884 /* UIView.swift */,
 				7D5876B8243A84B500480884 /* UIFont.swift */,
 				7D5876BF243A89C200480884 /* UIColor.swift */,
+				7D8EA6632442FE4400146B46 /* UIViewController.swift */,
+				7D8EA667244345B000146B46 /* UISearchBar.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -139,8 +159,8 @@
 		7D5876A8243A4D1300480884 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				7D58771C243E009D00480884 /* CollectionViews */,
-				7D5876DE243CE27200480884 /* Cells */,
+				7D8EA66B244384A300146B46 /* TableViewCells */,
+				7D5876DE243CE27200480884 /* CollectionViewCells */,
 				7D587722243E72D600480884 /* SupplementaryViews */,
 			);
 			path = "Custom Views";
@@ -150,7 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				7D587690243A447D00480884 /* TabsController.swift */,
+				7D8EA65F2442746400146B46 /* BrowseController.swift */,
 				7D5876AC243A4DAE00480884 /* ShopController.swift */,
+				7D8EA6702443874900146B46 /* TableViews */,
+				7D58771C243E009D00480884 /* CollectionViews */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -218,21 +241,23 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		7D5876DE243CE27200480884 /* Cells */ = {
+		7D5876DE243CE27200480884 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				7D5876E5243D319100480884 /* GenreCell.swift */,
 				7D5876DF243CE28700480884 /* AlbumCell.swift */,
 				7D5876E1243CE2C100480884 /* ArtistCell.swift */,
 			);
-			path = Cells;
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 		7D58771C243E009D00480884 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
 				7D58771A243DFE4F00480884 /* GenresCollectionView.swift */,
-				7D5876DC243CE09B00480884 /* ShopCollectionView.swift */,
+				7D5876DC243CE09B00480884 /* BrowseCollectionView.swift */,
+				7D8EA661244275AD00146B46 /* ShopCollectionView.swift */,
+				7D8EA669244383F200146B46 /* SearchCollectionView.swift */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -241,8 +266,26 @@
 			isa = PBXGroup;
 			children = (
 				7D587723243E730F00480884 /* ShopSectionHeader.swift */,
+				7D8EA6732443967900146B46 /* SearchSectionHeader.swift */,
 			);
 			path = SupplementaryViews;
+			sourceTree = "<group>";
+		};
+		7D8EA66B244384A300146B46 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				7D8EA66C244384C600146B46 /* ArtistTableCell.swift */,
+				7D8EA66E244384CD00146B46 /* AlbumTableCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		7D8EA6702443874900146B46 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				7D8EA6712443875900146B46 /* SearchTableView.swift */,
+			);
+			path = TableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,18 +391,27 @@
 			files = (
 				7D58771B243DFE4F00480884 /* GenresCollectionView.swift in Sources */,
 				7D587724243E730F00480884 /* ShopSectionHeader.swift in Sources */,
-				7D5876DD243CE09B00480884 /* ShopCollectionView.swift in Sources */,
+				7D8EA662244275AD00146B46 /* ShopCollectionView.swift in Sources */,
+				7D5876DD243CE09B00480884 /* BrowseCollectionView.swift in Sources */,
+				7D8EA6602442746400146B46 /* BrowseController.swift in Sources */,
 				7D5876E0243CE28700480884 /* AlbumCell.swift in Sources */,
+				7D8EA6742443967900146B46 /* SearchSectionHeader.swift in Sources */,
 				7D587721243E6BB900480884 /* LayoutsManager.swift in Sources */,
 				7D5876E2243CE2C100480884 /* ArtistCell.swift in Sources */,
 				7D587691243A447D00480884 /* TabsController.swift in Sources */,
+				7D8EA66A244383F200146B46 /* SearchCollectionView.swift in Sources */,
 				7D58768D243A447D00480884 /* AppDelegate.swift in Sources */,
+				7D8EA66F244384CD00146B46 /* AlbumTableCell.swift in Sources */,
 				7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */,
 				7D5876C4243A8C8900480884 /* WormTabStrip.swift in Sources */,
 				7D5876C5243A8C8900480884 /* WormTabStripView.swift in Sources */,
+				7D8EA6642442FE4400146B46 /* UIViewController.swift in Sources */,
+				7D8EA6722443875900146B46 /* SearchTableView.swift in Sources */,
+				7D8EA66D244384C600146B46 /* ArtistTableCell.swift in Sources */,
 				7D5876E6243D319100480884 /* GenreCell.swift in Sources */,
 				7D5876C0243A89C200480884 /* UIColor.swift in Sources */,
 				7D5876B9243A84B500480884 /* UIFont.swift in Sources */,
+				7D8EA668244345B000146B46 /* UISearchBar.swift in Sources */,
 				7D5876AD243A4DAE00480884 /* ShopController.swift in Sources */,
 				7D58771F243E108D00480884 /* UIView.swift in Sources */,
 				7D5876A5243A477300480884 /* Constants.swift in Sources */,

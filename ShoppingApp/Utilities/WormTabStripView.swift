@@ -71,7 +71,7 @@ class WormTabStripView: UIView {
     
     func setUpElements() {
         label = UILabel()
-        label.font = .Jura(ofSize: 16, weight: "Medium")
+        label.font = .Jura(ofSize: 18, weight: "Medium")
         label.textAlignment = .left
         
         imageView = UIImageView()

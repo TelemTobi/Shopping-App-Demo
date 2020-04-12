@@ -57,11 +57,11 @@ class AlbumCell: UICollectionViewCell {
     private func setTitleLabel() {
         titleLabel = UILabel()
         titleLabel.contentMode = .center
-        titleLabel.font = .Jura(ofSize: 18, weight: "Bold")
+        titleLabel.font = .Jura(ofSize: 16, weight: "Bold")
         titleLabel.textColor = .primaryColor
         titleLabel.textAlignment = .left
         titleLabel.numberOfLines = 2
-        titleLabel.text = "Album name here" // remove in future
+        titleLabel.text = "Album name goes here" // remove in future
         contentView.addSubview(titleLabel)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -72,7 +72,7 @@ class AlbumCell: UICollectionViewCell {
     
     private func setArtistLabel() {
         artistLabel = UILabel()
-        artistLabel.font = .Jura(ofSize: 14, weight: "Medium")
+        artistLabel.font = .Jura(ofSize: 12, weight: "Medium")
         artistLabel.textColor = .lightGray
         artistLabel.textAlignment = .left
         artistLabel.text = "Artist name" // remove in future
@@ -82,20 +82,5 @@ class AlbumCell: UICollectionViewCell {
         artistLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4).isActive = true
         artistLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4).isActive = true
         artistLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -4).isActive = true
-        artistLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4).isActive = true
     }
-//
-//    private func setStackView() {
-//        let stackView = UIStackView(arrangedSubviews: [titleLabel, artistLabel])
-//        stackView.axis = .vertical
-//        stackView.distribution = .fillProportionally
-//        stackView.alignment = .fill
-//        contentView.addSubview(stackView)
-//
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-//        stackView.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 4).isActive = true
-//        stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4).isActive = true
-//        stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -4).isActive = true
-//        stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4).isActive = true
-//    }
 }

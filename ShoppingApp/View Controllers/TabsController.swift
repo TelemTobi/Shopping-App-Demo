@@ -16,6 +16,7 @@ class TabsController: UIViewController {
     var userButton: UIButton!
     var menuButton: UIButton!
     
+    var browseController: UIViewController!
     var shopController: UIViewController!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -26,13 +27,21 @@ class TabsController: UIViewController {
         super.viewDidLoad()
         
         setUpElements()
-        setUpViewPager()
+        setSubControllers()
         setUpTitle()
         setUpButtons()
+        setUpViewPager()
     }
     
     func setUpElements() {
+        dismissKeyboardWhenTapped()
         view.backgroundColor = .primaryColor
+    }
+    
+    func setSubControllers() {
+        browseController = BrowseController()
+        addChild(browseController)
+        browseController.didMove(toParent: self)
         
         shopController = ShopController()
         addChild(shopController)
@@ -40,7 +49,9 @@ class TabsController: UIViewController {
     }
     
     func setUpViewPager() {
-        let frame =  CGRect(x: 0, y: 90, width: self.view.frame.size.width, height: self.view.frame.size.height - 90)
+        let yPosition = view.layoutMargins.top + 100
+        let height = view.frame.height - yPosition - view.layoutMargins.bottom - 24
+        let frame =  CGRect(x: 0, y: yPosition, width: view.frame.width, height: height)
         viewPager = WormTabStrip(frame: frame)
         self.view.addSubview(viewPager)
         
@@ -58,15 +69,14 @@ class TabsController: UIViewController {
         titleLabel = UILabel()
         titleLabel.text = "Tobi"
         titleLabel.textColor = .white
-        titleLabel.font = .MandatoryPlaything(ofSize: 32)
+        titleLabel.font = .MandatoryPlaything(ofSize: 36)
         titleLabel.textAlignment = .center
         titleLabel.adjustsFontSizeToFitWidth = true
         view.addSubview(titleLabel)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 48).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 4).isActive = true
         titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        titleLabel.widthAnchor.constraint(equalToConstant: view.frame.width / 1.8).isActive = true
     }
     
     func setUpButtons() {
@@ -80,7 +90,7 @@ class TabsController: UIViewController {
         view.bringSubviewToFront(userButton)
         
         userButton.translatesAutoresizingMaskIntoConstraints = false
-        userButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor, constant: -1).isActive = true
+        userButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor).isActive = true
         userButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         userButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
         userButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -96,12 +106,8 @@ class TabsController: UIViewController {
         menuButton.translatesAutoresizingMaskIntoConstraints = false
         menuButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor, constant: -2).isActive = true
         menuButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        menuButton.widthAnchor.constraint(equalToConstant: 26).isActive = true
-        menuButton.heightAnchor.constraint(equalToConstant: 26).isActive = true
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("Tapped")
+        menuButton.widthAnchor.constraint(equalToConstant: 28).isActive = true
+        menuButton.heightAnchor.constraint(equalToConstant: 28).isActive = true
     }
 }
 
@@ -111,7 +117,14 @@ extension TabsController: WormTabStripDelegate {
     }
     
     func WTSViewOfTab(index: Int) -> UIView {
-        index == 1 ? shopController.view : UIViewController().view
+        switch index {
+        case 0:
+            return shopController.view
+        case 1:
+            return browseController.view
+        default:
+            return UIViewController().view
+        }
     }
     
     func WTSTitleForTab(index: Int) -> String {

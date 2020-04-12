@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIFont {
+    
     static func MandatoryPlaything(ofSize size: CGFloat) -> UIFont {
         return UIFont(name: "MandatoryPlaything", size: size)!
     }

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ShopSectionHeader: UICollectionReusableView {
+class SearchSectionHeader:  UITableViewHeaderFooterView {
     
-    static let id = "ShopSectionHeader"
+    static let id = "SearchSectionHeader"
     private var titleLabel: UILabel!
     private var viewAllButton: UIButton!
     
@@ -20,8 +20,8 @@ class ShopSectionHeader: UICollectionReusableView {
         }
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
         
         setUpElements()
         setUpTitleLabel()
@@ -33,7 +33,7 @@ class ShopSectionHeader: UICollectionReusableView {
     }
     
     func setUpElements() {
-        backgroundColor = .myBackgroundColor
+        contentView.backgroundColor = .myBackgroundColor
     }
     
     func setUpTitleLabel() {
@@ -44,17 +44,13 @@ class ShopSectionHeader: UICollectionReusableView {
         addSubview(titleLabel)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
     }
     
     func setViewAllButton() {
         viewAllButton = UIButton(type: .custom)
         viewAllButton.backgroundColor = .none
-//        viewAllButton.setTitle("All", for: .normal)
-//        viewAllButton.setTitleColor(.secondaryColor, for: .normal)
-//        viewAllButton.titleLabel?.font = .Jura(ofSize: 16, weight: "Bold")
-//        viewAllButton.titleLabel?.contentMode = .bottom
         viewAllButton.setImage(UIImage(named: "arrows"), for: .normal)
         viewAllButton.imageView?.contentMode = .scaleAspectFit
         addSubview(viewAllButton)

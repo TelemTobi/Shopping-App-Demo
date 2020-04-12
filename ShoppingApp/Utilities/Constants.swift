@@ -9,9 +9,9 @@
 import UIKit
 
 struct TabItems {
-    static let titles = ["Search", "Shop", "Cart"]
-    static let images = [UIImage(systemName: "magnifyingglass"), UIImage(systemName: "bag"), UIImage(systemName: "cart")]
-    static let selectedImages = [UIImage(systemName: "magnifyingglass"), UIImage(systemName: "bag.fill"), UIImage(systemName: "cart.fill")]
+    static let titles = ["Genres", "Browse", "Cart"]
+    static let images = [UIImage(systemName: "music.note"), UIImage(systemName: "bag"), UIImage(systemName: "cart")]
+    static let selectedImages = [UIImage(systemName: "music.note"), UIImage(systemName: "bag.fill"), UIImage(systemName: "cart.fill")]
 }
 
 let musicGenres: [(String, UIImage)] = [
@@ -20,7 +20,5 @@ let musicGenres: [(String, UIImage)] = [
     ("Rock", UIImage(named: "rock")!),
     ("Rap", UIImage(named: "rap")!),
     ("Electronic", UIImage(named: "electronic")!),
-    ("Reggae", UIImage(named: "reggae")!),
-    ("Blues", UIImage(named: "blues")!),
-    ("Classical", UIImage(named: "classical")!)
+    ("Blues", UIImage(named: "blues")!)
 ]
