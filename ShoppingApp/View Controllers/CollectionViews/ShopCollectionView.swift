@@ -1,5 +1,5 @@
 //
-//  CollectionViewController.swift
+//  ShopCollectionView.swift
 //  ShoppingApp
 //
 //  Created by Telem Tobi on 07/04/2020.
@@ -28,7 +28,7 @@ class ShopCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        15
+        8
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

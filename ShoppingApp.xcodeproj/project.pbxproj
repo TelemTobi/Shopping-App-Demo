@@ -40,6 +40,11 @@
 		7D8EA66F244384CD00146B46 /* AlbumTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA66E244384CD00146B46 /* AlbumTableCell.swift */; };
 		7D8EA6722443875900146B46 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6712443875900146B46 /* SearchTableView.swift */; };
 		7D8EA6742443967900146B46 /* SearchSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6732443967900146B46 /* SearchSectionHeader.swift */; };
+		7D8EA6762443BC8100146B46 /* AlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6752443BC8100146B46 /* AlbumController.swift */; };
+		7D8EA6782444597A00146B46 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6772444597A00146B46 /* Album.swift */; };
+		7D8EA67A2444598A00146B46 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6792444598A00146B46 /* Artist.swift */; };
+		7D8EA67D24445EFC00146B46 /* cart.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D8EA67C24445EFC00146B46 /* cart.json */; };
+		7D8EA67F2444607D00146B46 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA67E2444607D00146B46 /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +84,11 @@
 		7D8EA66E244384CD00146B46 /* AlbumTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableCell.swift; sourceTree = "<group>"; };
 		7D8EA6712443875900146B46 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
 		7D8EA6732443967900146B46 /* SearchSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSectionHeader.swift; sourceTree = "<group>"; };
+		7D8EA6752443BC8100146B46 /* AlbumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumController.swift; sourceTree = "<group>"; };
+		7D8EA6772444597A00146B46 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		7D8EA6792444598A00146B46 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		7D8EA67C24445EFC00146B46 /* cart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cart.json; sourceTree = "<group>"; };
+		7D8EA67E2444607D00146B46 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B7244B8F971DB976240C28E5 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.release.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +182,7 @@
 				7D587690243A447D00480884 /* TabsController.swift */,
 				7D8EA65F2442746400146B46 /* BrowseController.swift */,
 				7D5876AC243A4DAE00480884 /* ShopController.swift */,
+				7D8EA6752443BC8100146B46 /* AlbumController.swift */,
 				7D8EA6702443874900146B46 /* TableViews */,
 				7D58771C243E009D00480884 /* CollectionViews */,
 			);
@@ -181,6 +192,9 @@
 		7D5876AA243A4D2500480884 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7D8EA6772444597A00146B46 /* Album.swift */,
+				7D8EA6792444598A00146B46 /* Artist.swift */,
+				7D8EA67E2444607D00146B46 /* Track.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +212,7 @@
 		7D5876AE243A839100480884 /* Assests */ = {
 			isa = PBXGroup;
 			children = (
+				7D8EA67B24445EE900146B46 /* Animations */,
 				7D5876AF243A839E00480884 /* Fonts */,
 				7D587695243A447E00480884 /* Assets.xcassets */,
 			);
@@ -288,6 +303,14 @@
 			path = TableViews;
 			sourceTree = "<group>";
 		};
+		7D8EA67B24445EE900146B46 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7D8EA67C24445EFC00146B46 /* cart.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +373,7 @@
 				7D5876CC243A8D0000480884 /* Jura-Regular.ttf in Resources */,
 				7D5876D0243A8D0000480884 /* Jura-Light.ttf in Resources */,
 				7D5876CE243A8D0000480884 /* Jura-Medium.ttf in Resources */,
+				7D8EA67D24445EFC00146B46 /* cart.json in Resources */,
 				7D5876CD243A8D0000480884 /* Jura-Bold.ttf in Resources */,
 				7D5876CF243A8D0000480884 /* Jura-SemiBold.ttf in Resources */,
 				7D5876D3243B278D00480884 /* MandatoryPlaything.ttf in Resources */,
@@ -393,12 +417,14 @@
 				7D587724243E730F00480884 /* ShopSectionHeader.swift in Sources */,
 				7D8EA662244275AD00146B46 /* ShopCollectionView.swift in Sources */,
 				7D5876DD243CE09B00480884 /* BrowseCollectionView.swift in Sources */,
+				7D8EA67A2444598A00146B46 /* Artist.swift in Sources */,
 				7D8EA6602442746400146B46 /* BrowseController.swift in Sources */,
 				7D5876E0243CE28700480884 /* AlbumCell.swift in Sources */,
 				7D8EA6742443967900146B46 /* SearchSectionHeader.swift in Sources */,
 				7D587721243E6BB900480884 /* LayoutsManager.swift in Sources */,
 				7D5876E2243CE2C100480884 /* ArtistCell.swift in Sources */,
 				7D587691243A447D00480884 /* TabsController.swift in Sources */,
+				7D8EA67F2444607D00146B46 /* Track.swift in Sources */,
 				7D8EA66A244383F200146B46 /* SearchCollectionView.swift in Sources */,
 				7D58768D243A447D00480884 /* AppDelegate.swift in Sources */,
 				7D8EA66F244384CD00146B46 /* AlbumTableCell.swift in Sources */,
@@ -408,6 +434,8 @@
 				7D8EA6642442FE4400146B46 /* UIViewController.swift in Sources */,
 				7D8EA6722443875900146B46 /* SearchTableView.swift in Sources */,
 				7D8EA66D244384C600146B46 /* ArtistTableCell.swift in Sources */,
+				7D8EA6782444597A00146B46 /* Album.swift in Sources */,
+				7D8EA6762443BC8100146B46 /* AlbumController.swift in Sources */,
 				7D5876E6243D319100480884 /* GenreCell.swift in Sources */,
 				7D5876C0243A89C200480884 /* UIColor.swift in Sources */,
 				7D5876B9243A84B500480884 /* UIFont.swift in Sources */,

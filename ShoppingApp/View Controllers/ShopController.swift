@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ShopController.swift
 //  ShoppingApp
 //
 //  Created by Telem Tobi on 05/04/2020.

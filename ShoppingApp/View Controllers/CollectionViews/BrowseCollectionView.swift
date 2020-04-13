@@ -1,5 +1,5 @@
 //
-//  CollectionViewController.swift
+//  BrowseCollectionView.swift
 //  ShoppingApp
 //
 //  Created by Telem Tobi on 07/04/2020.
