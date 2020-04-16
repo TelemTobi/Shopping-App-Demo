@@ -10,5 +10,5 @@ import Foundation
 
 struct Track {
     let title: String
-    let duration: Float
+    let duration: String
 }

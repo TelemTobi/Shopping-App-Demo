@@ -50,6 +50,7 @@ class ArtistTableCell: UITableViewCell {
         coverImage = UIImageView()
         coverImage.contentMode = .scaleAspectFit
         coverImage.layer.cornerRadius = 25
+        coverImage.layer.masksToBounds = true
         coverImage.layer.borderColor = UIColor.myBackgroundColor.cgColor
         coverImage.layer.borderWidth = 1
         coverImage.backgroundColor = .secondaryColor // remove in future

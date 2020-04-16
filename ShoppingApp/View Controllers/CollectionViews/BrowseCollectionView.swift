@@ -10,6 +10,8 @@ import UIKit
 
 class BrowseCollectionView: UICollectionViewController {
     
+    var delegate: AlbumDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,11 +38,11 @@ class BrowseCollectionView: UICollectionViewController {
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.smallCellID, for: indexPath) as! AlbumCell
-            cell.fontSize = 16
+            cell.album = testAlbum
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.bigCellID, for: indexPath) as! AlbumCell
-            cell.fontSize = 18
+            cell.album = testAlbum
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistCell.id, for: indexPath) as! ArtistCell
@@ -49,7 +51,14 @@ class BrowseCollectionView: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("item selected")
+        switch indexPath.section {
+        case 0:
+            delegate?.didSelectAlbum(nil)
+        case 1:
+            delegate?.didSelectAlbum(nil)
+        default:
+            delegate?.didSelectArtist(nil)
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

@@ -130,13 +130,11 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     
     private let plusOneforMarginOfLastTabToScreenEdge = 1
     //MARK: init
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        Width = self.frame.width
-        Height = self.frame.height
-    }
-    convenience required public init(key:String) {
-        self.init(frame:CGRect.zero)
+    
+    init(width: CGFloat, height: CGFloat) {
+        super.init(frame: .zero)
+        Width = width
+        Height = height
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -149,7 +147,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
         validate()
         addTopScrollView()
         addWorm()
-        addDivider()
+//        addDivider()
         addContentScrollView()
         buildContent()
         checkAndJustify()
@@ -195,7 +193,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     }
     // add content scroll view to the view stack which will hold mian  views such like table view ...
     private func addContentScrollView(){
-        contentScrollView.frame =  CGRect(x:0,y:0,width:Width,height:Height - eyStyle.kHeightOfTopScrollView)
+        contentScrollView.frame =  CGRect(x:0, y:0, width:Width ,height:Height - eyStyle.kHeightOfTopScrollView)
         contentScrollView.backgroundColor = eyStyle.contentScrollViewBackgroundColor
         contentScrollView.isPagingEnabled = true
         contentScrollView.delegate = self
@@ -259,7 +257,7 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     // add all content views to content scroll view and tabs to top scroll view
     private func buildContentScrollViewsContent(){
         let count = delegate!.WTSNumberOfTabs()
-        contentScrollView.contentSize.width = CGFloat(count)*self.frame.width
+        contentScrollView.contentSize.width = CGFloat(count)*Width
         for i in 0..<count{
             //position each content view
             let view = delegate!.WTSViewOfTab(index: i)
@@ -404,7 +402,6 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         currentTabIndex = Int(scrollView.contentOffset.x/Width)
-        
         setTabStyle()
         prevTabIndex = currentTabIndex
         let tab = tabs[currentTabIndex]

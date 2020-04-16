@@ -13,14 +13,15 @@ class AlbumCell: UICollectionViewCell {
     static let bigCellID = "AlbumBigCell"
     static let smallCellID = "AlbumSmallCell"
     
-    private var imageView: UIImageView!
+    private var coverImage: UIImageView!
     private var titleLabel: UILabel!
     private var artistLabel: UILabel!
     
-    var fontSize: CGFloat! {
+    var album: Album? {
         didSet {
-            titleLabel.font = .Jura(ofSize: fontSize, weight: "Bold")
-            artistLabel.font = .Jura(ofSize: fontSize - 4, weight: "Medium")
+            coverImage.image = album?.image
+            titleLabel.text = album?.title
+            artistLabel.text = album?.artist.name
         }
     }
     
@@ -28,7 +29,7 @@ class AlbumCell: UICollectionViewCell {
         super.init(frame: frame)
         
         setUpElements()
-        setImageView()
+        setCoverImage()
         setTitleLabel()
         setArtistLabel()
     }
@@ -41,17 +42,16 @@ class AlbumCell: UICollectionViewCell {
         contentView.backgroundColor = .none
     }
     
-    private func setImageView() {
-        imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .primaryColor // remove in future
-        contentView.addSubview(imageView)
+    private func setCoverImage() {
+        coverImage = UIImageView()
+        coverImage.contentMode = .scaleAspectFit
+        contentView.addSubview(coverImage)
         
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4).isActive = true
-        imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
-        imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        coverImage.translatesAutoresizingMaskIntoConstraints = false
+        coverImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 4).isActive = true
+        coverImage.widthAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
+        coverImage.heightAnchor.constraint(equalTo: contentView.widthAnchor).isActive = true
+        coverImage.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
     }
     
     private func setTitleLabel() {
@@ -61,11 +61,10 @@ class AlbumCell: UICollectionViewCell {
         titleLabel.textColor = .primaryColor
         titleLabel.textAlignment = .left
         titleLabel.numberOfLines = 2
-        titleLabel.text = "Album name goes here" // remove in future
         contentView.addSubview(titleLabel)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 4).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: coverImage.bottomAnchor, constant: 4).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -4).isActive = true
     }
@@ -75,7 +74,6 @@ class AlbumCell: UICollectionViewCell {
         artistLabel.font = .Jura(ofSize: 12, weight: "Medium")
         artistLabel.textColor = .lightGray
         artistLabel.textAlignment = .left
-        artistLabel.text = "Artist name" // remove in future
         contentView.addSubview(artistLabel)
         
         artistLabel.translatesAutoresizingMaskIntoConstraints = false

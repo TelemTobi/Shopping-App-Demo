@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D213B5E2448EE0000BC6D7E /* TracksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B5D2448EE0000BC6D7E /* TracksCollectionView.swift */; };
+		7D213B602448EE4500BC6D7E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B5F2448EE4500BC6D7E /* TrackCell.swift */; };
 		7D58768D243A447D00480884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768C243A447D00480884 /* AppDelegate.swift */; };
 		7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768E243A447D00480884 /* SceneDelegate.swift */; };
 		7D587691243A447D00480884 /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587690243A447D00480884 /* TabsController.swift */; };
@@ -35,7 +37,6 @@
 		7D8EA662244275AD00146B46 /* ShopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA661244275AD00146B46 /* ShopCollectionView.swift */; };
 		7D8EA6642442FE4400146B46 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6632442FE4400146B46 /* UIViewController.swift */; };
 		7D8EA668244345B000146B46 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA667244345B000146B46 /* UISearchBar.swift */; };
-		7D8EA66A244383F200146B46 /* SearchCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA669244383F200146B46 /* SearchCollectionView.swift */; };
 		7D8EA66D244384C600146B46 /* ArtistTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA66C244384C600146B46 /* ArtistTableCell.swift */; };
 		7D8EA66F244384CD00146B46 /* AlbumTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA66E244384CD00146B46 /* AlbumTableCell.swift */; };
 		7D8EA6722443875900146B46 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6712443875900146B46 /* SearchTableView.swift */; };
@@ -45,10 +46,16 @@
 		7D8EA67A2444598A00146B46 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6792444598A00146B46 /* Artist.swift */; };
 		7D8EA67D24445EFC00146B46 /* cart.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D8EA67C24445EFC00146B46 /* cart.json */; };
 		7D8EA67F2444607D00146B46 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA67E2444607D00146B46 /* Track.swift */; };
+		7D8EA681244491B000146B46 /* AlbumTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA680244491B000146B46 /* AlbumTopView.swift */; };
+		7D8EA6832444CEB200146B46 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6822444CEB200146B46 /* Protocols.swift */; };
+		7D8EA6852445F20C00146B46 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6842445F20C00146B46 /* UILabel.swift */; };
+		7D8EA6872446FD7100146B46 /* AlbumDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6862446FD7100146B46 /* AlbumDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51581C73FA1A7CBAE28FE7C6 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7D213B5D2448EE0000BC6D7E /* TracksCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksCollectionView.swift; sourceTree = "<group>"; };
+		7D213B5F2448EE4500BC6D7E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		7D587689243A447D00480884 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D58768C243A447D00480884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D58768E243A447D00480884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +86,6 @@
 		7D8EA661244275AD00146B46 /* ShopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionView.swift; sourceTree = "<group>"; };
 		7D8EA6632442FE4400146B46 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		7D8EA667244345B000146B46 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
-		7D8EA669244383F200146B46 /* SearchCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionView.swift; sourceTree = "<group>"; };
 		7D8EA66C244384C600146B46 /* ArtistTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableCell.swift; sourceTree = "<group>"; };
 		7D8EA66E244384CD00146B46 /* AlbumTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableCell.swift; sourceTree = "<group>"; };
 		7D8EA6712443875900146B46 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 		7D8EA6792444598A00146B46 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		7D8EA67C24445EFC00146B46 /* cart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cart.json; sourceTree = "<group>"; };
 		7D8EA67E2444607D00146B46 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		7D8EA680244491B000146B46 /* AlbumTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTopView.swift; sourceTree = "<group>"; };
+		7D8EA6822444CEB200146B46 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		7D8EA6842445F20C00146B46 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		7D8EA6862446FD7100146B46 /* AlbumDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsView.swift; sourceTree = "<group>"; };
 		B7244B8F971DB976240C28E5 /* Pods-ShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.release.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				7D58771E243E108D00480884 /* UIView.swift */,
+				7D8EA6842445F20C00146B46 /* UILabel.swift */,
 				7D5876B8243A84B500480884 /* UIFont.swift */,
 				7D5876BF243A89C200480884 /* UIColor.swift */,
 				7D8EA6632442FE4400146B46 /* UIViewController.swift */,
@@ -160,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				7D5876A4243A477300480884 /* Constants.swift */,
+				7D8EA6822444CEB200146B46 /* Protocols.swift */,
 				7D5876C2243A8C8900480884 /* WormTabStrip.swift */,
 				7D5876C3243A8C8900480884 /* WormTabStripView.swift */,
 			);
@@ -169,6 +181,8 @@
 		7D5876A8243A4D1300480884 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				7D8EA680244491B000146B46 /* AlbumTopView.swift */,
+				7D8EA6862446FD7100146B46 /* AlbumDetailsView.swift */,
 				7D8EA66B244384A300146B46 /* TableViewCells */,
 				7D5876DE243CE27200480884 /* CollectionViewCells */,
 				7D587722243E72D600480884 /* SupplementaryViews */,
@@ -262,6 +276,7 @@
 				7D5876E5243D319100480884 /* GenreCell.swift */,
 				7D5876DF243CE28700480884 /* AlbumCell.swift */,
 				7D5876E1243CE2C100480884 /* ArtistCell.swift */,
+				7D213B5F2448EE4500BC6D7E /* TrackCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -272,7 +287,7 @@
 				7D58771A243DFE4F00480884 /* GenresCollectionView.swift */,
 				7D5876DC243CE09B00480884 /* BrowseCollectionView.swift */,
 				7D8EA661244275AD00146B46 /* ShopCollectionView.swift */,
-				7D8EA669244383F200146B46 /* SearchCollectionView.swift */,
+				7D213B5D2448EE0000BC6D7E /* TracksCollectionView.swift */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -419,15 +434,17 @@
 				7D5876DD243CE09B00480884 /* BrowseCollectionView.swift in Sources */,
 				7D8EA67A2444598A00146B46 /* Artist.swift in Sources */,
 				7D8EA6602442746400146B46 /* BrowseController.swift in Sources */,
+				7D8EA6872446FD7100146B46 /* AlbumDetailsView.swift in Sources */,
+				7D8EA6852445F20C00146B46 /* UILabel.swift in Sources */,
 				7D5876E0243CE28700480884 /* AlbumCell.swift in Sources */,
 				7D8EA6742443967900146B46 /* SearchSectionHeader.swift in Sources */,
 				7D587721243E6BB900480884 /* LayoutsManager.swift in Sources */,
 				7D5876E2243CE2C100480884 /* ArtistCell.swift in Sources */,
 				7D587691243A447D00480884 /* TabsController.swift in Sources */,
 				7D8EA67F2444607D00146B46 /* Track.swift in Sources */,
-				7D8EA66A244383F200146B46 /* SearchCollectionView.swift in Sources */,
 				7D58768D243A447D00480884 /* AppDelegate.swift in Sources */,
 				7D8EA66F244384CD00146B46 /* AlbumTableCell.swift in Sources */,
+				7D8EA6832444CEB200146B46 /* Protocols.swift in Sources */,
 				7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */,
 				7D5876C4243A8C8900480884 /* WormTabStrip.swift in Sources */,
 				7D5876C5243A8C8900480884 /* WormTabStripView.swift in Sources */,
@@ -438,9 +455,12 @@
 				7D8EA6762443BC8100146B46 /* AlbumController.swift in Sources */,
 				7D5876E6243D319100480884 /* GenreCell.swift in Sources */,
 				7D5876C0243A89C200480884 /* UIColor.swift in Sources */,
+				7D213B602448EE4500BC6D7E /* TrackCell.swift in Sources */,
 				7D5876B9243A84B500480884 /* UIFont.swift in Sources */,
 				7D8EA668244345B000146B46 /* UISearchBar.swift in Sources */,
 				7D5876AD243A4DAE00480884 /* ShopController.swift in Sources */,
+				7D213B5E2448EE0000BC6D7E /* TracksCollectionView.swift in Sources */,
+				7D8EA681244491B000146B46 /* AlbumTopView.swift in Sources */,
 				7D58771F243E108D00480884 /* UIView.swift in Sources */,
 				7D5876A5243A477300480884 /* Constants.swift in Sources */,
 			);

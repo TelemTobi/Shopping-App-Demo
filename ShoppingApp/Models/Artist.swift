@@ -6,10 +6,12 @@
 //  Copyright © 2020 Telem Tobi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Artist {
+    let id: String
     let name: String
     let albums: [Album]
     let genre: Int
+    let image: UIImage
 }

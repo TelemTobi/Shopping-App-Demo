@@ -12,7 +12,6 @@ class SearchSectionHeader:  UITableViewHeaderFooterView {
     
     static let id = "SearchSectionHeader"
     private var titleLabel: UILabel!
-    private var viewAllButton: UIButton!
     
     var title: String? {
         willSet {
@@ -25,7 +24,6 @@ class SearchSectionHeader:  UITableViewHeaderFooterView {
         
         setUpElements()
         setUpTitleLabel()
-        setViewAllButton()
     }
     
     required init?(coder: NSCoder) {
@@ -46,20 +44,6 @@ class SearchSectionHeader:  UITableViewHeaderFooterView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
         titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
-    }
-    
-    func setViewAllButton() {
-        viewAllButton = UIButton(type: .custom)
-        viewAllButton.backgroundColor = .none
-        viewAllButton.setImage(UIImage(named: "arrows"), for: .normal)
-        viewAllButton.imageView?.contentMode = .scaleAspectFit
-        addSubview(viewAllButton)
-        
-        viewAllButton.translatesAutoresizingMaskIntoConstraints = false
-        viewAllButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true
-        viewAllButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor, constant: 2).isActive = true
-        viewAllButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        viewAllButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
 }
 

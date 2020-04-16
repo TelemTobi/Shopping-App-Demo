@@ -10,7 +10,7 @@ import UIKit
 
 class GenresCollectionView: UICollectionViewController {
     
-    var shopDelegate: ShopDelegate!
+    var shopDelegate: GenresDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()

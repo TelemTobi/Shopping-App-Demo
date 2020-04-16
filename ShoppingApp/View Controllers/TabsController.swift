@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TabsController.swift
 //  ShoppingApp
 //
 //  Created by Telem Tobi on 05/04/2020.
@@ -49,11 +49,14 @@ class TabsController: UIViewController {
     }
     
     func setUpViewPager() {
-        let yPosition = view.layoutMargins.top + 100
-        let height = view.frame.height - yPosition - view.layoutMargins.bottom - 24
-        let frame =  CGRect(x: 0, y: yPosition, width: view.frame.width, height: height)
-        viewPager = WormTabStrip(frame: frame)
+        viewPager = WormTabStrip(width: view.frame.width, height: view.frame.height * 0.88)
         self.view.addSubview(viewPager)
+        
+        viewPager.translatesAutoresizingMaskIntoConstraints = false
+        viewPager.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8).isActive = true
+        viewPager.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        viewPager.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        viewPager.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
         
         viewPager.delegate = self
         viewPager.eyStyle.wormStyel = .BUBBLE

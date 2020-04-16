@@ -33,6 +33,7 @@ class SearchTableView: UITableViewController {
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: AlbumTableCell.id) as! AlbumTableCell
+            cell.album = testAlbum
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: ArtistTableCell.id) as! ArtistTableCell

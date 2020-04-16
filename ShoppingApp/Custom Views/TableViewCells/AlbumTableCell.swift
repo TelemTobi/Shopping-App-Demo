@@ -17,6 +17,14 @@ class AlbumTableCell: UITableViewCell {
     private var titleLabel: UILabel!
     private var artistLabel: UILabel!
     
+    var album: Album? {
+        didSet {
+            coverImage.image = album?.image
+            titleLabel.text = album?.title
+            artistLabel.text = album?.artist.name
+        }
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -51,10 +59,6 @@ class AlbumTableCell: UITableViewCell {
     private func setCoverImage() {
         coverImage = UIImageView()
         coverImage.contentMode = .scaleAspectFit
-        coverImage.layer.cornerRadius = 25
-        coverImage.layer.borderColor = UIColor.myBackgroundColor.cgColor
-        coverImage.layer.borderWidth = 1
-        coverImage.backgroundColor = .secondaryColor // remove in future
         containerView.addSubview(coverImage)
         
         coverImage.translatesAutoresizingMaskIntoConstraints = false
@@ -68,14 +72,12 @@ class AlbumTableCell: UITableViewCell {
         titleLabel = UILabel()
         titleLabel.font = .Jura(ofSize: 18, weight: "Bold")
         titleLabel.textColor = .myBackgroundColor
-        titleLabel.text = "Album name here" // remove in future
     }
     
     private func setArtistLabel() {
         artistLabel = UILabel()
         artistLabel.font = .Jura(ofSize: 14, weight: "Medium")
         artistLabel.textColor = .myBackgroundColor
-        artistLabel.text = "Artist name" // remove in future
         
         let stackView = UIStackView(arrangedSubviews: [titleLabel, artistLabel])
         stackView.axis = .vertical

@@ -8,14 +8,11 @@
 
 import UIKit
 
-protocol ShopDelegate {
-    func didSelectGenre(_ genre: Int)
-}
-
 class ShopController: UIViewController {
     
     var genresCollectionView: GenresCollectionView!
     var shopCollectionView: ShopCollectionView!
+    var albumController: AlbumController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +23,7 @@ class ShopController: UIViewController {
     }
     
     func setUpElements() {
+        albumController = setAlbumController()
         view.backgroundColor = .myBackgroundColor
     }
     
@@ -63,7 +61,7 @@ class ShopController: UIViewController {
     }
 }
 
-extension ShopController: ShopDelegate {
+extension ShopController: GenresDelegate {
     func didSelectGenre(_ genre: Int) {
         
         shopCollectionView.selectedGenre = genre

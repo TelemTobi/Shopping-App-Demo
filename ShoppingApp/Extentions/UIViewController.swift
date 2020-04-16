@@ -10,6 +10,18 @@ import UIKit
 
 extension UIViewController {
     
+    func setAlbumController() -> AlbumController {
+        let albumController = AlbumController()
+        albumController.view.isHidden = true
+        
+        addChild(albumController)
+        albumController.didMove(toParent: self)
+        view.addSubview(albumController.view)
+        
+        view.constraintToBounds(albumController.view)
+        return albumController
+    }
+    
     func dismissKeyboardWhenTapped() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(backgroundTapped(_:)))
         tap.cancelsTouchesInView = false

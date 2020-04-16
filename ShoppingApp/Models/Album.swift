@@ -6,15 +6,16 @@
 //  Copyright © 2020 Telem Tobi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Album {
+    let id: String
     let title: String
     let artist: Artist
     let genre: Int
-    
-    let records: Int
+    let image: UIImage
+    let price: Float
     let tracks: [Track]
-    let releaseDate: Date
+    let releaseDate: String
     let notes: String
 }

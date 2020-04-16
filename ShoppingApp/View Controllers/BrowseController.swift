@@ -13,6 +13,7 @@ class BrowseController: UIViewController {
     var searchBar: UISearchBar!
     var searchTableView: SearchTableView!
     var browseCollectionView: BrowseCollectionView!
+    var albumController: AlbumController!
     
     var searchMode = false {
         didSet {
@@ -31,6 +32,9 @@ class BrowseController: UIViewController {
     }
     
     func setUpElements() {
+        albumController = setAlbumController()
+        albumController.delegate = self
+        
         view.backgroundColor = .myBackgroundColor
     }
     
@@ -38,7 +42,7 @@ class BrowseController: UIViewController {
         searchBar = UISearchBar()
         searchBar.tintColor = .primaryColor
         searchBar.barTintColor = .myBackgroundColor
-        searchBar.placeholder = "Search by album or artist name"
+        searchBar.placeholder = "Look for an Album or an Artist"
         searchBar.delegate = self
         searchBar.setTextAttributes()
         view.addSubview(searchBar)
@@ -52,6 +56,7 @@ class BrowseController: UIViewController {
     func setBrowseCollectionView() {
         let layout = LayoutsManager.shared.browseLayout()
         browseCollectionView = BrowseCollectionView(collectionViewLayout: layout)
+        browseCollectionView.delegate = self
         
         addChild(browseCollectionView)
         browseCollectionView.didMove(toParent: self)
@@ -80,6 +85,27 @@ class BrowseController: UIViewController {
     }
 }
 
+extension BrowseController: AlbumDelegate {
+    func didSelectAlbum(_ album: Album?) {
+        albumController.album = album ?? testAlbum
+
+        searchBar.isHidden = true
+        browseCollectionView.view.isHidden = true
+        albumController.view.isHidden = false
+        albumController.viewDidAppear(false)
+    }
+    
+    func didSelectArtist(_ artist: Artist?) {
+        
+    }
+    
+    @objc func backButtonTapped() {
+        searchBar.isHidden = false
+        browseCollectionView.view.isHidden = false
+        albumController.view.isHidden = true
+    }
+}
+
 extension BrowseController: UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -90,6 +116,10 @@ extension BrowseController: UISearchBarDelegate {
         if searchBar.text == "" {
             searchMode = false
         }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
