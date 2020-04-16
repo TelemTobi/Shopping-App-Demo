@@ -12,7 +12,6 @@ class AlbumController: UIViewController {
     
     var topView: AlbumTopView!
     var detailsView: AlbumDetailsView!
-    var tracksTable: TracksTableView!
     var trackCollectionView: TracksCollectionView!
     
     var delegate: AlbumDelegate?
@@ -34,7 +33,6 @@ class AlbumController: UIViewController {
         setUpElements()
         setTopView()
         setDetailsView()
-        
         setBackButton()
         setCartButton()
         setTracksCollectionView()

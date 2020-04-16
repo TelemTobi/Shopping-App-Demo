@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D213B5E2448EE0000BC6D7E /* TracksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B5D2448EE0000BC6D7E /* TracksCollectionView.swift */; };
 		7D213B602448EE4500BC6D7E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B5F2448EE4500BC6D7E /* TrackCell.swift */; };
+		7D213B622448F73300BC6D7E /* BasicSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B612448F73300BC6D7E /* BasicSectionHeader.swift */; };
 		7D58768D243A447D00480884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768C243A447D00480884 /* AppDelegate.swift */; };
 		7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768E243A447D00480884 /* SceneDelegate.swift */; };
 		7D587691243A447D00480884 /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587690243A447D00480884 /* TabsController.swift */; };
@@ -56,6 +57,7 @@
 		51581C73FA1A7CBAE28FE7C6 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7D213B5D2448EE0000BC6D7E /* TracksCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksCollectionView.swift; sourceTree = "<group>"; };
 		7D213B5F2448EE4500BC6D7E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		7D213B612448F73300BC6D7E /* BasicSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSectionHeader.swift; sourceTree = "<group>"; };
 		7D587689243A447D00480884 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D58768C243A447D00480884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D58768E243A447D00480884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		7D587722243E72D600480884 /* SupplementaryViews */ = {
 			isa = PBXGroup;
 			children = (
+				7D213B612448F73300BC6D7E /* BasicSectionHeader.swift */,
 				7D587723243E730F00480884 /* ShopSectionHeader.swift */,
 				7D8EA6732443967900146B46 /* SearchSectionHeader.swift */,
 			);
@@ -443,6 +446,7 @@
 				7D587691243A447D00480884 /* TabsController.swift in Sources */,
 				7D8EA67F2444607D00146B46 /* Track.swift in Sources */,
 				7D58768D243A447D00480884 /* AppDelegate.swift in Sources */,
+				7D213B622448F73300BC6D7E /* BasicSectionHeader.swift in Sources */,
 				7D8EA66F244384CD00146B46 /* AlbumTableCell.swift in Sources */,
 				7D8EA6832444CEB200146B46 /* Protocols.swift in Sources */,
 				7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */,

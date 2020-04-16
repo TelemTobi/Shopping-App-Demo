@@ -27,6 +27,7 @@ class TracksCollectionView: UICollectionViewController {
     func setUpElements() {
         collectionView.backgroundColor = .myBackgroundColor
         collectionView.register(TrackCell.self, forCellWithReuseIdentifier: TrackCell.id)
+        collectionView.register(BasicSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: BasicSectionHeader.id)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -37,6 +38,13 @@ class TracksCollectionView: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrackCell.id, for: indexPath) as! TrackCell
         cell.indexLabel.text = (indexPath.row + 1).description
         cell.track = tracks?[indexPath.row]
+        cell.handleSeperator(shouldHide: (indexPath.item + 1) % 3 == 0 || indexPath.item == tracks!.count - 1)
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: BasicSectionHeader.id, for: indexPath) as! BasicSectionHeader
+        header.title = "Tracklist"
+        return header
     }
 }

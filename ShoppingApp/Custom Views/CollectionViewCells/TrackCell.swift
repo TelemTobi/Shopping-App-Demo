@@ -15,6 +15,7 @@ class TrackCell: UICollectionViewCell {
     var indexLabel: UILabel!
     private var titleLabel: UILabel!
     private var durationLabel: UILabel!
+    private var seperatorView: UIView!
     
     var track: Track? {
         didSet {
@@ -30,6 +31,7 @@ class TrackCell: UICollectionViewCell {
         setIndexLabel()
         setTitleLabel()
         setDurationLabel()
+        setSeperator()
     }
     
     required init?(coder: NSCoder) {
@@ -71,5 +73,21 @@ class TrackCell: UICollectionViewCell {
         durationLabel.translatesAutoresizingMaskIntoConstraints = false
         durationLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
         durationLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+    }
+    
+    private func setSeperator() {
+        seperatorView = UIView()
+        seperatorView.backgroundColor = .primaryColor
+        contentView.addSubview(seperatorView)
+        
+        seperatorView.translatesAutoresizingMaskIntoConstraints = false
+        seperatorView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -1).isActive = true
+        seperatorView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
+        seperatorView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
+        seperatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+    }
+    
+    func handleSeperator(shouldHide: Bool) {
+        seperatorView.isHidden = shouldHide
     }
 }
