@@ -24,6 +24,7 @@ class ShopController: UIViewController {
     
     func setUpElements() {
         albumController = setAlbumController()
+        albumController.delegate = self
         view.backgroundColor = .myBackgroundColor
     }
     
@@ -48,6 +49,7 @@ class ShopController: UIViewController {
     func setShopCollectionView() {
         let layout = LayoutsManager.shared.shopLayout()
         shopCollectionView = ShopCollectionView(collectionViewLayout: layout)
+        shopCollectionView.delegate = self
         
         addChild(shopCollectionView)
         shopCollectionView.didMove(toParent: self)
@@ -65,5 +67,25 @@ extension ShopController: GenresDelegate {
     func didSelectGenre(_ genre: Int) {
         
         shopCollectionView.selectedGenre = genre
+    }
+}
+
+extension ShopController: AlbumDelegate {
+    func didSelectAlbum(_ album: Album?) {
+        albumController.album = album ?? testAlbum
+
+        genresCollectionView.view.isHidden = true
+        shopCollectionView.view.isHidden = true
+        albumController.view.isHidden = false
+    }
+    
+    func didSelectArtist(_ artist: Artist?) {
+        
+    }
+    
+    func backButtonTapped() {
+        genresCollectionView.view.isHidden = false
+        shopCollectionView.view.isHidden = false
+        albumController.view.isHidden = true
     }
 }

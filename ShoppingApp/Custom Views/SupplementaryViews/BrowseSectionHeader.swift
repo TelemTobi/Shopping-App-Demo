@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ShopSectionHeader: UICollectionReusableView {
+class BrowseSectionHeader: UICollectionReusableView {
     
-    static let id = "ShopSectionHeader"
+    static let id = "BrowseSectionHeader"
     private var titleLabel: UILabel!
     private var viewAllButton: UIButton!
     
@@ -51,10 +51,6 @@ class ShopSectionHeader: UICollectionReusableView {
     func setViewAllButton() {
         viewAllButton = UIButton(type: .custom)
         viewAllButton.backgroundColor = .none
-//        viewAllButton.setTitle("All", for: .normal)
-//        viewAllButton.setTitleColor(.secondaryColor, for: .normal)
-//        viewAllButton.titleLabel?.font = .Jura(ofSize: 16, weight: "Bold")
-//        viewAllButton.titleLabel?.contentMode = .bottom
         viewAllButton.setImage(UIImage(named: "arrows"), for: .normal)
         viewAllButton.imageView?.contentMode = .scaleAspectFit
         addSubview(viewAllButton)

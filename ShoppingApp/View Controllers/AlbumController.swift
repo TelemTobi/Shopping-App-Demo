@@ -17,13 +17,24 @@ class AlbumController: UIViewController {
     var delegate: AlbumDelegate?
     var backButton: UIButton!
     var cartButton: UIButton!
-    var isCollapsed = false
+    
+    var topViewHeightAnchor: NSLayoutConstraint!
     
     var album: Album? {
         didSet {
             topView.album = album
             detailsView.album = album
             trackCollectionView.tracks = album?.tracks
+        }
+    }
+    
+    var isCollapsed: Bool = false {
+        willSet {
+            topViewHeightAnchor.constant = newValue ? view.frame.height * 0.15 : view.frame.height * 0.4
+            UIView.animate(withDuration: 0.5, animations: {
+                self.topView.shouldCollapse(newValue)
+                self.view.layoutIfNeeded()
+            })
         }
     }
     
@@ -36,10 +47,33 @@ class AlbumController: UIViewController {
         setBackButton()
         setCartButton()
         setTracksCollectionView()
+        setGestures()
     }
     
     private func setUpElements() {
         view.backgroundColor = .myBackgroundColor
+    }
+    
+    private func setGestures() {
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeUp(_:)))
+        upSwipe.direction = .up
+        view.addGestureRecognizer(upSwipe)
+        
+        let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeDown(_:)))
+        downSwipe.direction = .down
+        view.addGestureRecognizer(downSwipe)
+    }
+    
+    @objc private func handleSwipeUp(_ swipe: UISwipeGestureRecognizer) {
+        if !isCollapsed {
+            isCollapsed = true
+        }
+    }
+    
+    @objc private func handleSwipeDown(_ swipe: UISwipeGestureRecognizer) {
+        if isCollapsed {
+            isCollapsed = false
+        }
     }
     
     private func setTopView() {
@@ -50,7 +84,8 @@ class AlbumController: UIViewController {
         topView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         topView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         topView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        topView.heightAnchor.constraint(equalToConstant: view.frame.height * 0.4).isActive = true
+        topViewHeightAnchor = topView.heightAnchor.constraint(equalToConstant: view.frame.height * 0.4)
+        topViewHeightAnchor.isActive = true
     }
     
     private func setDetailsView() {
@@ -69,9 +104,9 @@ class AlbumController: UIViewController {
         view.addSubview(trackCollectionView.view)
         
         trackCollectionView.view.translatesAutoresizingMaskIntoConstraints = false
-        trackCollectionView.view.topAnchor.constraint(equalTo: detailsView.bottomAnchor, constant: 80).isActive = true
+        trackCollectionView.view.topAnchor.constraint(equalTo: detailsView.bottomAnchor, constant: 72).isActive = true
         trackCollectionView.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
-        trackCollectionView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -32).isActive = true
+        trackCollectionView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         trackCollectionView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
@@ -84,7 +119,7 @@ class AlbumController: UIViewController {
         view.addSubview(backButton)
         
         backButton.translatesAutoresizingMaskIntoConstraints = false
-        backButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 8).isActive = true
+        backButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 32).isActive = true
         backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         backButton.widthAnchor.constraint(equalToConstant: 32).isActive = true
         backButton.heightAnchor.constraint(equalToConstant: 32).isActive = true

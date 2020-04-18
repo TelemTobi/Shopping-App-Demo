@@ -36,7 +36,7 @@ class BasicSectionHeader: UICollectionReusableView {
     
     func setUpTitleLabel() {
         titleLabel = UILabel()
-        titleLabel.font = .Jura(ofSize: 20, weight: "Bold")
+        titleLabel.font = .Jura(ofSize: 18, weight: "Bold")
         titleLabel.contentMode = .bottomLeft
         titleLabel.textColor = .primaryColor
         addSubview(titleLabel)

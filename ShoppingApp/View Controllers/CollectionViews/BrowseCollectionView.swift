@@ -23,7 +23,7 @@ class BrowseCollectionView: UICollectionViewController {
         collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.smallCellID)
         collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.bigCellID)
         collectionView.register(ArtistCell.self, forCellWithReuseIdentifier: ArtistCell.id)
-        collectionView.register(ShopSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ShopSectionHeader.id)
+        collectionView.register(BrowseSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: BrowseSectionHeader.id)
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -62,7 +62,7 @@ class BrowseCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ShopSectionHeader.id, for: indexPath) as! ShopSectionHeader
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: BrowseSectionHeader.id, for: indexPath) as! BrowseSectionHeader
         switch indexPath.section {
         case 0:
             header.title = "Most Popular Albums"

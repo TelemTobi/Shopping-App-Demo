@@ -18,7 +18,14 @@ class AlbumTopView: UIView {
     private var priceLabel: UILabel!
     
     private var coverImagerCenterX: NSLayoutConstraint!
+    private var coverImagerCenterY: NSLayoutConstraint!
+    private var coverImageWidth: NSLayoutConstraint!
+    private var coverImageHeight: NSLayoutConstraint!
+    
     private var vinylImageCenterX: NSLayoutConstraint!
+    private var titleTopAnchor: NSLayoutConstraint!
+    private var titleLeadingAnchor: NSLayoutConstraint!
+    private var titleTrailingAnchor: NSLayoutConstraint!
     
     var album: Album? {
         didSet {
@@ -34,11 +41,11 @@ class AlbumTopView: UIView {
         super.init(frame: .zero)
         
         setBackgroundImage()
-        setVinylImage()
         setCoverImage()
+        setVinylImage()
+        setPriceLabel()
         setTitleLabel()
         setArtistLabel()
-        setPriceLabel()
     }
     
     required init?(coder: NSCoder) {
@@ -48,7 +55,6 @@ class AlbumTopView: UIView {
     private func setBackgroundImage() {
         backgroundImage = UIImageView()
         backgroundImage.contentMode = .scaleToFill
-        backgroundImage.backgroundColor = .primaryColor // remove in future
         addSubview(backgroundImage)
         self.constraintToBounds(backgroundImage)
         
@@ -58,56 +64,32 @@ class AlbumTopView: UIView {
         self.constraintToBounds(blurEffectView)
     }
     
+    private func setCoverImage() {
+        coverImage = UIImageView()
+        coverImage.contentMode = .scaleAspectFit
+        addSubview(coverImage)
+        
+        coverImage.translatesAutoresizingMaskIntoConstraints = false
+        coverImagerCenterY = coverImage.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -32)
+        coverImagerCenterX = coverImage.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -32)
+        coverImageWidth = coverImage.widthAnchor.constraint(equalToConstant: 140)
+        coverImageHeight = coverImage.heightAnchor.constraint(equalToConstant: 140)
+        NSLayoutConstraint.activate([coverImageHeight, coverImageWidth, coverImagerCenterX, coverImagerCenterY])
+    }
+    
     private func setVinylImage() {
         vinylImage = UIImageView(image: UIImage(named: "vinyl_record"))
         vinylImage.contentMode = .scaleAspectFit
         addSubview(vinylImage)
         
         vinylImage.translatesAutoresizingMaskIntoConstraints = false
-        vinylImageCenterX = vinylImage.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 8)
+        vinylImageCenterX = vinylImage.centerXAnchor.constraint(equalTo: coverImage.centerXAnchor, constant: 40)
         vinylImageCenterX.isActive = true
-        vinylImage.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -28).isActive = true
-        vinylImage.widthAnchor.constraint(equalToConstant: 165).isActive = true
-        vinylImage.heightAnchor.constraint(equalToConstant: 165).isActive = true
-    }
-    
-    private func setCoverImage() {
-        coverImage = UIImageView()
-        coverImage.contentMode = .scaleAspectFit
-        coverImage.backgroundColor = .primaryColor // remove in future
-        addSubview(coverImage)
+        vinylImage.centerYAnchor.constraint(equalTo: coverImage.centerYAnchor, constant: 4).isActive = true
+        vinylImage.widthAnchor.constraint(equalTo: coverImage.widthAnchor, multiplier: 1.2).isActive = true
+        vinylImage.heightAnchor.constraint(equalTo: coverImage.widthAnchor, multiplier: 1.2).isActive = true
         
-        coverImage.translatesAutoresizingMaskIntoConstraints = false
-        coverImagerCenterX = coverImage.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -32)
-        coverImagerCenterX.isActive = true
-        coverImage.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -32).isActive = true
-        coverImage.widthAnchor.constraint(equalToConstant: 140).isActive = true
-        coverImage.heightAnchor.constraint(equalToConstant: 140).isActive = true
-    }
-    
-    private func setTitleLabel() {
-        titleLabel = UILabel()
-        titleLabel.numberOfLines = 2
-        titleLabel.font = .Jura(ofSize: 20, weight: "Bold")
-        titleLabel.textColor = .myBackgroundColor
-        addSubview(titleLabel)
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: coverImage.bottomAnchor, constant: 32).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: vinylImage.trailingAnchor, constant: 8).isActive = true
-    }
-    
-    private func setArtistLabel() {
-        artistLabel = UILabel()
-        artistLabel.font = .Jura(ofSize: 14, weight: "Medium")
-        artistLabel.textColor = .myBackgroundColor
-        addSubview(artistLabel)
-        
-        artistLabel.translatesAutoresizingMaskIntoConstraints = false
-        artistLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8).isActive = true
-        artistLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24).isActive = true
-        artistLabel.trailingAnchor.constraint(equalTo: vinylImage.trailingAnchor, constant: 8).isActive = true
+        bringSubviewToFront(coverImage)
     }
     
     private func setPriceLabel() {
@@ -122,6 +104,33 @@ class AlbumTopView: UIView {
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
         priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -48).isActive = true
+        priceLabel.widthAnchor.constraint(equalToConstant: 55).isActive = true
+    }
+    
+    private func setTitleLabel() {
+        titleLabel = UILabel()
+        titleLabel.numberOfLines = 2
+        titleLabel.font = .Jura(ofSize: 20, weight: "Bold")
+        titleLabel.textColor = .myBackgroundColor
+        addSubview(titleLabel)
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleTopAnchor = titleLabel.topAnchor.constraint(equalTo: coverImage.bottomAnchor, constant: 32)
+        titleLeadingAnchor = titleLabel.leadingAnchor.constraint(equalTo: coverImage.leadingAnchor, constant: -64)
+        titleTrailingAnchor = titleLabel.trailingAnchor.constraint(equalTo: priceLabel.leadingAnchor, constant: -8)
+        NSLayoutConstraint.activate([titleTopAnchor, titleLeadingAnchor, titleTrailingAnchor])
+    }
+    
+    private func setArtistLabel() {
+        artistLabel = UILabel()
+        artistLabel.font = .Jura(ofSize: 14, weight: "Medium")
+        artistLabel.textColor = .myBackgroundColor
+        addSubview(artistLabel)
+        
+        artistLabel.translatesAutoresizingMaskIntoConstraints = false
+        artistLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8).isActive = true
+        artistLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor).isActive = true
+        artistLabel.trailingAnchor.constraint(equalTo: priceLabel.leadingAnchor, constant: -8).isActive = true
     }
     
     func animateVinyl() {
@@ -131,5 +140,19 @@ class AlbumTopView: UIView {
             self.vinylImageCenterX.constant = 8
             self.coverImagerCenterX.constant = -32
         }
+    }
+    
+    func shouldCollapse(_ shouldCollapse: Bool) {
+        coverImagerCenterX.constant = shouldCollapse ? -92 : -32
+        coverImagerCenterY.constant = shouldCollapse ? 0 : -32
+        coverImageWidth.constant = shouldCollapse ? 75 : 140
+        coverImageHeight.constant = shouldCollapse ? 75 : 140
+        
+        vinylImageCenterX.constant = shouldCollapse ? 0 : 40
+        priceLabel.alpha = shouldCollapse ? 0 : 1
+        
+        titleTopAnchor.constant = shouldCollapse ? -64 : 32
+        titleLeadingAnchor.constant = shouldCollapse ? 92 : -64
+        titleTrailingAnchor.constant = shouldCollapse ? 64 : -8
     }
 }

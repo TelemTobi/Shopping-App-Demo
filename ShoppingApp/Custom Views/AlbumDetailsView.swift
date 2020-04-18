@@ -54,7 +54,7 @@ class AlbumDetailsView: UIView {
         addSubview(containerStackView)
         
         containerStackView.translatesAutoresizingMaskIntoConstraints = false
-        containerStackView.topAnchor.constraint(equalTo: topAnchor, constant: 40).isActive = true
+        containerStackView.topAnchor.constraint(equalTo: topAnchor, constant: 32).isActive = true
         containerStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
 //        containerStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
         containerStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
@@ -122,7 +122,7 @@ class AlbumDetailsView: UIView {
         addSubview(artistImage)
         
         artistImage.translatesAutoresizingMaskIntoConstraints = false
-        artistImage.topAnchor.constraint(equalTo: containerStackView.bottomAnchor, constant: 24).isActive = true
+        artistImage.topAnchor.constraint(equalTo: containerStackView.bottomAnchor, constant: 16).isActive = true
         artistImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24).isActive = true
         artistImage.heightAnchor.constraint(equalToConstant: 50).isActive = true
         artistImage.widthAnchor.constraint(equalToConstant: 50).isActive = true

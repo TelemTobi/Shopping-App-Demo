@@ -16,8 +16,10 @@ class TabsController: UIViewController {
     var userButton: UIButton!
     var menuButton: UIButton!
     
-    var browseController: UIViewController!
-    var shopController: UIViewController!
+    var browseController: BrowseController!
+    var shopController: ShopController!
+    
+    var albumController: AlbumController!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -66,6 +68,10 @@ class TabsController: UIViewController {
         viewPager.eyStyle.tabItemSelectedColor = .white
         viewPager.currentTabIndex = 1
         viewPager.buildUI()
+    }
+    
+    func setUpAlbumController() {
+        
     }
     
     func setUpTitle() {

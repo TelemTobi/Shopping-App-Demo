@@ -92,7 +92,6 @@ extension BrowseController: AlbumDelegate {
         searchBar.isHidden = true
         browseCollectionView.view.isHidden = true
         albumController.view.isHidden = false
-        albumController.viewDidAppear(false)
     }
     
     func didSelectArtist(_ artist: Artist?) {

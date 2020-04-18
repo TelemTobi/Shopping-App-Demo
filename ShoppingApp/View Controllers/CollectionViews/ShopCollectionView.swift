@@ -10,6 +10,8 @@ import UIKit
 
 class ShopCollectionView: UICollectionViewController {
     
+    var delegate: AlbumDelegate?
+    
     var selectedGenre: Int! {
         willSet {
             collectionView.reloadData()
@@ -38,6 +40,6 @@ class ShopCollectionView: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("item selected")
+        delegate?.didSelectAlbum(nil)
     }
 }
