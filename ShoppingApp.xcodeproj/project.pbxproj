@@ -216,8 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				7D587690243A447D00480884 /* TabsController.swift */,
-				7D8EA65F2442746400146B46 /* BrowseController.swift */,
 				7D5876AC243A4DAE00480884 /* ShopController.swift */,
+				7D8EA65F2442746400146B46 /* BrowseController.swift */,
 				7D213B6C244C3FB800BC6D7E /* CartController.swift */,
 				7D8EA6752443BC8100146B46 /* AlbumController.swift */,
 				7D58771C243E009D00480884 /* CollectionViews */,

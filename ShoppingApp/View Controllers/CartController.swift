@@ -67,7 +67,7 @@ class CartController: UIViewController {
     
     func setTotalLabel() {
         totalLabel = UILabel()
-        totalLabel.text = "Total 3 Items - 45$" // remove in the future
+        totalLabel.text = "Total 3 Items - 45.0$" // remove in the future
         totalLabel.font = .Jura(ofSize: 20, weight: "Bold")
         totalLabel.textColor = .primaryColor
         view.addSubview(totalLabel)
@@ -104,9 +104,9 @@ class CartController: UIViewController {
 
 extension CartController: AlbumDelegate {
     func didSelectAlbum(_ album: Album?) {
-        albumController.album = album ?? testAlbum
-        albumController.view.isHidden = false
+        albumController.willAppear(album ?? testAlbum)
         
+        albumController.view.isHidden = false
         cartTableView.view.isUserInteractionEnabled = false
         checkoutButton.isUserInteractionEnabled = false
     }
@@ -120,6 +120,8 @@ extension CartController: AlbumDelegate {
         albumController.view.isHidden = true
         cartTableView.view.isUserInteractionEnabled = true
         checkoutButton.isUserInteractionEnabled = true
+        
+        albumController.didDisappear()
     }
     
     

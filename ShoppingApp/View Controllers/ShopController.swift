@@ -72,8 +72,8 @@ extension ShopController: GenresDelegate {
 
 extension ShopController: AlbumDelegate {
     func didSelectAlbum(_ album: Album?) {
-        albumController.album = album ?? testAlbum
-
+        albumController.willAppear(album ?? testAlbum)
+        
         genresCollectionView.view.isHidden = true
         shopCollectionView.view.isHidden = true
         albumController.view.isHidden = false
@@ -88,5 +88,7 @@ extension ShopController: AlbumDelegate {
         genresCollectionView.view.isHidden = false
         shopCollectionView.view.isHidden = false
         albumController.view.isHidden = true
+        
+        albumController.didDisappear()
     }
 }

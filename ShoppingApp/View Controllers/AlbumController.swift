@@ -33,6 +33,7 @@ class AlbumController: UIViewController {
     
     var isCollapsed: Bool = false {
         willSet {
+            guard isCollapsed != newValue else { return }
             topViewHeightAnchor.constant = newValue ? UIScreen.main.bounds.height * 0.14 : UIScreen.main.bounds.height * 0.37
             UIView.animate(withDuration: 0.5, animations: {
                 self.topView.shouldCollapse(newValue)
@@ -177,5 +178,15 @@ class AlbumController: UIViewController {
         trackCollectionView.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         trackCollectionView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         trackCollectionView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
+    }
+    
+    func willAppear(_ album: Album) {
+        self.album = album
+        topView.animateVinyl()
+    }
+    
+    func didDisappear() {
+        topView.reset()
+        isCollapsed = false
     }
 }

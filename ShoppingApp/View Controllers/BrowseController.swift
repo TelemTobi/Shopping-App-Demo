@@ -87,8 +87,8 @@ class BrowseController: UIViewController {
 
 extension BrowseController: AlbumDelegate {
     func didSelectAlbum(_ album: Album?) {
-        albumController.album = album ?? testAlbum
-
+        albumController.willAppear(album ?? testAlbum)
+        
         searchBar.isHidden = true
         browseCollectionView.view.isHidden = true
         albumController.view.isHidden = false
@@ -103,6 +103,8 @@ extension BrowseController: AlbumDelegate {
         searchBar.isHidden = false
         browseCollectionView.view.isHidden = false
         albumController.view.isHidden = true
+        
+        albumController.didDisappear()
     }
 }
 

@@ -83,7 +83,7 @@ class AlbumTopView: UIView {
         addSubview(vinylImage)
         
         vinylImage.translatesAutoresizingMaskIntoConstraints = false
-        vinylImageCenterX = vinylImage.centerXAnchor.constraint(equalTo: coverImage.centerXAnchor, constant: 40)
+        vinylImageCenterX = vinylImage.centerXAnchor.constraint(equalTo: coverImage.centerXAnchor, constant: 0)
         vinylImageCenterX.isActive = true
         vinylImage.centerYAnchor.constraint(equalTo: coverImage.centerYAnchor, constant: 4).isActive = true
         vinylImage.widthAnchor.constraint(equalTo: coverImage.widthAnchor, multiplier: 1.2).isActive = true
@@ -134,12 +134,14 @@ class AlbumTopView: UIView {
     }
     
     func animateVinyl() {
-        vinylImageCenterX.constant = 0
-        coverImagerCenterX.constant = 0
-        UIView.animate(withDuration: 0.5) {
-            self.vinylImageCenterX.constant = 8
-            self.coverImagerCenterX.constant = -32
+        vinylImageCenterX.constant = 40
+        UIView.animate(withDuration: 1.0) {
+            self.layoutIfNeeded()
         }
+    }
+    
+    func reset() {
+        vinylImageCenterX.constant = 0
     }
     
     func shouldCollapse(_ shouldCollapse: Bool) {
