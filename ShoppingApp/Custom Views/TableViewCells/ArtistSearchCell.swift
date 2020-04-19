@@ -16,8 +16,18 @@ class ArtistSearchCell: UITableViewCell {
     private var coverImage: UIImageView!
     private var titleLabel: UILabel!
     
+    var artist: Artist? {
+        didSet {
+            coverImage.image = artist?.image
+            titleLabel.text = artist?.name
+        }
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        selectionStyle = .none
+        backgroundColor = .myBackgroundColor
         
         setContaienrView()
         setCoverImage()

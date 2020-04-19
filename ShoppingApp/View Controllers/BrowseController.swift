@@ -99,6 +99,7 @@ extension BrowseController: AlbumDelegate {
     }
     
     @objc func backButtonTapped() {
+        guard albumController.view.isHidden == false else { return }
         searchBar.isHidden = false
         browseCollectionView.view.isHidden = false
         albumController.view.isHidden = true

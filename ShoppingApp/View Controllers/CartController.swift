@@ -116,8 +116,8 @@ extension CartController: AlbumDelegate {
     }
     
     func backButtonTapped() {
+        guard albumController.view.isHidden == false else { return }
         albumController.view.isHidden = true
-        
         cartTableView.view.isUserInteractionEnabled = true
         checkoutButton.isUserInteractionEnabled = true
     }

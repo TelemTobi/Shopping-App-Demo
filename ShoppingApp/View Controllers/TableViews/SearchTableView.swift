@@ -37,6 +37,7 @@ class SearchTableView: UITableViewController {
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: ArtistSearchCell.id) as! ArtistSearchCell
+            cell.artist = testAlbum.artist
             return cell
         }
     }

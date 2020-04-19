@@ -19,8 +19,9 @@ class TabsController: UIViewController {
     var browseController: BrowseController!
     var shopController: ShopController!
     var cartController: CartController!
-    
+    var tabControllers: [AlbumDelegate]!
     var albumController: AlbumController!
+    var selectedTab = 0
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -53,6 +54,8 @@ class TabsController: UIViewController {
         cartController = CartController()
         addChild(cartController)
         cartController.didMove(toParent: self)
+        
+        tabControllers = [shopController, browseController, cartController]
     }
     
     func setUpViewPager() {
@@ -126,6 +129,15 @@ class TabsController: UIViewController {
 }
 
 extension TabsController: WormTabStripDelegate {
+    
+    func tabSelected(index: Int) {
+        if index == selectedTab {
+            tabControllers[index].backButtonTapped()
+            return
+        }
+        selectedTab = index
+    }
+    
     func WTSNumberOfTabs() -> Int {
         3
     }

@@ -84,6 +84,7 @@ extension ShopController: AlbumDelegate {
     }
     
     func backButtonTapped() {
+        guard albumController.view.isHidden == false else { return }
         genresCollectionView.view.isHidden = false
         shopCollectionView.view.isHidden = false
         albumController.view.isHidden = true

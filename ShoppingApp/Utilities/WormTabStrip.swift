@@ -24,7 +24,7 @@ public protocol WormTabStripDelegate:class {
     
     
     func imageForTab(index: Int) -> UIImage
-    
+    func tabSelected(index: Int)
 }
 
 public enum WormStyle{
@@ -310,6 +310,8 @@ public class WormTabStrip: UIView,UIScrollViewDelegate {
     }
     
     private func selectTab(tab:WormTabStripView){
+        delegate?.tabSelected(index: tab.index ?? -1)
+        
         prevTabIndex = currentTabIndex
         currentTabIndex = tab.index!
         setTabStyle()
