@@ -1,5 +1,5 @@
 //
-//  AlbumCell.swift
+//  ArtistCell.swift
 //  ShoppingApp
 //
 //  Created by Telem Tobi on 12/04/2020.
@@ -8,39 +8,24 @@
 
 import UIKit
 
-class AlbumTableCell: UITableViewCell {
+class ArtistSearchCell: UITableViewCell {
     
-    static let id = "AlbumTableViewCell"
+    static let id = "ArtistTableViewCell"
     
     private var containerView: UIView!
     private var coverImage: UIImageView!
     private var titleLabel: UILabel!
-    private var artistLabel: UILabel!
-    
-    var album: Album? {
-        didSet {
-            coverImage.image = album?.image
-            titleLabel.text = album?.title
-            artistLabel.text = album?.artist.name
-        }
-    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        setUpElements()
         setContaienrView()
         setCoverImage()
         setTitleLabel()
-        setArtistLabel()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func setUpElements() {
-        contentView.backgroundColor = .myBackgroundColor
     }
     
     private func setContaienrView() {
@@ -59,6 +44,11 @@ class AlbumTableCell: UITableViewCell {
     private func setCoverImage() {
         coverImage = UIImageView()
         coverImage.contentMode = .scaleAspectFit
+        coverImage.layer.cornerRadius = 25
+        coverImage.layer.masksToBounds = true
+        coverImage.layer.borderColor = UIColor.myBackgroundColor.cgColor
+        coverImage.layer.borderWidth = 1
+        coverImage.backgroundColor = .secondaryColor // remove in future
         containerView.addSubview(coverImage)
         
         coverImage.translatesAutoresizingMaskIntoConstraints = false
@@ -72,21 +62,11 @@ class AlbumTableCell: UITableViewCell {
         titleLabel = UILabel()
         titleLabel.font = .Jura(ofSize: 18, weight: "Bold")
         titleLabel.textColor = .myBackgroundColor
-    }
-    
-    private func setArtistLabel() {
-        artistLabel = UILabel()
-        artistLabel.font = .Jura(ofSize: 14, weight: "Medium")
-        artistLabel.textColor = .myBackgroundColor
+        titleLabel.text = "Artist name" // remove in future
+        containerView.addSubview(titleLabel)
         
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, artistLabel])
-        stackView.axis = .vertical
-        stackView.spacing = 4
-        containerView.addSubview(stackView)
-        
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: coverImage.trailingAnchor, constant: 12).isActive = true
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: coverImage.trailingAnchor, constant: 12).isActive = true
     }
 }
-

@@ -16,8 +16,8 @@ class SearchTableView: UITableViewController {
         tableView.backgroundColor = .myBackgroundColor
         tableView.separatorStyle = .none
         
-        tableView.register(AlbumTableCell.self, forCellReuseIdentifier: AlbumTableCell.id)
-        tableView.register(ArtistTableCell.self, forCellReuseIdentifier: ArtistTableCell.id)
+        tableView.register(AlbumSearchCell.self, forCellReuseIdentifier: AlbumSearchCell.id)
+        tableView.register(ArtistSearchCell.self, forCellReuseIdentifier: ArtistSearchCell.id)
         tableView.register(SearchSectionHeader.self, forHeaderFooterViewReuseIdentifier: SearchSectionHeader.id)
     }
     
@@ -32,11 +32,11 @@ class SearchTableView: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: AlbumTableCell.id) as! AlbumTableCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: AlbumSearchCell.id) as! AlbumSearchCell
             cell.album = testAlbum
             return cell
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: ArtistTableCell.id) as! ArtistTableCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: ArtistSearchCell.id) as! ArtistSearchCell
             return cell
         }
     }

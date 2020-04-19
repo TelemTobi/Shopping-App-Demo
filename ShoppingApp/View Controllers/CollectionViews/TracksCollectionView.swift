@@ -25,6 +25,10 @@ class TracksCollectionView: UICollectionViewController {
     }
     
     func setUpElements() {
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.primaryColor.cgColor
+        view.layer.cornerRadius = 10
+        
         collectionView.backgroundColor = .myBackgroundColor
         collectionView.register(TrackCell.self, forCellWithReuseIdentifier: TrackCell.id)
         collectionView.register(BasicSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: BasicSectionHeader.id)

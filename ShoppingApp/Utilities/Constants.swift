@@ -32,5 +32,5 @@ let testAlbum = Album(id: "0", title: "To Pimp a Butterfly",
                       price: 15.0,
                       tracks: Array(repeating: Track(title: "Mortal Man", duration: "4:20"), count: 16),
                       releaseDate: "March 15, 2015",
-                      notes: "To Pimp a Butterfly is the third studio album by American rapper Kendrick Lamar.                                                                        It was released on March 15, 2015, by Top Dawg Entertainment, distributed by Aftermath Entertainment and Interscope Records"
+                      notes: "To Pimp a Butterfly is the third studio album by American rapper Kendrick Lamar.                                                                        Released by Top Dawg Entertainment, distributed by Aftermath Entertainment and Interscope Records."
                 )

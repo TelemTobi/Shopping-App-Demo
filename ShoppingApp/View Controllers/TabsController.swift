@@ -18,6 +18,7 @@ class TabsController: UIViewController {
     
     var browseController: BrowseController!
     var shopController: ShopController!
+    var cartController: CartController!
     
     var albumController: AlbumController!
     
@@ -48,6 +49,10 @@ class TabsController: UIViewController {
         shopController = ShopController()
         addChild(shopController)
         shopController.didMove(toParent: self)
+        
+        cartController = CartController()
+        addChild(cartController)
+        cartController.didMove(toParent: self)
     }
     
     func setUpViewPager() {
@@ -132,7 +137,7 @@ extension TabsController: WormTabStripDelegate {
         case 1:
             return browseController.view
         default:
-            return UIViewController().view
+            return cartController.view
         }
     }
     

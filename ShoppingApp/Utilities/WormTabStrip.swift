@@ -86,7 +86,7 @@ public struct WormTabStripStylePropertyies {
     
     var topScrollViewBackgroundColor:UIColor = .primaryColor
     
-    var contentScrollViewBackgroundColor:UIColor = UIColor.gray
+    var contentScrollViewBackgroundColor:UIColor = UIColor.primaryColor
     
     var dividerBackgroundColor:UIColor = UIColor.red
     
