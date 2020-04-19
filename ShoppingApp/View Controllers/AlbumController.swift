@@ -34,6 +34,7 @@ class AlbumController: UIViewController {
     var isCollapsed: Bool = false {
         willSet {
             guard isCollapsed != newValue else { return }
+            
             topViewHeightAnchor.constant = newValue ? UIScreen.main.bounds.height * 0.14 : UIScreen.main.bounds.height * 0.37
             UIView.animate(withDuration: 0.5, animations: {
                 self.topView.shouldCollapse(newValue)

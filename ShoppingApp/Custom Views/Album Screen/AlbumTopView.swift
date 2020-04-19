@@ -134,8 +134,10 @@ class AlbumTopView: UIView {
     }
     
     func animateVinyl() {
-        vinylImageCenterX.constant = 40
+        vinylImageCenterX.constant = 0
+        layoutIfNeeded()
         UIView.animate(withDuration: 1.0) {
+            self.vinylImageCenterX.constant = 40
             self.layoutIfNeeded()
         }
     }
