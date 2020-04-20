@@ -9,10 +9,17 @@
 import Foundation
 
 struct Track {
+    
     let title: String
     let duration: String
     
+    internal init(title: String, duration: String) {
+        self.title = title
+        self.duration = duration
+    }
+    
     init(dictionary: [String: String]) {
-        
+        title = dictionary["title"]!
+        duration = dictionary["duration"]!
     }
 }
