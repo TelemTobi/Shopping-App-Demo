@@ -12,6 +12,5 @@ struct Artist {
     let id: String
     let name: String
     let albums: [Album]
-    let genre: Int
     let image: UIImage
 }
