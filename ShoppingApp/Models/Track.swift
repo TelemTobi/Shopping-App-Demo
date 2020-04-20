@@ -11,4 +11,8 @@ import Foundation
 struct Track {
     let title: String
     let duration: String
+    
+    init(dictionary: [String: String]) {
+        
+    }
 }
