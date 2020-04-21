@@ -88,7 +88,7 @@ class AlbumDetailsView: UIView {
         
         genreStackView.translatesAutoresizingMaskIntoConstraints = false
         genreStackView.bottomAnchor.constraint(equalTo: tracksStackView.bottomAnchor).isActive = true
-        genreStackView.leadingAnchor.constraint(equalTo: tracksLabel.leadingAnchor, constant: 80).isActive = true
+        genreStackView.leadingAnchor.constraint(lessThanOrEqualTo: tracksStackView.trailingAnchor, constant: 40).isActive = true
     }
     
 

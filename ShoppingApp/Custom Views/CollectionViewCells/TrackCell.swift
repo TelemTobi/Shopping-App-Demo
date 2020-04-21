@@ -55,6 +55,7 @@ class TrackCell: UICollectionViewCell {
     
     private func setDurationLabel() {
         durationLabel = UILabel()
+        durationLabel.textAlignment = .right
         durationLabel.font = .Jura(ofSize: 12, weight: "Bold")
         durationLabel.textColor = .lightGray
         contentView.addSubview(durationLabel)

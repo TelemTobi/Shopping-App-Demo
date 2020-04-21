@@ -188,6 +188,7 @@ class AlbumController: UIViewController {
     
     func didDisappear() {
         topView.reset()
+        trackCollectionView.reset()
         isCollapsed = false
     }
 }

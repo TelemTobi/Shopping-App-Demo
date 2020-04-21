@@ -43,8 +43,8 @@ class AlbumTracklistView: UIView {
         titleLabel = UILabel()
         titleLabel.text = "Tracklist"
         titleLabel.backgroundColor = .myBackgroundColor
-        titleLabel.textColor = .primaryColor
-        titleLabel.font = .Jura(ofSize: 16, weight: "Bold")
+        titleLabel.textColor = .lightGray
+        titleLabel.font = .Jura(ofSize: 16, weight: "Medium")
         addSubview(titleLabel)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

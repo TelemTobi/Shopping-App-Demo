@@ -11,6 +11,7 @@ import UIKit
 var demoAlbums: [String: Album] = [:]
 var demoArtists: [String: Artist] = [:]
 var albumsByGenre: [[Album]]!
+var browseData: [[Any]] = Array(repeating: [], count: 3)
 
 class DemoDataManager {
     
@@ -21,7 +22,7 @@ class DemoDataManager {
         setDemoAlbums()
         setDemoArtists()
         splitByGenres()
-        print(demoArtists)
+        setBrowseDemoData()
     }
     
     private func setDemoAlbums() {
@@ -55,6 +56,14 @@ class DemoDataManager {
         albumsByGenre = Array(repeating: [], count: musicGenres.count)
         demoAlbums.forEach {
             albumsByGenre[$0.value.genre].append($0.value)
+        }
+    }
+    
+    private func setBrowseDemoData() {
+        for i in 0..<browseData.count {
+            for _ in 0...7 {
+                browseData[i].append(i == 2 ? demoArtists.randomElement()!.value : demoAlbums.randomElement()!.value)
+            }
         }
     }
 }

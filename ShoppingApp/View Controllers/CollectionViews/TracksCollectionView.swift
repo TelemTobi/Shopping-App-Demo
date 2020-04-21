@@ -51,4 +51,8 @@ class TracksCollectionView: UICollectionViewController {
         header.title = "Tracklist"
         return header
     }
+    
+    func reset() {
+        
+    }
 }

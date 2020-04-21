@@ -44,7 +44,7 @@ class AlbumMoreByView: UIView {
         
         artistImage.translatesAutoresizingMaskIntoConstraints = false
         artistImage.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        artistImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
+        artistImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
 //        artistImage.heightAnchor.constraint(equalToConstant: 50).isActive = true
         artistImage.widthAnchor.constraint(equalToConstant: 50).isActive = true
         artistImage.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true

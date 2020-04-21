@@ -31,22 +31,22 @@ class BrowseCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        8
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.smallCellID, for: indexPath) as! AlbumCell
-            cell.album = demoAlbums.randomElement()?.value
+            cell.album = browseData[indexPath.section][indexPath.row] as? Album
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.bigCellID, for: indexPath) as! AlbumCell
-            cell.album = demoAlbums.randomElement()?.value
+            cell.album = browseData[indexPath.section][indexPath.row] as? Album
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistCell.id, for: indexPath) as! ArtistCell
-            cell.artist = demoArtists.randomElement()?.value
+            cell.artist = browseData[indexPath.section][indexPath.row] as? Artist
             return cell
         }
     }

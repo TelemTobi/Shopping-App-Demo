@@ -23,7 +23,7 @@ class AlbumCartCell: UITableViewCell {
         didSet {
             coverImage.image = album?.image
             titleLabel.text = album?.title
-            artistLabel.text = demoArtists[album?.artist ?? ""]?.name
+            artistLabel.text = demoArtists[album?.artist ?? ""]?.name ?? testArtist.name
             priceLabel.text = " \(album?.price.description ?? "15.0")$ "
         }
     }

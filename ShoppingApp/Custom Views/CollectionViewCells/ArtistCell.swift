@@ -55,7 +55,7 @@ class ArtistCell: UICollectionViewCell {
     
     private func setTitleLabel() {
         titleLabel = UILabel()
-        titleLabel.font = .Jura(ofSize: 16, weight: "Bold")
+        titleLabel.font = .Jura(ofSize: 14, weight: "Bold")
         titleLabel.textColor = .primaryColor
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 2
