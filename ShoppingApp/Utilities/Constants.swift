@@ -26,7 +26,7 @@ let musicGenres: [(String, UIImage)] = [
 let testArtist = Artist(id: "0", name: "Kendrick Lamar", albums: [], image: UIImage(named: "kendrick")!)
 
 let testAlbum = Album(id: "0", title: "To Pimp a Butterfly",
-                      artist: testArtist,
+                      artist: "0",
                       genre: 3,
                       image: UIImage(named: "album-cover")!,
                       price: 15.0,

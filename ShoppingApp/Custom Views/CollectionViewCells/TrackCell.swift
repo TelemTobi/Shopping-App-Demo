@@ -29,8 +29,8 @@ class TrackCell: UICollectionViewCell {
         
         setUpElements()
         setIndexLabel()
-        setTitleLabel()
         setDurationLabel()
+        setTitleLabel()
         setSeperator()
     }
     
@@ -53,17 +53,6 @@ class TrackCell: UICollectionViewCell {
         indexLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
     
-    private func setTitleLabel() {
-        titleLabel = UILabel()
-        titleLabel.font = .Jura(ofSize: 16, weight: "Medium")
-        titleLabel.textColor = .primaryColor
-        contentView.addSubview(titleLabel)
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.leadingAnchor.constraint(equalTo: indexLabel.trailingAnchor, constant: 16).isActive = true
-        titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-    }
-    
     private func setDurationLabel() {
         durationLabel = UILabel()
         durationLabel.font = .Jura(ofSize: 12, weight: "Bold")
@@ -73,6 +62,18 @@ class TrackCell: UICollectionViewCell {
         durationLabel.translatesAutoresizingMaskIntoConstraints = false
         durationLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
         durationLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+    }
+    
+    private func setTitleLabel() {
+        titleLabel = UILabel()
+        titleLabel.font = .Jura(ofSize: 16, weight: "Medium")
+        titleLabel.textColor = .primaryColor
+        contentView.addSubview(titleLabel)
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.leadingAnchor.constraint(equalTo: indexLabel.trailingAnchor, constant: 16).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: durationLabel.leadingAnchor, constant: -8).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
     
     private func setSeperator() {

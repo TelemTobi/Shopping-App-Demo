@@ -12,7 +12,7 @@ class ShopCollectionView: UICollectionViewController {
     
     var delegate: AlbumDelegate?
     
-    var selectedGenre: Int! {
+    var selectedGenre: Int = 0 {
         willSet {
             collectionView.reloadData()
         }
@@ -30,16 +30,16 @@ class ShopCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        8
+        albumsByGenre[selectedGenre].count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.smallCellID, for: indexPath) as! AlbumCell
-        cell.album = testAlbum
+        cell.album = albumsByGenre[selectedGenre][indexPath.row]
         return cell
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didSelectAlbum(nil)
+        delegate?.didSelectAlbum(albumsByGenre[selectedGenre][indexPath.row])
     }
 }

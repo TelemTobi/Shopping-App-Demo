@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Track {
+class Track {
     
     let title: String
     let duration: String

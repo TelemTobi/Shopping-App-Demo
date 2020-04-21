@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Artist {
+class Artist {
     
     let id: String
     let name: String
@@ -26,6 +26,6 @@ struct Artist {
         id = dictionary["id"] as! String
         name = dictionary["name"] as! String
         albums = dictionary["albums"] as! [String]
-        image = UIImage(named: id)!
+        image = UIImage(named: id) ?? UIImage(named: "kendrick")!
     }
 }

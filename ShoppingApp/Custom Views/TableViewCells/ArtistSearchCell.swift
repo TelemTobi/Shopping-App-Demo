@@ -53,7 +53,7 @@ class ArtistSearchCell: UITableViewCell {
     
     private func setCoverImage() {
         coverImage = UIImageView()
-        coverImage.contentMode = .scaleAspectFit
+        coverImage.contentMode = .scaleAspectFill
         coverImage.layer.cornerRadius = 25
         coverImage.layer.masksToBounds = true
         coverImage.layer.borderColor = UIColor.myBackgroundColor.cgColor

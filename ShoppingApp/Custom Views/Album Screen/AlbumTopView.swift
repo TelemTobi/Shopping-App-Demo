@@ -32,7 +32,7 @@ class AlbumTopView: UIView {
             backgroundImage.image = album?.image
             coverImage.image = album?.image
             titleLabel.text = album?.title
-            artistLabel.text = album?.artist.name
+            artistLabel.text = demoArtists[album?.artist ?? ""]?.name
             priceLabel.text = " \(album?.price.description ?? "15.0")$ "
         }
     }

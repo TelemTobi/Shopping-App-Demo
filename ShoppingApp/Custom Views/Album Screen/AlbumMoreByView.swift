@@ -35,7 +35,7 @@ class AlbumMoreByView: UIView {
     
     private func setArtistImage() {
         artistImage = UIImageView()
-        artistImage.contentMode = .scaleAspectFit
+        artistImage.contentMode = .scaleAspectFill
         artistImage.layer.cornerRadius = 25
         artistImage.layer.masksToBounds = true
         artistImage.layer.borderWidth = 1
@@ -65,7 +65,7 @@ class AlbumMoreByView: UIView {
     
     private func setArtistLabel() {
         artistLabel = UILabel()
-        artistLabel.textAlignment = .center
+        artistLabel.textAlignment = .left
         artistLabel.numberOfLines = 2
         artistLabel.backgroundColor = .myBackgroundColor
         artistLabel.textColor = .primaryColor

@@ -15,10 +15,11 @@
 		7D213B69244C3DE900BC6D7E /* CartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B68244C3DE800BC6D7E /* CartTableView.swift */; };
 		7D213B6B244C3E4100BC6D7E /* AlbumCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B6A244C3E4100BC6D7E /* AlbumCartCell.swift */; };
 		7D213B6D244C3FB800BC6D7E /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B6C244C3FB800BC6D7E /* CartController.swift */; };
-		7D277736244D8BE700575A66 /* Albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D277735244D8BE700575A66 /* Albums.plist */; };
 		7D27773A244DE86C00575A66 /* AlbumCovers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D277739244DE86C00575A66 /* AlbumCovers.xcassets */; };
-		7D27773C244E43EB00575A66 /* ArtistPictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D27773B244E43EB00575A66 /* ArtistPictures.xcassets */; };
 		7D27773E244E443900575A66 /* DemoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27773D244E443900575A66 /* DemoDataManager.swift */; };
+		7D27775E244EE8BC00575A66 /* DemoAlbums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D27775C244EE8BC00575A66 /* DemoAlbums.plist */; };
+		7D27775F244EE8BC00575A66 /* DemoArtists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D27775D244EE8BC00575A66 /* DemoArtists.plist */; };
+		7D277761244EEF1A00575A66 /* ArtistPictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D277760244EEF1A00575A66 /* ArtistPictures.xcassets */; };
 		7D58768D243A447D00480884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768C243A447D00480884 /* AppDelegate.swift */; };
 		7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768E243A447D00480884 /* SceneDelegate.swift */; };
 		7D587691243A447D00480884 /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587690243A447D00480884 /* TabsController.swift */; };
@@ -72,11 +73,11 @@
 		7D213B68244C3DE800BC6D7E /* CartTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableView.swift; sourceTree = "<group>"; };
 		7D213B6A244C3E4100BC6D7E /* AlbumCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCartCell.swift; sourceTree = "<group>"; };
 		7D213B6C244C3FB800BC6D7E /* CartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
-		7D277735244D8BE700575A66 /* Albums.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Albums.plist; sourceTree = "<group>"; };
-		7D277738244D8ECB00575A66 /* Artists.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Artists.plist; sourceTree = "<group>"; };
 		7D277739244DE86C00575A66 /* AlbumCovers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AlbumCovers.xcassets; sourceTree = "<group>"; };
-		7D27773B244E43EB00575A66 /* ArtistPictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ArtistPictures.xcassets; sourceTree = "<group>"; };
 		7D27773D244E443900575A66 /* DemoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDataManager.swift; sourceTree = "<group>"; };
+		7D27775C244EE8BC00575A66 /* DemoAlbums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DemoAlbums.plist; path = "../../../../../Downloads/Shopping-App-Demo-master 2/ShoppingApp/Assests/DemoAlbums.plist"; sourceTree = "<group>"; };
+		7D27775D244EE8BC00575A66 /* DemoArtists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DemoArtists.plist; path = "../../../../../Downloads/Shopping-App-Demo-master 2/ShoppingApp/Assests/DemoArtists.plist"; sourceTree = "<group>"; };
+		7D277760244EEF1A00575A66 /* ArtistPictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ArtistPictures.xcassets; sourceTree = "<group>"; };
 		7D587689243A447D00480884 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D58768C243A447D00480884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D58768E243A447D00480884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,9 +263,9 @@
 				7D5876AF243A839E00480884 /* Fonts */,
 				7D587695243A447E00480884 /* Assets.xcassets */,
 				7D277739244DE86C00575A66 /* AlbumCovers.xcassets */,
-				7D27773B244E43EB00575A66 /* ArtistPictures.xcassets */,
-				7D277735244D8BE700575A66 /* Albums.plist */,
-				7D277738244D8ECB00575A66 /* Artists.plist */,
+				7D277760244EEF1A00575A66 /* ArtistPictures.xcassets */,
+				7D27775C244EE8BC00575A66 /* DemoAlbums.plist */,
+				7D27775D244EE8BC00575A66 /* DemoArtists.plist */,
 			);
 			path = Assests;
 			sourceTree = "<group>";
@@ -426,16 +427,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5876CC243A8D0000480884 /* Jura-Regular.ttf in Resources */,
+				7D277761244EEF1A00575A66 /* ArtistPictures.xcassets in Resources */,
 				7D5876D0243A8D0000480884 /* Jura-Light.ttf in Resources */,
 				7D5876CE243A8D0000480884 /* Jura-Medium.ttf in Resources */,
 				7D8EA67D24445EFC00146B46 /* cart.json in Resources */,
 				7D5876CD243A8D0000480884 /* Jura-Bold.ttf in Resources */,
 				7D27773A244DE86C00575A66 /* AlbumCovers.xcassets in Resources */,
-				7D277736244D8BE700575A66 /* Albums.plist in Resources */,
+				7D27775F244EE8BC00575A66 /* DemoArtists.plist in Resources */,
+				7D27775E244EE8BC00575A66 /* DemoAlbums.plist in Resources */,
 				7D5876CF243A8D0000480884 /* Jura-SemiBold.ttf in Resources */,
 				7D5876D3243B278D00480884 /* MandatoryPlaything.ttf in Resources */,
 				7D587696243A447E00480884 /* Assets.xcassets in Resources */,
-				7D27773C244E43EB00575A66 /* ArtistPictures.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

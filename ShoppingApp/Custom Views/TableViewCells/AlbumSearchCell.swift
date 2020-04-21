@@ -21,7 +21,7 @@ class AlbumSearchCell: UITableViewCell {
         didSet {
             coverImage.image = album?.image
             titleLabel.text = album?.title
-            artistLabel.text = album?.artist.name
+            artistLabel.text = demoArtists[album?.artist ?? ""]?.name
         }
     }
     

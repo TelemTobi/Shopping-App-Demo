@@ -15,6 +15,13 @@ class ArtistCell: UICollectionViewCell {
     private var imageView: UIImageView!
     private var titleLabel: UILabel!
     
+    var artist: Artist? {
+        didSet {
+            imageView.image = artist?.image
+            titleLabel.text = artist?.name
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -33,8 +40,9 @@ class ArtistCell: UICollectionViewCell {
     
     private func setImageView() {
         imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = contentView.frame.width / 2
+        imageView.layer.masksToBounds = true
         imageView.backgroundColor = .primaryColor // remove in future
         contentView.addSubview(imageView)
         

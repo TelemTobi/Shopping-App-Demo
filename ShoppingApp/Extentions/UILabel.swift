@@ -8,10 +8,10 @@
 
 import UIKit
 
-class PaddingLabel: UILabel {
+extension UILabel {
     
-    override func drawText(in rect: CGRect) {
-        let insets = UIEdgeInsets(top: 1, left: 5, bottom: 1, right: 5)
-        super.drawText(in: rect.inset(by: insets))
+    func outline() {
+        let attrString = NSAttributedString(string: text ?? "", attributes: [NSAttributedString.Key.strokeColor: UIColor.primaryColor, NSAttributedString.Key.foregroundColor: UIColor.myBackgroundColor, NSAttributedString.Key.strokeWidth: -2.0])
+        attributedText = attrString
     }
 }

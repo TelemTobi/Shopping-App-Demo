@@ -10,6 +10,7 @@ import UIKit
 
 var demoAlbums: [String: Album] = [:]
 var demoArtists: [String: Artist] = [:]
+var albumsByGenre: [[Album]]!
 
 class DemoDataManager {
     
@@ -19,11 +20,13 @@ class DemoDataManager {
     func setup() {
         setDemoAlbums()
         setDemoArtists()
+        splitByGenres()
+        print(demoArtists)
     }
     
     private func setDemoAlbums() {
         guard
-          let URL = Bundle.main.url(forResource: "Albums", withExtension: "plist"),
+          let URL = Bundle.main.url(forResource: "DemoAlbums", withExtension: "plist"),
           let albumsFromPlist = NSArray(contentsOf: URL) as? [[String: Any]]
           else {
             return
@@ -36,14 +39,22 @@ class DemoDataManager {
     
     private func setDemoArtists() {
         guard
-          let URL = Bundle.main.url(forResource: "Artists", withExtension: "plist"),
+          let URL = Bundle.main.url(forResource: "DemoArtists", withExtension: "plist"),
           let artistsFromPlist = NSArray(contentsOf: URL) as? [[String: Any]]
           else {
             return
         }
+        
         for dictionary in artistsFromPlist {
             let artist = Artist(dictionary: dictionary)
             demoArtists[artist.id] = artist
+        }
+    }
+    
+    private func splitByGenres() {
+        albumsByGenre = Array(repeating: [], count: musicGenres.count)
+        demoAlbums.forEach {
+            albumsByGenre[$0.value.genre].append($0.value)
         }
     }
 }

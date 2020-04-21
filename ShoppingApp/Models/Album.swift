@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Album {
+class Album {
     
     let id: String
     let title: String

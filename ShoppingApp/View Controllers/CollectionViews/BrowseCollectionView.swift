@@ -38,26 +38,28 @@ class BrowseCollectionView: UICollectionViewController {
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.smallCellID, for: indexPath) as! AlbumCell
-            cell.album = testAlbum
+            cell.album = demoAlbums.randomElement()?.value
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.bigCellID, for: indexPath) as! AlbumCell
-            cell.album = testAlbum
+            cell.album = demoAlbums.randomElement()?.value
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistCell.id, for: indexPath) as! ArtistCell
+            cell.artist = demoArtists.randomElement()?.value
             return cell
         }
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as? AlbumCell
         switch indexPath.section {
         case 0:
-            delegate?.didSelectAlbum(nil)
+            delegate?.didSelectAlbum(cell?.album ?? testAlbum)
         case 1:
-            delegate?.didSelectAlbum(nil)
+            delegate?.didSelectAlbum(cell?.album ?? testAlbum)
         default:
-            delegate?.didSelectArtist(nil)
+            delegate?.didSelectArtist(testArtist)
         }
     }
     

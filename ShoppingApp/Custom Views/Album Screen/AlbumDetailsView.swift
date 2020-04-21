@@ -10,12 +10,14 @@ import UIKit
 
 class AlbumDetailsView: UIView {
     
-    private var containerStackView: UIStackView!
-    private var notesLabel: UILabel!
     private var tracksLabel: UILabel!
     private var genreLabel: UILabel!
     private var genreImage: UIImageView!
     private var dateLabel: UILabel!
+    private var notesLabel: UILabel!
+    
+    private var tracksStackView: UIStackView!
+    private var genreStackView: UIStackView!
     
     var album: Album? {
         didSet {
@@ -30,53 +32,37 @@ class AlbumDetailsView: UIView {
     init() {
         super.init(frame: .zero)
         
-        setStackView()
-        setNotesLabel()
         setTracksLabel()
         setGenreLabel()
         setDateLabel()
+        setNotesLabel()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private func setStackView() {
-        containerStackView = UIStackView()
-        containerStackView.axis = .horizontal
-        containerStackView.distribution = .fill
-        containerStackView.alignment = .bottom
-        containerStackView.spacing = 32
-        addSubview(containerStackView)
-        
-        containerStackView.translatesAutoresizingMaskIntoConstraints = false
-        containerStackView.topAnchor.constraint(equalTo: topAnchor, constant: 16).isActive = true
-        containerStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
-//        containerStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
-//        containerStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
-    }
-    
-    private func setNotesLabel() {
-        notesLabel = UILabel()
-        notesLabel.backgroundColor = .myBackgroundColor
-        notesLabel.textColor = .primaryColor
-        notesLabel.numberOfLines = 0
-        notesLabel.font = .Jura(ofSize: 14, weight: "Medium")
-        addSubview(notesLabel)
-        
-        notesLabel.translatesAutoresizingMaskIntoConstraints = false
-        notesLabel.topAnchor.constraint(equalTo: containerStackView.bottomAnchor, constant: 20).isActive = true
-        notesLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
-        notesLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
-        notesLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
-    }
-    
+
     private func titleLabel(_ title: String) -> UILabel {
         let titleLabel = UILabel()
         titleLabel.textColor = .lightGray
         titleLabel.font = .Jura(ofSize: 12, weight: "Bold")
         titleLabel.text = title
         return titleLabel
+    }
+    
+    private func setTracksLabel() {
+        tracksLabel = UILabel()
+        tracksLabel.textColor = .primaryColor
+        tracksLabel.font = .Jura(ofSize: 24, weight: "Medium")
+        
+        tracksStackView = UIStackView(arrangedSubviews: [tracksLabel, titleLabel("Tracks")])
+        tracksStackView.axis = .vertical
+        tracksStackView.spacing = 12
+        addSubview(tracksStackView)
+        
+        tracksStackView.translatesAutoresizingMaskIntoConstraints = false
+        tracksStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
+        tracksStackView.bottomAnchor.constraint(equalTo: topAnchor, constant: 80).isActive = true
     }
     
     private func setGenreLabel() {
@@ -95,31 +81,48 @@ class AlbumDetailsView: UIView {
         stackView.distribution = .fill
         stackView.spacing = 12
         
-        let tracksStackView = UIStackView(arrangedSubviews: [stackView, titleLabel("Genre")])
-        tracksStackView.axis = .vertical
-        tracksStackView.spacing = 12
-        containerStackView.addArrangedSubview(tracksStackView)
+        genreStackView = UIStackView(arrangedSubviews: [stackView, titleLabel("Genre")])
+        genreStackView.axis = .vertical
+        genreStackView.spacing = 12
+        addSubview(genreStackView)
+        
+        genreStackView.translatesAutoresizingMaskIntoConstraints = false
+        genreStackView.bottomAnchor.constraint(equalTo: tracksStackView.bottomAnchor).isActive = true
+        genreStackView.leadingAnchor.constraint(equalTo: tracksLabel.leadingAnchor, constant: 80).isActive = true
     }
     
-    private func setTracksLabel() {
-        tracksLabel = UILabel()
-        tracksLabel.textColor = .primaryColor
-        tracksLabel.font = .Jura(ofSize: 24, weight: "Medium")
-        
-        let tracksStackView = UIStackView(arrangedSubviews: [tracksLabel, titleLabel("Tracks")])
-        tracksStackView.axis = .vertical
-        tracksStackView.spacing = 12
-        containerStackView.addArrangedSubview(tracksStackView)
-    }
+
     
     private func setDateLabel() {
         dateLabel = UILabel()
+        dateLabel.textAlignment = .right
+        dateLabel.adjustsFontSizeToFitWidth = true
         dateLabel.textColor = .primaryColor
         dateLabel.font = .Jura(ofSize: 18, weight: "Bold")
         
         let dateStackView = UIStackView(arrangedSubviews: [dateLabel, titleLabel("Release Date")])
         dateStackView.axis = .vertical
         dateStackView.spacing = 12
-        containerStackView.addArrangedSubview(dateStackView)
+        addSubview(dateStackView)
+        
+        dateStackView.translatesAutoresizingMaskIntoConstraints = false
+        dateStackView.bottomAnchor.constraint(equalTo: tracksStackView.bottomAnchor).isActive = true
+        dateStackView.leadingAnchor.constraint(greaterThanOrEqualTo: genreStackView.trailingAnchor, constant: 8).isActive = true
+        dateStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+    }
+    
+    private func setNotesLabel() {
+        notesLabel = UILabel()
+        notesLabel.backgroundColor = .myBackgroundColor
+        notesLabel.textColor = .primaryColor
+        notesLabel.numberOfLines = 0
+        notesLabel.font = .Jura(ofSize: 14, weight: "Medium")
+        addSubview(notesLabel)
+        
+        notesLabel.translatesAutoresizingMaskIntoConstraints = false
+        notesLabel.topAnchor.constraint(equalTo: tracksStackView.bottomAnchor, constant: 24).isActive = true
+        notesLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
+        notesLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+        notesLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
     }
 }

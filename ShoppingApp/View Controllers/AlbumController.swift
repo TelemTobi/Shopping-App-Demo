@@ -26,7 +26,7 @@ class AlbumController: UIViewController {
         didSet {
             topView.album = album
             detailsView.album = album
-            moreByView.artist = album?.artist
+            moreByView.artist = demoArtists[album?.artist ?? ""]
             trackCollectionView.tracks = album?.tracks
         }
     }
