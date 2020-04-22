@@ -18,4 +18,6 @@ protocol AlbumDelegate {
     func backButtonTapped()
 }
 
-
+protocol CartDelegate {
+    func removeItemFromCart(id: String)
+}

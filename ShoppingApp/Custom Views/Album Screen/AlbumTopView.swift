@@ -33,7 +33,7 @@ class AlbumTopView: UIView {
             coverImage.image = album?.image
             titleLabel.text = album?.title
             artistLabel.text = demoArtists[album?.artist ?? ""]?.name
-            priceLabel.text = " \(album?.price.description ?? "15.0")$ "
+            priceLabel.text = "$\(album?.price.description ?? "15.0")0"
         }
     }
     
@@ -58,7 +58,7 @@ class AlbumTopView: UIView {
         addSubview(backgroundImage)
         self.constraintToBounds(backgroundImage)
         
-        let blurEffect = UIBlurEffect(style: .regular)
+        let blurEffect = UIBlurEffect(style: .dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         addSubview(blurEffectView)
         self.constraintToBounds(blurEffectView)
@@ -94,6 +94,7 @@ class AlbumTopView: UIView {
     
     private func setPriceLabel() {
         priceLabel = UILabel()
+        priceLabel.textAlignment = .center
         priceLabel.font = .Jura(ofSize: 18, weight: "Medium")
         priceLabel.textColor = .myBackgroundColor
         priceLabel.layer.borderColor = UIColor.myBackgroundColor.cgColor
@@ -102,9 +103,9 @@ class AlbumTopView: UIView {
         addSubview(priceLabel)
         
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
-        priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
+        priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -48).isActive = true
-        priceLabel.widthAnchor.constraint(equalToConstant: 55).isActive = true
+        priceLabel.widthAnchor.constraint(equalToConstant: 65).isActive = true
     }
     
     private func setTitleLabel() {

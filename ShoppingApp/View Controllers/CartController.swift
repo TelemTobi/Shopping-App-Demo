@@ -28,7 +28,7 @@ class CartController: UIViewController {
         setCartTable()
         view.bringSubviewToFront(albumController.view)
     }
-    
+
     func setUpElements() {
         albumController = setAlbumController()
         albumController.delegate = self
@@ -38,7 +38,7 @@ class CartController: UIViewController {
     
     func setTitleLabel() {
         titleLabel = UILabel()
-        titleLabel.text = "Your Shopping Cart"
+        titleLabel.numberOfLines = 2
         titleLabel.font = .Jura(ofSize: 26, weight: "Bold")
         titleLabel.textColor = .primaryColor
         view.addSubview(titleLabel)
@@ -67,7 +67,6 @@ class CartController: UIViewController {
     
     func setTotalLabel() {
         totalLabel = UILabel()
-        totalLabel.text = "Total 3 Items - 45.0$" // remove in the future
         totalLabel.font = .Jura(ofSize: 20, weight: "Bold")
         totalLabel.textColor = .primaryColor
         view.addSubview(totalLabel)
@@ -100,6 +99,15 @@ class CartController: UIViewController {
         cartTableView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8).isActive = true
         cartTableView.view.bottomAnchor.constraint(equalTo: totalLabel.topAnchor, constant: -12).isActive = true
     }
+    
+    func reloadData() {
+        DispatchQueue.main.async {
+            self.cartTableView.tableView.reloadData()
+        }
+        let totalPrice = CartManager.shared.totalPrice
+        totalLabel.text = "Total \(cartItems.count) Items - $\(totalPrice)0"
+        titleLabel.text = cartItems.count == 0 ? "Your Shopping Cart is Empty" : "Your Shopping Cart"
+    }
 }
 
 extension CartController: AlbumDelegate {
@@ -123,6 +131,4 @@ extension CartController: AlbumDelegate {
         
         albumController.didDisappear()
     }
-    
-    
 }

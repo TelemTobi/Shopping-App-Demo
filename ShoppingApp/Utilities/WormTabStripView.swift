@@ -88,9 +88,5 @@ class WormTabStripView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-//        stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-//        stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true
-//        stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
-//        stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
 }

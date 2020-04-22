@@ -145,7 +145,7 @@ class AlbumController: UIViewController {
         cartButton.layer.cornerRadius = 27.5
         cartButton.layer.borderWidth = 1
         cartButton.layer.borderColor = UIColor.myBackgroundColor.cgColor
-//        cartButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+        cartButton.addTarget(self, action: #selector(cartButtonTapped), for: .touchUpInside)
         view.addSubview(cartButton)
         
         cartButton.translatesAutoresizingMaskIntoConstraints = false
@@ -179,6 +179,11 @@ class AlbumController: UIViewController {
         trackCollectionView.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         trackCollectionView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         trackCollectionView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
+    }
+    
+    @objc private func cartButtonTapped() {
+        guard let id = album?.id else { return }
+        CartManager.shared.addItemToCart(id)
     }
     
     func willAppear(_ album: Album) {

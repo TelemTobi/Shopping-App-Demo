@@ -19,12 +19,14 @@ class AlbumCartCell: UITableViewCell {
     private var priceLabel: UILabel!
     private var removeButton: UIButton!
     
+    var delegate: CartDelegate!
+    
     var album: Album? {
         didSet {
             coverImage.image = album?.image
             titleLabel.text = album?.title
             artistLabel.text = demoArtists[album?.artist ?? ""]?.name ?? testArtist.name
-            priceLabel.text = " \(album?.price.description ?? "15.0")$ "
+            priceLabel.text = "$\(album?.price.description ?? "15.0")0"
         }
     }
     
@@ -75,6 +77,7 @@ class AlbumCartCell: UITableViewCell {
     
     private func setPriceLabel() {
         priceLabel = UILabel()
+        priceLabel.textAlignment = .center
         priceLabel.font = .Jura(ofSize: 16, weight: "Medium")
         priceLabel.textColor = .myBackgroundColor
         priceLabel.layer.borderColor = UIColor.myBackgroundColor.cgColor
@@ -85,7 +88,7 @@ class AlbumCartCell: UITableViewCell {
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
         priceLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -16).isActive = true
-        priceLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        priceLabel.widthAnchor.constraint(equalToConstant: 60).isActive = true
     }
     
     private func setTitleLabel() {
@@ -118,6 +121,7 @@ class AlbumCartCell: UITableViewCell {
         removeButton.setImage(UIImage(systemName: "trash"), for: .normal)
         removeButton.setImage(UIImage(systemName: "trash.fill"), for: .highlighted)
         removeButton.imageView?.contentMode = .scaleAspectFit
+        removeButton.addTarget(self, action: #selector(removeButtonTapped), for: .touchUpInside)
         containerView.addSubview(removeButton)
         
         removeButton.translatesAutoresizingMaskIntoConstraints = false
@@ -125,5 +129,10 @@ class AlbumCartCell: UITableViewCell {
         removeButton.centerXAnchor.constraint(equalTo: priceLabel.centerXAnchor).isActive = true
         removeButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
         removeButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+    }
+    
+    @objc private func removeButtonTapped() {
+        guard let id = album?.id else { return }
+        delegate.removeItemFromCart(id: id)
     }
 }

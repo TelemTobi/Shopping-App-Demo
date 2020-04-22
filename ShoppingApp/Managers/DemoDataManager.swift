@@ -11,7 +11,7 @@ import UIKit
 var demoAlbums: [String: Album] = [:]
 var demoArtists: [String: Artist] = [:]
 var albumsByGenre: [[Album]]!
-var browseData: [[Any]] = Array(repeating: [], count: 3)
+var browseData: [[String]] = Array(repeating: [], count: 3)
 
 class DemoDataManager {
     
@@ -60,10 +60,8 @@ class DemoDataManager {
     }
     
     private func setBrowseDemoData() {
-        for i in 0..<browseData.count {
-            for _ in 0...7 {
-                browseData[i].append(i == 2 ? demoArtists.randomElement()!.value : demoAlbums.randomElement()!.value)
-            }
-        }
+        browseData[0] = ["024", "017", "018", "031", "006", "012", "022", "027"]
+        browseData[1] = ["029", "025", "026", "010", "008", "004"]
+        browseData[2] = ["19", "06", "21", "14", "18", "05", "04", "15"]
     }
 }

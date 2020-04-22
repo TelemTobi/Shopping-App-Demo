@@ -136,6 +136,9 @@ extension TabsController: WormTabStripDelegate {
             return
         }
         selectedTab = index
+        if index == 2 {
+            cartController.reloadData()
+        }
     }
     
     func WTSNumberOfTabs() -> Int {

@@ -20,6 +20,7 @@
 		7D27775E244EE8BC00575A66 /* DemoAlbums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D27775C244EE8BC00575A66 /* DemoAlbums.plist */; };
 		7D27775F244EE8BC00575A66 /* DemoArtists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D27775D244EE8BC00575A66 /* DemoArtists.plist */; };
 		7D277761244EEF1A00575A66 /* ArtistPictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D277760244EEF1A00575A66 /* ArtistPictures.xcassets */; };
+		7D2777642450BE5D00575A66 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2777632450BE5D00575A66 /* CartManager.swift */; };
 		7D58768D243A447D00480884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768C243A447D00480884 /* AppDelegate.swift */; };
 		7D58768F243A447D00480884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58768E243A447D00480884 /* SceneDelegate.swift */; };
 		7D587691243A447D00480884 /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587690243A447D00480884 /* TabsController.swift */; };
@@ -78,6 +79,7 @@
 		7D27775C244EE8BC00575A66 /* DemoAlbums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DemoAlbums.plist; path = "../../../../../Downloads/Shopping-App-Demo-master 2/ShoppingApp/Assests/DemoAlbums.plist"; sourceTree = "<group>"; };
 		7D27775D244EE8BC00575A66 /* DemoArtists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DemoArtists.plist; path = "../../../../../Downloads/Shopping-App-Demo-master 2/ShoppingApp/Assests/DemoArtists.plist"; sourceTree = "<group>"; };
 		7D277760244EEF1A00575A66 /* ArtistPictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ArtistPictures.xcassets; sourceTree = "<group>"; };
+		7D2777632450BE5D00575A66 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		7D587689243A447D00480884 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D58768C243A447D00480884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D58768E243A447D00480884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			children = (
 				7D587720243E6BB900480884 /* LayoutsManager.swift */,
 				7D27773D244E443900575A66 /* DemoDataManager.swift */,
+				7D2777632450BE5D00575A66 /* CartManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				7D8EA6762443BC8100146B46 /* AlbumController.swift in Sources */,
 				7D213B64244B758F00BC6D7E /* AlbumMoreByView.swift in Sources */,
 				7D27773E244E443900575A66 /* DemoDataManager.swift in Sources */,
+				7D2777642450BE5D00575A66 /* CartManager.swift in Sources */,
 				7D5876E6243D319100480884 /* GenreCell.swift in Sources */,
 				7D5876C0243A89C200480884 /* UIColor.swift in Sources */,
 				7D213B602448EE4500BC6D7E /* TrackCell.swift in Sources */,

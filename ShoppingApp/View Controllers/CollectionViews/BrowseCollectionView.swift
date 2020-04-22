@@ -31,22 +31,25 @@ class BrowseCollectionView: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        8
+        browseData[section].count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.smallCellID, for: indexPath) as! AlbumCell
-            cell.album = browseData[indexPath.section][indexPath.row] as? Album
+            let albumId = browseData[indexPath.section][indexPath.row]
+            cell.album = demoAlbums[albumId]
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.bigCellID, for: indexPath) as! AlbumCell
-            cell.album = browseData[indexPath.section][indexPath.row] as? Album
+            let albumId = browseData[indexPath.section][indexPath.row]
+            cell.album = demoAlbums[albumId]
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistCell.id, for: indexPath) as! ArtistCell
-            cell.artist = browseData[indexPath.section][indexPath.row] as? Artist
+            let artistId = browseData[indexPath.section][indexPath.row]
+            cell.artist = demoArtists[artistId]
             return cell
         }
     }
@@ -67,7 +70,7 @@ class BrowseCollectionView: UICollectionViewController {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: BrowseSectionHeader.id, for: indexPath) as! BrowseSectionHeader
         switch indexPath.section {
         case 0:
-            header.title = "Most Popular Albums"
+            header.title = "Best Selling Albums"
         case 1:
             header.title = "New Releases"
         default:

@@ -22,20 +22,32 @@ class CartTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        cartItems.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AlbumCartCell.id, for: indexPath) as! AlbumCartCell
-        cell.album = testAlbum
+        cell.delegate = self
+        cell.album = demoAlbums[cartItems[indexPath.row]] ?? testAlbum
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.didSelectAlbum(nil)
+        delegate?.didSelectAlbum(demoAlbums[cartItems[indexPath.row]] ?? testAlbum)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         140
+    }
+}
+
+extension CartTableView: CartDelegate {
+    
+    func removeItemFromCart(id: String) {
+        guard let index = cartItems.firstIndex(of: id) else { return }
+        cartItems.remove(at: index)
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
