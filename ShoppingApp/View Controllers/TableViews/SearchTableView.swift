@@ -10,6 +10,15 @@ import UIKit
 
 class SearchTableView: UITableViewController {
     
+    var delegate: AlbumDelegate?
+    var searchResults: [[String]] = Array(repeating: [], count: 2) {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,24 +35,30 @@ class SearchTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        searchResults[section].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: AlbumSearchCell.id) as! AlbumSearchCell
-            cell.album = testAlbum
+            let albumId = searchResults[indexPath.section][indexPath.row]
+            cell.album = demoAlbums[albumId]
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: ArtistSearchCell.id) as! ArtistSearchCell
-            cell.artist = testArtist
+            let artistId = searchResults[indexPath.section][indexPath.row]
+            cell.artist = demoArtists[artistId]
             return cell
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("item selected")
+        if let cell = tableView.cellForRow(at: indexPath) as? AlbumSearchCell {
+            delegate?.didSelectAlbum(cell.album)
+        } else if let cell = tableView.cellForRow(at: indexPath) as? ArtistSearchCell {
+            delegate?.didSelectArtist(cell.artist)
+        }
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -57,6 +72,6 @@ class SearchTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        50
+        (searchResults[section].count > 0) ? 50 : 0
     }
 }

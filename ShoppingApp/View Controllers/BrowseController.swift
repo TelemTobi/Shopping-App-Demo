@@ -72,6 +72,7 @@ class BrowseController: UIViewController {
     func setSearchTableView() {
         searchTableView = SearchTableView()
         searchTableView.view.isHidden = true
+        searchTableView.delegate = self
         
         addChild(searchTableView)
         searchTableView.didMove(toParent: self)
@@ -90,6 +91,7 @@ extension BrowseController: AlbumDelegate {
         albumController.willAppear(album ?? testAlbum)
         
         searchBar.isHidden = true
+        searchTableView.view.isHidden = true
         browseCollectionView.view.isHidden = true
         albumController.view.isHidden = false
     }
@@ -121,10 +123,22 @@ extension BrowseController: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
+        var results: [[String]] = Array(repeating: [], count: 2)
+        demoAlbums.forEach {
+            if $0.value.title.contains(searchText) {
+                results[0].append($0.key)
+            }
+        }
+        demoArtists.forEach {
+           if $0.value.name.contains(searchText) {
+               results[1].append($0.key)
+           }
+        }
+        searchTableView.searchResults = results
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
         searchMode = false
         view.endEditing(true)
     }
