@@ -10,3 +10,8 @@ Simple, yet beautifully designed vinyl shop app.</br>
 Shop by music genres, artists or simply browse the best selling and latest released albums.</br>
 Implemented a custom designed tab bar and many compositional layouts.</br>
 </p>
+<p align="center">
+<b>Technologies used</b>
+</br>
+Swift, CoreData
+</p>
