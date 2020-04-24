@@ -8,25 +8,25 @@
 
 import UIKit
 
-class ShopController: UIViewController {
+class ShopController: TabController {
     
     var genresCollectionView: GenresCollectionView!
     var shopCollectionView: ShopCollectionView!
-    var albumController: AlbumController!
+//    var albumController: AlbumController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpElements()
+//        setUpElements()
         setGenresCollectionView()
         setShopCollectionView()
     }
     
-    func setUpElements() {
-        albumController = setAlbumController()
-        albumController.delegate = self
-        view.backgroundColor = .myBackgroundColor
-    }
+//    func setUpElements() {
+//        albumController = setAlbumController()
+//        albumController.delegate = self
+//        view.backgroundColor = .myBackgroundColor
+//    }
     
     func setGenresCollectionView() {
         let layout = LayoutsManager.shared.genresLayout()
@@ -70,25 +70,25 @@ extension ShopController: GenresDelegate {
     }
 }
 
-extension ShopController: AlbumDelegate {
-    func didSelectAlbum(_ album: Album?) {
-        albumController.willAppear(album ?? testAlbum)
-        
-        genresCollectionView.view.isHidden = true
-        shopCollectionView.view.isHidden = true
-        albumController.view.isHidden = false
-    }
-    
-    func didSelectArtist(_ artist: Artist?) {
-        
-    }
-    
-    func backButtonTapped() {
-        guard albumController.view.isHidden == false else { return }
-        genresCollectionView.view.isHidden = false
-        shopCollectionView.view.isHidden = false
-        albumController.view.isHidden = true
-        
-        albumController.didDisappear()
-    }
-}
+//extension ShopController: AlbumDelegate {
+//    func didSelectAlbum(_ album: Album?) {
+//        albumController.willAppear(album ?? testAlbum)
+//
+//        genresCollectionView.view.isHidden = true
+//        shopCollectionView.view.isHidden = true
+//        albumController.view.isHidden = false
+//    }
+//
+//    func didSelectArtist(_ artist: Artist?) {
+//
+//    }
+//
+//    func backButtonTapped() {
+//        guard albumController.view.isHidden == false else { return }
+//        genresCollectionView.view.isHidden = false
+//        shopCollectionView.view.isHidden = false
+//        albumController.view.isHidden = true
+//
+//        albumController.didDisappear()
+//    }
+//}

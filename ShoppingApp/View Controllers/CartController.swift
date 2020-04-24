@@ -8,32 +8,22 @@
 
 import UIKit
 
-class CartController: UIViewController {
+class CartController: TabController {
     
     var titleLabel: UILabel!
     var cartTableView: CartTableView!
     var totalLabel: UILabel!
     var checkoutButton: UIButton!
     
-    var albumController: AlbumController!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpElements()
         setTitleLabel()
         setCheckoutButton()
         setTotalLabel()
         setSeperator()
         setCartTable()
         view.bringSubviewToFront(albumController.view)
-    }
-
-    func setUpElements() {
-        albumController = setAlbumController()
-        albumController.delegate = self
-        
-        view.backgroundColor = .myBackgroundColor
     }
     
     func setTitleLabel() {
@@ -107,28 +97,5 @@ class CartController: UIViewController {
         let totalPrice = CartManager.shared.totalPrice
         totalLabel.text = "Total \(cartItems.count) Items - $\(totalPrice)0"
         titleLabel.text = cartItems.count == 0 ? "Your Shopping Cart is Empty" : "Your Shopping Cart"
-    }
-}
-
-extension CartController: AlbumDelegate {
-    func didSelectAlbum(_ album: Album?) {
-        albumController.willAppear(album ?? testAlbum)
-        
-        albumController.view.isHidden = false
-        cartTableView.view.isUserInteractionEnabled = false
-        checkoutButton.isUserInteractionEnabled = false
-    }
-    
-    func didSelectArtist(_ artist: Artist?) {
-        
-    }
-    
-    func backButtonTapped() {
-        guard albumController.view.isHidden == false else { return }
-        albumController.view.isHidden = true
-        cartTableView.view.isUserInteractionEnabled = true
-        checkoutButton.isUserInteractionEnabled = true
-        
-        albumController.didDisappear()
     }
 }

@@ -1,0 +1,3068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>000</string>
+		<key>title</key>
+		<string>Songs in the Key of Life</string>
+		<key>artist</key>
+		<string>00</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Love&apos;s in Need of Love Today</string>
+				<key>duration</key>
+				<string>7:06</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Have a Talk with God</string>
+				<key>duration</key>
+				<string>2:42</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Village Ghetto Land</string>
+				<key>duration</key>
+				<string>3:25</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Contusion</string>
+				<key>duration</key>
+				<string>3:46</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sir Duke</string>
+				<key>duration</key>
+				<string>3:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Wish</string>
+				<key>duration</key>
+				<string>4:12</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Knock Me Off My Feet</string>
+				<key>duration</key>
+				<string>3:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pastime Paradise</string>
+				<key>duration</key>
+				<string>3:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Summer Soft</string>
+				<key>duration</key>
+				<string>4:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Ordinary Pain</string>
+				<key>duration</key>
+				<string>6:!6</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Isn&apos;t She Lovely</string>
+				<key>duration</key>
+				<string>6:34</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Joy Inside My Tears</string>
+				<key>duration</key>
+				<string>6:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Black Man</string>
+				<key>duration</key>
+				<string>8:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Ngiculela – Es Una Historia – I Am Singing</string>
+				<key>duration</key>
+				<string>3:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>If It&apos;s Magic</string>
+				<key>duration</key>
+				<string>3:12</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>As</string>
+				<key>duration</key>
+				<string>7:08</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Another Star</string>
+				<key>duration</key>
+				<string>8:28</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>September 28, 1976</string>
+		<key>notes</key>
+		<string>Songs in the Key of Life is the eighteenth album by American singer, songwriter and musician Stevie Wonder. It was released on September 28, 1976, by Tamla Records, a division of Motown. The album has been regarded by music journalists as the culmination of Wonder&apos;s &quot;classic period&quot; of recording.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>001</string>
+		<key>title</key>
+		<string>Abbey Road
+</string>
+		<key>artist</key>
+		<string>01</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<real>20</real>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Come Together</string>
+				<key>duration</key>
+				<string>4:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Something</string>
+				<key>duration</key>
+				<string>3:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Maxwell&apos;s Silver Hammer</string>
+				<key>duration</key>
+				<string>3:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Oh! Darling</string>
+				<key>duration</key>
+				<string>3:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Octopus&apos;s Garden</string>
+				<key>duration</key>
+				<string>2:51</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Want You (She&apos;s So Heavy)&quot;</string>
+				<key>duration</key>
+				<string>7:47</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Here Comes the Sun</string>
+				<key>duration</key>
+				<string>3:05</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Because</string>
+				<key>duration</key>
+				<string>2:45</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>You Never Give Me Your Money</string>
+				<key>duration</key>
+				<string>4:03</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sun King</string>
+				<key>duration</key>
+				<string>2:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Mean Mr. Mustard</string>
+				<key>duration</key>
+				<string>1:06</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Polythene Pam</string>
+				<key>duration</key>
+				<string>1:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>She Came In Through the Bathroom Window</string>
+				<key>duration</key>
+				<string>1:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Golden Slumbers</string>
+				<key>duration</key>
+				<string>1:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Carry That Weight</string>
+				<key>duration</key>
+				<string>1:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The End</string>
+				<key>duration</key>
+				<string>2:05</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Her Majesty</string>
+				<key>duration</key>
+				<string>0:23</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>September 26, 1969</string>
+		<key>notes</key>
+		<string>Abbey Road is the eleventh studio album by the English rock band the Beatles, released on 26 September 1969 by Apple Records.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>002</string>
+		<key>title</key>
+		<string>Come Fly with Me</string>
+		<key>artist</key>
+		<string>02</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Come Fly with Me</string>
+				<key>duration</key>
+				<string>3:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Around The World</string>
+				<key>duration</key>
+				<string>3:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Isle of Capri</string>
+				<key>duration</key>
+				<string>2:29</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Moonlight in Vermont</string>
+				<key>duration</key>
+				<string>3:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Autumn in New York</string>
+				<key>duration</key>
+				<string>4:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>On the Road to Mandalay</string>
+				<key>duration</key>
+				<string>3:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Let&apos;s Get Away from It All</string>
+				<key>duration</key>
+				<string>2:11</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>April in Paris</string>
+				<key>duration</key>
+				<string>2:50</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>London by Night</string>
+				<key>duration</key>
+				<string>3:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Brazil</string>
+				<key>duration</key>
+				<string>2:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Blue Hawaii</string>
+				<key>duration</key>
+				<string>2:44</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>It&apos;s Nice to Go Trav&apos;ling</string>
+				<key>duration</key>
+				<string>3:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Chicago</string>
+				<key>duration</key>
+				<string>2:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>South of the Border</string>
+				<key>duration</key>
+				<string>2:50</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Love Paris</string>
+				<key>duration</key>
+				<string>1:49</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>January 6, 1958</string>
+		<key>notes</key>
+		<string>Come Fly with Me is an album by American singer Frank Sinatra, released in 1958. In 2000 it was voted number 616 in Colin Larkin&apos;s All Time Top 1000 Albums.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>003</string>
+		<key>title</key>
+		<string>Thriller</string>
+		<key>artist</key>
+		<string>03</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Wanna Be Startin&apos; Somethin&apos;</string>
+				<key>duration</key>
+				<string>6:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Baby Be Mine</string>
+				<key>duration</key>
+				<string>4:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Girl is Mine</string>
+				<key>duration</key>
+				<string>3:41</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Thriller</string>
+				<key>duration</key>
+				<string>5:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Beat It</string>
+				<key>duration</key>
+				<string>4:18</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Billie Jean</string>
+				<key>duration</key>
+				<string>4:54</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Human Nature</string>
+				<key>duration</key>
+				<string>4:07</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>P.Y.T. (Pretty Young Thing)</string>
+				<key>duration</key>
+				<string>3:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Lady in My Life</string>
+				<key>duration</key>
+				<string>4:59</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>November 30, 1982</string>
+		<key>notes</key>
+		<string>Thriller is the sixth studio album by American singer Michael Jackson, released on November 30, 1982 by Epic Records. Reunited with Off the Wall producer Quincy Jones, Jackson was inspired to create an album where &quot;every song was a killer&quot;.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>004</string>
+		<key>title</key>
+		<string>Melodrama</string>
+		<key>artist</key>
+		<string>04</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Green Light</string>
+				<key>duration</key>
+				<string>3:54</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sober</string>
+				<key>duration</key>
+				<string>3:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Homemade Dynamite</string>
+				<key>duration</key>
+				<string>3:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Louvre</string>
+				<key>duration</key>
+				<string>4:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Liability</string>
+				<key>duration</key>
+				<string>2:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hard Feelings/Loveless</string>
+				<key>duration</key>
+				<string>6:07</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sober ll (Melodrama)</string>
+				<key>duration</key>
+				<string>2:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Writer in the Dark</string>
+				<key>duration</key>
+				<string>3:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Supercut</string>
+				<key>duration</key>
+				<string>4:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Liability (Reprise)</string>
+				<key>duration</key>
+				<string>2:16</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Perfect Places</string>
+				<key>duration</key>
+				<string>3:41</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>June 16, 2017</string>
+		<key>notes</key>
+		<string>A melodrama is a dramatic work wherein the plot, which is typically sensational and designed to appeal strongly to the emotions, takes precedence over detailed characterization. Melodramas typically concentrate on dialogue, which is often bombastic or excessively sentimental, rather than action.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>005</string>
+		<key>title</key>
+		<string>Revolver</string>
+		<key>artist</key>
+		<string>01</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Taxman</string>
+				<key>duration</key>
+				<string>2:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Eleanor Rigby</string>
+				<key>duration</key>
+				<string>2:11</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I&apos;m Only Sleeping</string>
+				<key>duration</key>
+				<string>2:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love You To</string>
+				<key>duration</key>
+				<string>3:00</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Here, There and Everywhere</string>
+				<key>duration</key>
+				<string>2:29</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yellow Submarine</string>
+				<key>duration</key>
+				<string>2:40</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>She Said She Said</string>
+				<key>duration</key>
+				<string>2:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Good Day Sunshine</string>
+				<key>duration</key>
+				<string>2:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>And Your Bird Can Sing</string>
+				<key>duration</key>
+				<string>2:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>For No One</string>
+				<key>duration</key>
+				<string>2:03</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Doctor Robert</string>
+				<key>duration</key>
+				<string>2:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Want to Tell You</string>
+				<key>duration</key>
+				<string>2:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Got to Get You into My Life</string>
+				<key>duration</key>
+				<string>2:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Tomorrow Never Knows</string>
+				<key>duration</key>
+				<string>3:00</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>August 5, 1966</string>
+		<key>notes</key>
+		<string>Revolver is the seventh studio album by the English rock band the Beatles. It was released on 5 August 1966, accompanied by the double A-side single &quot;Eleanor Rigby&quot; / &quot;Yellow Submarine&quot;.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>006</string>
+		<key>title</key>
+		<string>Lemonade</string>
+		<key>artist</key>
+		<string>05</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Pray You Catch Me</string>
+				<key>duration</key>
+				<string>3:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hold Up</string>
+				<key>duration</key>
+				<string>3:41</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Don&apos;t Hurt Yourself</string>
+				<key>duration</key>
+				<string>3:53</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sorry</string>
+				<key>duration</key>
+				<string>3:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>6 Inch</string>
+				<key>duration</key>
+				<string>4:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Daddy Lessons</string>
+				<key>duration</key>
+				<string>4:47</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love Drought</string>
+				<key>duration</key>
+				<string>3:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sandcastles</string>
+				<key>duration</key>
+				<string>3:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Forward</string>
+				<key>duration</key>
+				<string>1:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Freedom</string>
+				<key>duration</key>
+				<string>4:49</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>All Night</string>
+				<key>duration</key>
+				<string>5:21</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Formation</string>
+				<key>duration</key>
+				<string>3:26</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>April 23, 2016</string>
+		<key>notes</key>
+		<string>Lemonade is the sixth studio album by American singer Beyoncé, released on April 23, 2016, by Parkwood Entertainment and Columbia Records. It was her second &quot;visual album&quot; following her 2013 eponymous fifth album, is a concept album and a song cycle.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>007</string>
+		<key>title</key>
+		<string>Anti</string>
+		<key>artist</key>
+		<string>06</string>
+		<key>genre</key>
+		<integer>0</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Consideration</string>
+				<key>duration</key>
+				<string>2:41</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>James Joint</string>
+				<key>duration</key>
+				<string>1:12</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Kiss It Better</string>
+				<key>duration</key>
+				<string>4:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Work</string>
+				<key>duration</key>
+				<string>3:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Desperado</string>
+				<key>duration</key>
+				<string>3:06</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Woo</string>
+				<key>duration</key>
+				<string>3:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Needed Me</string>
+				<key>duration</key>
+				<string>3:11</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yeah, I Said It</string>
+				<key>duration</key>
+				<string>2:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Same Ol&apos; Mistakes</string>
+				<key>duration</key>
+				<string>6:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Never Ending</string>
+				<key>duration</key>
+				<string>3:22</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love on the Brain</string>
+				<key>duration</key>
+				<string>3:44</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Higher</string>
+				<key>duration</key>
+				<string>2:00</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Close to You</string>
+				<key>duration</key>
+				<string>3:43</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>January 27, 2016</string>
+		<key>notes</key>
+		<string>Anti is the eighth studio album by Barbadian singer Rihanna. It was released on January 28, 2016, through Westbury Road and Roc Nation. Rihanna began planning the record in 2014, at which time she left her previous label Def Jam and joined Roc Nation.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>008</string>
+		<key>title</key>
+		<string>After Hours</string>
+		<key>artist</key>
+		<string>07</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Alone Again</string>
+				<key>duration</key>
+				<string>4:10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Too Late</string>
+				<key>duration</key>
+				<string>3:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hardest to Love</string>
+				<key>duration</key>
+				<string>3:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Scared to Live</string>
+				<key>duration</key>
+				<string>3:11</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Snowchild</string>
+				<key>duration</key>
+				<string>4:07</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Escape from LA</string>
+				<key>duration</key>
+				<string>5:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Heartless</string>
+				<key>duration</key>
+				<string>3:18</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Faith</string>
+				<key>duration</key>
+				<string>4:43</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Blinding Lights</string>
+				<key>duration</key>
+				<string>3:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>In Your Eyes</string>
+				<key>duration</key>
+				<string>3:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Save Your Tears</string>
+				<key>duration</key>
+				<string>3:35</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Repeat After Me</string>
+				<key>duration</key>
+				<string>3:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>After Hours</string>
+				<key>duration</key>
+				<string>6:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Until I Bleed Out</string>
+				<key>duration</key>
+				<string>3:12</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>March 20, 2020</string>
+		<key>notes</key>
+		<string>After Hours is the fourth studio album by Canadian singer The Weeknd. The album was released by XO and Republic Records on March 20, 2020. It is The Weeknd&apos;s first studio album since 2016&apos;s Starboy, following the release of the 2018 EP My Dear Melancholy.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>009</string>
+		<key>title</key>
+		<string>Channel Orange</string>
+		<key>artist</key>
+		<string>08</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Start</string>
+				<key>duration</key>
+				<string>0:45</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Thinkin Bout You</string>
+				<key>duration</key>
+				<string>3:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Fertillzer</string>
+				<key>duration</key>
+				<string>0:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sierra Leone</string>
+				<key>duration</key>
+				<string>2:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sweet Life</string>
+				<key>duration</key>
+				<string>4:22</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Not Just Money</string>
+				<key>duration</key>
+				<string>0:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Super Rich Kids</string>
+				<key>duration</key>
+				<string>5:04</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pilot Jones</string>
+				<key>duration</key>
+				<string>3:04</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Crack Rock</string>
+				<key>duration</key>
+				<string>3:44</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pyramids</string>
+				<key>duration</key>
+				<string>9:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Lost</string>
+				<key>duration</key>
+				<string>3:54</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>White</string>
+				<key>duration</key>
+				<string>1:!6</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Monks</string>
+				<key>duration</key>
+				<string>3:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Bad Religion</string>
+				<key>duration</key>
+				<string>2:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pink Matter</string>
+				<key>duration</key>
+				<string>4:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Forrest Gump</string>
+				<key>duration</key>
+				<string>3:!4</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>End</string>
+				<key>duration</key>
+				<string>2:14</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>July 10, 2012</string>
+		<key>notes</key>
+		<string>Channel Orange is the debut studio album by American R&amp;B singer and songwriter Frank Ocean. It was released on July 10, 2012, by Def Jam Recordings.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>010</string>
+		<key>title</key>
+		<string>Ctrl</string>
+		<key>artist</key>
+		<string>09</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Supermodel</string>
+				<key>duration</key>
+				<string>3:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love Galore</string>
+				<key>duration</key>
+				<string>4:35</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Doves in the Wind</string>
+				<key>duration</key>
+				<string>4:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Drew Barrymore</string>
+				<key>duration</key>
+				<string>3:51</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Prom</string>
+				<key>duration</key>
+				<string>3:16</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Weekend</string>
+				<key>duration</key>
+				<string>4:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Go Gina</string>
+				<key>duration</key>
+				<string>2:41</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Garden (Say It Like Dat)</string>
+				<key>duration</key>
+				<string>3:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Broken Clocks</string>
+				<key>duration</key>
+				<string>3:51</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Anything</string>
+				<key>duration</key>
+				<string>2:29</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Wavy</string>
+				<key>duration</key>
+				<string>1:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Normal Girl</string>
+				<key>duration</key>
+				<string>4:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pretty Little Birds</string>
+				<key>duration</key>
+				<string>4:05</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>20 Something</string>
+				<key>duration</key>
+				<string>3:18</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>June 9, 2017</string>
+		<key>notes</key>
+		<string>Ctrl is the debut studio album by American singer SZA. It was released on June 9, 2017, on Top Dawg Entertainment and RCA Records. Originally scheduled for release in late 2015, it was delayed by SZA&apos;s experience of &quot;a kind of blinding paralysis brought on by anxiety.&quot;</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>011</string>
+		<key>title</key>
+		<string>American Teen</string>
+		<key>artist</key>
+		<string>10</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>American Teen</string>
+				<key>duration</key>
+				<string>4:10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Young Dumb &amp; Broke</string>
+				<key>duration</key>
+				<string>3:22</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Location</string>
+				<key>duration</key>
+				<string>3:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Another Sad Love Song</string>
+				<key>duration</key>
+				<string>4:04</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Saved</string>
+				<key>duration</key>
+				<string>3:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Coaster</string>
+				<key>duration</key>
+				<string>3:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>8teen</string>
+				<key>duration</key>
+				<string>3:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Let&apos;s Go</string>
+				<key>duration</key>
+				<string>3:24</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hopeless</string>
+				<key>duration</key>
+				<string>2:47</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Cold Blooded</string>
+				<key>duration</key>
+				<string>3:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Winter</string>
+				<key>duration</key>
+				<string>4:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Therapy</string>
+				<key>duration</key>
+				<string>4:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Keep Me</string>
+				<key>duration</key>
+				<string>4:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Shot Down</string>
+				<key>duration</key>
+				<string>3:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Angels</string>
+				<key>duration</key>
+				<string>2:50</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>March 3, 2017</string>
+		<key>notes</key>
+		<string>American Teen is the debut studio album by American singer Khalid. It was released on March 3, 2017, by Right Hand Music Group and RCA Records. The album was supported by the singles &quot;Location&quot;, &quot;Young Dumb &amp; Broke&quot; and &quot;Saved&quot;.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>012</string>
+		<key>title</key>
+		<string>Malibu</string>
+		<key>artist</key>
+		<string>11</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>The Bird</string>
+				<key>duration</key>
+				<string>3:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Heart Don&apos;t Stand a Chance</string>
+				<key>duration</key>
+				<string>5:12</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Waters</string>
+				<key>duration</key>
+				<string>2:54</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Season / Carry Me</string>
+				<key>duration</key>
+				<string>5:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Put Me Thru</string>
+				<key>duration</key>
+				<string>2:40</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Am I Wrong</string>
+				<key>duration</key>
+				<string>4:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Whitout You</string>
+				<key>duration</key>
+				<string>3:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Parking Lot</string>
+				<key>duration</key>
+				<string>3:54</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Life Weight</string>
+				<key>duration</key>
+				<string>3:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Room in Here</string>
+				<key>duration</key>
+				<string>3:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Water Fall</string>
+				<key>duration</key>
+				<string>1:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Your Prime</string>
+				<key>duration</key>
+				<string>3:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Come Down</string>
+				<key>duration</key>
+				<string>2:56</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Silicon Valley</string>
+				<key>duration</key>
+				<string>4:04</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Celebrate</string>
+				<key>duration</key>
+				<string>3:46</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Dreamer</string>
+				<key>duration</key>
+				<string>5:39</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>January 15, 2016</string>
+		<key>notes</key>
+		<string>Malibu is the second studio album by American singer Anderson Paak. It was released on January 15, 2016, by ArtClub International, Empire Distribution, OBE and Steel Wool Records following the release of his EP, Link Up &amp; Suede, with Knxwledge.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>013</string>
+		<key>title</key>
+		<string>Ventura</string>
+		<key>artist</key>
+		<string>11</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Come Home</string>
+				<key>duration</key>
+				<string>4:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Make it Better</string>
+				<key>duration</key>
+				<string>3:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Reachin&apos; 2 Much</string>
+				<key>duration</key>
+				<string>5:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Winners Circle</string>
+				<key>duration</key>
+				<string>3:@9</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Good Heels</string>
+				<key>duration</key>
+				<string>1:38</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yada Yada</string>
+				<key>duration</key>
+				<string>3:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>King James</string>
+				<key>duration</key>
+				<string>3:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Chosen One</string>
+				<key>duration</key>
+				<string>4:05</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Jet Black</string>
+				<key>duration</key>
+				<string>3:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Twilight</string>
+				<key>duration</key>
+				<string>3:16</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>What Can We Do?</string>
+				<key>duration</key>
+				<string>2:56</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>April 12, 2019</string>
+		<key>notes</key>
+		<string>Ventura is the fourth studio album by American singer Anderson Paak. It was released on April 12, 2019, by 12 Tone Music and Aftermath Entertainment. It features guest appearances from André 3000, Smokey Robinson, Lalah Hathaway, Jazmine Sullivan, Sonyae Elise, and Brandy, along with posthumous vocals from Nate Dogg.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>014</string>
+		<key>title</key>
+		<string>Blonde</string>
+		<key>artist</key>
+		<string>08</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Nikes</string>
+				<key>duration</key>
+				<string>5:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Ivy</string>
+				<key>duration</key>
+				<string>4:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pink + White</string>
+				<key>duration</key>
+				<string>3:04</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Be Yourself</string>
+				<key>duration</key>
+				<string>1:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Solo</string>
+				<key>duration</key>
+				<string>4:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Skyline To</string>
+				<key>duration</key>
+				<string>3:04</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Self Control</string>
+				<key>duration</key>
+				<string>4:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Good Guy</string>
+				<key>duration</key>
+				<string>1:06</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Nights</string>
+				<key>duration</key>
+				<string>5:07</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Solo</string>
+				<key>duration</key>
+				<string>1:18</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pretty Sweet</string>
+				<key>duration</key>
+				<string>2:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Facebook Story</string>
+				<key>duration</key>
+				<string>1:08</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Close to You</string>
+				<key>duration</key>
+				<string>1:25</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>White Ferrari</string>
+				<key>duration</key>
+				<string>4:08</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Seigfried</string>
+				<key>duration</key>
+				<string>5:34</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Godspeed</string>
+				<key>duration</key>
+				<string>2:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Futura Free</string>
+				<key>duration</key>
+				<string>9:24</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>August 20, 2016</string>
+		<key>notes</key>
+		<string>Blonde is the second studio album by American singer Frank Ocean. It was released on August 20, 2016, as a timed exclusive on the iTunes Store and Apple Music, and followed the August 19 release of Ocean&apos;s video album Endless.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>015</string>
+		<key>title</key>
+		<string>Beauty Behind the Madness</string>
+		<key>artist</key>
+		<string>07</string>
+		<key>genre</key>
+		<integer>1</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Real Life</string>
+				<key>duration</key>
+				<string>3:43</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Losers</string>
+				<key>duration</key>
+				<string>4:41</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Tell Your Friends</string>
+				<key>duration</key>
+				<string>5:34</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Often</string>
+				<key>duration</key>
+				<string>4:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Hills</string>
+				<key>duration</key>
+				<string>4:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Acquainted</string>
+				<key>duration</key>
+				<string>5:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Can&apos;t Feel My Face</string>
+				<key>duration</key>
+				<string>3:33</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Shameless</string>
+				<key>duration</key>
+				<string>4:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Earned It</string>
+				<key>duration</key>
+				<string>4:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>In the Night</string>
+				<key>duration</key>
+				<string>3:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>As You Are</string>
+				<key>duration</key>
+				<string>5:40</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Dark Times</string>
+				<key>duration</key>
+				<string>4:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Prisoner</string>
+				<key>duration</key>
+				<string>4:34</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Angel</string>
+				<key>duration</key>
+				<string>6:17</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>August 28, 2015</string>
+		<key>notes</key>
+		<string>Beauty Behind the Madness is the second studio album by Canadian singer The Weeknd. It was released on August 28, 2015, through XO and distributed by Republic Records.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>016</string>
+		<key>title</key>
+		<string>Get a Grip</string>
+		<key>artist</key>
+		<string>12</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Intro</string>
+				<key>duration</key>
+				<string>0:24</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Eat the Rich</string>
+				<key>duration</key>
+				<string>4:11</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Get a Grip</string>
+				<key>duration</key>
+				<string>3:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Fever</string>
+				<key>duration</key>
+				<string>4:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Livin&apos; on the Edge</string>
+				<key>duration</key>
+				<string>6:07</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Flesh</string>
+				<key>duration</key>
+				<string>5:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Walk On Down</string>
+				<key>duration</key>
+				<string>3:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Shut Up and Dance</string>
+				<key>duration</key>
+				<string>4:56</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Cryin</string>
+				<key>duration</key>
+				<string>5:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Gotta Love It</string>
+				<key>duration</key>
+				<string>5:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Crazy</string>
+				<key>duration</key>
+				<string>5:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Line Up</string>
+				<key>duration</key>
+				<string>4:03</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Amazin</string>
+				<key>duration</key>
+				<string>5:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Boggie Man (Instrumental)</string>
+				<key>duration</key>
+				<string>2:17</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>April 20, 1993</string>
+		<key>notes</key>
+		<string>Get a Grip is the eleventh studio album by American rock band Aerosmith, released in April 1993 by Geffen Records. Get a Grip was the band&apos;s last studio album to be released by Geffen before they returned to Columbia Records.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>017</string>
+		<key>title</key>
+		<string>The Dark Side of the Moon</string>
+		<key>artist</key>
+		<string>13</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Speak to Me</string>
+				<key>duration</key>
+				<string>1:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Breathe</string>
+				<key>duration</key>
+				<string>2:43</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>On the Run</string>
+				<key>duration</key>
+				<string>3:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Time</string>
+				<key>duration</key>
+				<string>6:53</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Great Gig in th Sky</string>
+				<key>duration</key>
+				<string>4:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Money</string>
+				<key>duration</key>
+				<string>6:23</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Us and Them</string>
+				<key>duration</key>
+				<string>7:49</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Any Colour You Like</string>
+				<key>duration</key>
+				<string>3:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Brain Damage</string>
+				<key>duration</key>
+				<string>3:49</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Eclipse</string>
+				<key>duration</key>
+				<string>2:03</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>March 1, 1973</string>
+		<key>notes</key>
+		<string>The Dark Side of the Moon is the eighth studio album by English rock band Pink Floyd, released on 1 March 1973 by Harvest Records. Primarily developed during live performances, the band premiered an early version of the record several months before recording began.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>018</string>
+		<key>title</key>
+		<string>Nevermind</string>
+		<key>artist</key>
+		<string>14</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Smells Like Teen Spirit</string>
+				<key>duration</key>
+				<string>5:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>In Bloom</string>
+				<key>duration</key>
+				<string>4:!4</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Come as You Are</string>
+				<key>duration</key>
+				<string>3:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Breed</string>
+				<key>duration</key>
+				<string>3:03</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Lithium</string>
+				<key>duration</key>
+				<string>4:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Polly</string>
+				<key>duration</key>
+				<string>2:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Territorial Pissings</string>
+				<key>duration</key>
+				<string>2:22</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Drain You</string>
+				<key>duration</key>
+				<string>3:43</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Lounge Act</string>
+				<key>duration</key>
+				<string>2:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stay Away</string>
+				<key>duration</key>
+				<string>3:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>On a Plain</string>
+				<key>duration</key>
+				<string>3:16</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Something in the Way</string>
+				<key>duration</key>
+				<string>3:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Endless, Nameless</string>
+				<key>duration</key>
+				<string>6:44</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>September 24, 1991</string>
+		<key>notes</key>
+		<string>Nevermind is the second studio album by American rock band Nirvana, released on September 24, 1991, by DGC Records. A number of labels courted the band, but Nirvana ultimately signed with Geffen Records imprint DGC Records based upon repeated recommendations from Kim Gordon of Sonic Youth and their management company.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>019</string>
+		<key>title</key>
+		<string>Are You Experienced</string>
+		<key>artist</key>
+		<string>15</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Foxy Lady</string>
+				<key>duration</key>
+				<string>3:10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Manic Depression</string>
+				<key>duration</key>
+				<string>3:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Red House</string>
+				<key>duration</key>
+				<string>3:45</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Can You See Me</string>
+				<key>duration</key>
+				<string>2:35</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love of Confusion</string>
+				<key>duration</key>
+				<string>3:05</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Don&apos;t Live Today</string>
+				<key>duration</key>
+				<string>3:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>May This Be Love</string>
+				<key>duration</key>
+				<string>2:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Fire</string>
+				<key>duration</key>
+				<string>2:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>3rd Stone from the Sun</string>
+				<key>duration</key>
+				<string>6:#0</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Remember</string>
+				<key>duration</key>
+				<string>2:43</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Are You Experienced</string>
+				<key>duration</key>
+				<string>4:02</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>May 12, 1967</string>
+		<key>notes</key>
+		<string>Are You Experienced is the debut studio album by the Jimi Hendrix Experience. Released in 1967, the LP was an immediate critical and commercial success, and it is widely regarded as one of the greatest debuts in the history of rock music.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>020</string>
+		<key>title</key>
+		<string>Sticky Fingers</string>
+		<key>artist</key>
+		<string>16</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Brown Sugar</string>
+				<key>duration</key>
+				<string>3:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sway</string>
+				<key>duration</key>
+				<string>3:50</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Wild Horses</string>
+				<key>duration</key>
+				<string>5:42</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Can&apos;t You Hear Me Knocking</string>
+				<key>duration</key>
+				<string>7:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>You Gotta Move</string>
+				<key>duration</key>
+				<string>2:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Bitch</string>
+				<key>duration</key>
+				<string>3:38</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I got the Blues</string>
+				<key>duration</key>
+				<string>3:54</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sister Morphine</string>
+				<key>duration</key>
+				<string>5:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Dead Flowers</string>
+				<key>duration</key>
+				<string>4:03</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Moonlight Mile</string>
+				<key>duration</key>
+				<string>5:56</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>April 23, 1971</string>
+		<key>notes</key>
+		<string>Sticky Fingers is the ninth British and eleventh American studio album by the English rock band the Rolling Stones, released in 23 April 1971.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>021</string>
+		<key>title</key>
+		<string>Let It Bleed</string>
+		<key>artist</key>
+		<string>16</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Gimme Shelter</string>
+				<key>duration</key>
+				<string>4:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love in Vain</string>
+				<key>duration</key>
+				<string>4:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Country Honk</string>
+				<key>duration</key>
+				<string>3:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Live with Me</string>
+				<key>duration</key>
+				<string>3:33</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Let It Bleed</string>
+				<key>duration</key>
+				<string>5:26</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Midnight Rambler</string>
+				<key>duration</key>
+				<string>6:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>You Got the Silver</string>
+				<key>duration</key>
+				<string>2:51</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Monkey Man</string>
+				<key>duration</key>
+				<string>4:12</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>You Can&apos;t Always Get What You Want</string>
+				<key>duration</key>
+				<string>7:28</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>December 5, 1969</string>
+		<key>notes</key>
+		<string>Let It Bleed is the eighth British and tenth American studio album by English rock band the Rolling Stones, released in December 1969 by Decca Records in the United Kingdom and London Records in the United States. Released shortly after the band&apos;s 1969 American Tour, it is the follow-up to 1968&apos;s Beggars Banquet.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>022</string>
+		<key>title</key>
+		<string>Definitely Maybe</string>
+		<key>artist</key>
+		<string>17</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Rock n&apos; Roll Star</string>
+				<key>duration</key>
+				<string>5:23</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Shakermaker</string>
+				<key>duration</key>
+				<string>5:08</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Live Forever</string>
+				<key>duration</key>
+				<string>4:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Up in the Sky</string>
+				<key>duration</key>
+				<string>4:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Columbia</string>
+				<key>duration</key>
+				<string>6:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sad Song</string>
+				<key>duration</key>
+				<string>4:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Supersonic</string>
+				<key>duration</key>
+				<string>4:43</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Bring It on Down</string>
+				<key>duration</key>
+				<string>4:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Cigarettes &amp; Alcohol</string>
+				<key>duration</key>
+				<string>4:49</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Digsy&apos;s Dinner</string>
+				<key>duration</key>
+				<string>2:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Slide Away</string>
+				<key>duration</key>
+				<string>6:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Married with Children</string>
+				<key>duration</key>
+				<string>3:15</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>August 29, 1994</string>
+		<key>notes</key>
+		<string>DescriptionDefinitely Maybe is the debut studio album by English rock band Oasis, released by Creation Records on 29 August 1994. The album was an immediate commercial and critical success in the United Kingdom, having followed on the heels of the singles &quot;Supersonic&quot;, &quot;Shakermaker&quot;, and &quot;Live Forever&quot;.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>023</string>
+		<key>title</key>
+		<string>Be Here Now</string>
+		<key>artist</key>
+		<string>17</string>
+		<key>genre</key>
+		<integer>2</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>D&apos;You Know What I Mean?</string>
+				<key>duration</key>
+				<string>7:42</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>My Big Mouth</string>
+				<key>duration</key>
+				<string>5:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Magic Pie</string>
+				<key>duration</key>
+				<string>7:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Stand by Me</string>
+				<key>duration</key>
+				<string>5:55</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Hope, I Think, I Know</string>
+				<key>duration</key>
+				<string>4:23</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Girl in the Dirty Shirt</string>
+				<key>duration</key>
+				<string>5:49</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Fade In-Out</string>
+				<key>duration</key>
+				<string>6:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Don&apos;t Go Away</string>
+				<key>duration</key>
+				<string>4:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Be Here Now</string>
+				<key>duration</key>
+				<string>5:13</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>All Around the World</string>
+				<key>duration</key>
+				<string>9:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>It&apos;s Getting Better (Man!!)</string>
+				<key>duration</key>
+				<string>7:00</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>All Around the World (Reprise)</string>
+				<key>duration</key>
+				<string>2:10</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>August 21, 1997</string>
+		<key>notes</key>
+		<string>Be Here Now is the third studio album by English rock band Oasis, released on 21 August 1997 by Creation Records. Following the worldwide success of their first two albums, Definitely Maybe and Morning Glory?, the album was highly anticipated.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>024</string>
+		<key>title</key>
+		<string>To Pimp a Butterfly</string>
+		<key>artist</key>
+		<string>18</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Wesley&apos;s Theory</string>
+				<key>duration</key>
+				<string>4:47</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>For Free?</string>
+				<key>duration</key>
+				<string>2:10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>King Kunta</string>
+				<key>duration</key>
+				<string>3:54</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Institutionalized</string>
+				<key>duration</key>
+				<string>4:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>These Walls</string>
+				<key>duration</key>
+				<string>5:00</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>u</string>
+				<key>duration</key>
+				<string>4:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Alright</string>
+				<key>duration</key>
+				<string>3:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>For Sale?</string>
+				<key>duration</key>
+				<string>4:51</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Momma</string>
+				<key>duration</key>
+				<string>4:43</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hood Politics</string>
+				<key>duration</key>
+				<string>4:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Home Much a Dollar Cost</string>
+				<key>duration</key>
+				<string>4:21</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Complexion</string>
+				<key>duration</key>
+				<string>4:23</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>The Blacker the Berry</string>
+				<key>duration</key>
+				<string>5:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>You Ain&apos;t Gotta Lie</string>
+				<key>duration</key>
+				<string>4:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>i</string>
+				<key>duration</key>
+				<string>5:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Mortal Man</string>
+				<key>duration</key>
+				<string>12:07</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>March 15, 2015</string>
+		<key>notes</key>
+		<string>To Pimp a Butterfly is the third studio album by American rapper Kendrick Lamar. It was released on March 15, 2015, by Top Dawg Entertainment, distributed by Aftermath Entertainment and Interscope Records.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>025</string>
+		<key>title</key>
+		<string>DAMN.</string>
+		<key>artist</key>
+		<string>18</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Blood</string>
+				<key>duration</key>
+				<string>1:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>DNA</string>
+				<key>duration</key>
+				<string>3:05</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yah</string>
+				<key>duration</key>
+				<string>2:40</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Element</string>
+				<key>duration</key>
+				<string>3:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Feel</string>
+				<key>duration</key>
+				<string>3:34</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Loyalty</string>
+				<key>duration</key>
+				<string>3:47</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pride</string>
+				<key>duration</key>
+				<string>4:35</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Humble</string>
+				<key>duration</key>
+				<string>2:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Lust</string>
+				<key>duration</key>
+				<string>5:07</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love</string>
+				<key>duration</key>
+				<string>3:33</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>XXX</string>
+				<key>duration</key>
+				<string>4:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Fear</string>
+				<key>duration</key>
+				<string>7:40</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>God</string>
+				<key>duration</key>
+				<string>4:08</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Duckworth</string>
+				<key>duration</key>
+				<string>4:08</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>April 14, 2017</string>
+		<key>notes</key>
+		<string>Damn is the fourth studio album by American rapper Kendrick Lamar. It was released on April 14, 2017, through Top Dawg Entertainment, distributed by Aftermath Entertainment and Interscope Records.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>026</string>
+		<key>title</key>
+		<string>Circles</string>
+		<key>artist</key>
+		<string>19</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Circles</string>
+				<key>duration</key>
+				<string>2:50</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Complicated</string>
+				<key>duration</key>
+				<string>3:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Blue World</string>
+				<key>duration</key>
+				<string>3:29</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Good News</string>
+				<key>duration</key>
+				<string>5:42</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Can See</string>
+				<key>duration</key>
+				<string>3:40</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Everybody</string>
+				<key>duration</key>
+				<string>4:16</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Woods</string>
+				<key>duration</key>
+				<string>4:46</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hand Me Downs</string>
+				<key>duration</key>
+				<string>4:58</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>That&apos;s on Me</string>
+				<key>duration</key>
+				<string>3:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hands</string>
+				<key>duration</key>
+				<string>3:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Surf</string>
+				<key>duration</key>
+				<string>5:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Once a Day</string>
+				<key>duration</key>
+				<string>2:40</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>January 17, 2020</string>
+		<key>notes</key>
+		<string>Circles is the sixth studio album by American rapper Mac Miller. It was released posthumously on January 17, 2020, by Warner Records, and was being worked on by Miller before his death in September 2018. Production was completed by Jon Brion.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>027</string>
+		<key>title</key>
+		<string>2014 Forest Hills Drive</string>
+		<key>artist</key>
+		<string>20</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Intro</string>
+				<key>duration</key>
+				<string>2:09</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Januray 28th</string>
+				<key>duration</key>
+				<string>4:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Wet Dreamz</string>
+				<key>duration</key>
+				<string>3:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>03&apos; Adolesence</string>
+				<key>duration</key>
+				<string>4:24</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>A Tale of 2 Citiez</string>
+				<key>duration</key>
+				<string>4:29</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Fire Squad</string>
+				<key>duration</key>
+				<string>4:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>St. Tropez</string>
+				<key>duration</key>
+				<string>4:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>G.O.M.D</string>
+				<key>duration</key>
+				<string>5:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>No Role Modelz</string>
+				<key>duration</key>
+				<string>4:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hello</string>
+				<key>duration</key>
+				<string>3:39</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Apparently</string>
+				<key>duration</key>
+				<string>4:53</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Love Yourz</string>
+				<key>duration</key>
+				<string>3:31</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Note to Self</string>
+				<key>duration</key>
+				<string>14:35</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>December 9, 2014</string>
+		<key>notes</key>
+		<string>2014 Forest Hills Drive is the third studio album by American rapper J. Cole. It was released on December 9, 2014, by ByStorm Entertainment, Columbia Records, Dreamville Records and Roc Nation.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>028</string>
+		<key>title</key>
+		<string>Born Sinner</string>
+		<key>artist</key>
+		<string>20</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Villuminati</string>
+				<key>duration</key>
+				<string>5:07</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Kerney Sermon</string>
+				<key>duration</key>
+				<string>0:46</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Land of the Snakes</string>
+				<key>duration</key>
+				<string>4:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Power Trip</string>
+				<key>duration</key>
+				<string>4:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Mo Money (Interlude)</string>
+				<key>duration</key>
+				<string>1:17</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Trouble</string>
+				<key>duration</key>
+				<string>4:48</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Runaway</string>
+				<key>duration</key>
+				<string>5:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>She Knows</string>
+				<key>duration</key>
+				<string>4:56</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Rich Niggaz</string>
+				<key>duration</key>
+				<string>4:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Where&apos;s Jermaine?</string>
+				<key>duration</key>
+				<string>0:36</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Forbidden Fruit</string>
+				<key>duration</key>
+				<string>4:28</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Chaining Day</string>
+				<key>duration</key>
+				<string>4:44</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Ain&apos;t That Some Shit</string>
+				<key>duration</key>
+				<string>2:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Crooked Smile</string>
+				<key>duration</key>
+				<string>4:38</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Let Nas Down</string>
+				<key>duration</key>
+				<string>4:37</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Born Sinner</string>
+				<key>duration</key>
+				<string>3:29</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>June 18, 2013</string>
+		<key>notes</key>
+		<string>Born Sinner is the second studio album by American rapper J. Cole. It was released on June 18, 2013, by ByStorm Entertainment, Columbia Records, Dreamville Records and Roc Nation. The album serves as the follow-up to his debut album, Cole World: The Sideline Story.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>029</string>
+		<key>title</key>
+		<string>Igor</string>
+		<key>artist</key>
+		<string>21</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Igor&apos;s Theme</string>
+				<key>duration</key>
+				<string>3:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Earfquake</string>
+				<key>duration</key>
+				<string>3:10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Think</string>
+				<key>duration</key>
+				<string>3:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Exactly What You Run from You End Up Chasing</string>
+				<key>duration</key>
+				<string>0:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Running Out of Time</string>
+				<key>duration</key>
+				<string>2:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>New Magic Wand</string>
+				<key>duration</key>
+				<string>3:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>A Boy is a Gun</string>
+				<key>duration</key>
+				<string>3:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Puppet</string>
+				<key>duration</key>
+				<string>2:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>What&apos;s Good</string>
+				<key>duration</key>
+				<string>3:25</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Gone, Gone / Thank You</string>
+				<key>duration</key>
+				<string>6:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Don&apos;t Love You Anymore</string>
+				<key>duration</key>
+				<string>2:41</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Are We strill Friends?</string>
+				<key>duration</key>
+				<string>4:25</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>May 17, 2019</string>
+		<key>notes</key>
+		<string>Igor is the fifth studio album by American rapper Tyler, the Creator, released on May 17, 2019, through A Boy is a Gun and distributed by Columbia Records. Produced entirely by Tyler, the album follows the 2017 release of Flower Boy.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>030</string>
+		<key>title</key>
+		<string>Igor</string>
+		<key>artist</key>
+		<string>22</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>15</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Igor&apos;s Theme</string>
+				<key>duration</key>
+				<string>3:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Earfquake</string>
+				<key>duration</key>
+				<string>3:10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Think</string>
+				<key>duration</key>
+				<string>3:32</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Exactly What You Run from You End Up Chasing</string>
+				<key>duration</key>
+				<string>0:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Running Out of Time</string>
+				<key>duration</key>
+				<string>2:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>New Magic Wand</string>
+				<key>duration</key>
+				<string>3:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>A Boy is a Gun</string>
+				<key>duration</key>
+				<string>3:30</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Puppet</string>
+				<key>duration</key>
+				<string>2:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>What&apos;s Good</string>
+				<key>duration</key>
+				<string>3:25</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Gone, Gone / Thank You</string>
+				<key>duration</key>
+				<string>6:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Don&apos;t Love You Anymore</string>
+				<key>duration</key>
+				<string>2:41</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Are We strill Friends?</string>
+				<key>duration</key>
+				<string>4:25</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>May 17, 2019</string>
+		<key>notes</key>
+		<string>Igor is the fifth studio album by American rapper Tyler, the Creator, released on May 17, 2019, through A Boy is a Gun and distributed by Columbia Records. Produced entirely by Tyler, the album follows the 2017 release of Flower Boy.</string>
+	</dict>
+</array>
+</plist>

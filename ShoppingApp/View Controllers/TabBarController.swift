@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TabsController: UIViewController {
+class TabBarController: UIViewController {
 
     var viewPager: WormTabStrip!
     var titleLabel: UILabel!
@@ -128,7 +128,7 @@ class TabsController: UIViewController {
     }
 }
 
-extension TabsController: WormTabStripDelegate {
+extension TabBarController: WormTabStripDelegate {
     
     func tabSelected(index: Int) {
         if index == selectedTab {
