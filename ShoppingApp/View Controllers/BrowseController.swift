@@ -13,7 +13,6 @@ class BrowseController: TabController {
     var searchBar: UISearchBar!
     var searchTableView: SearchTableView!
     var browseCollectionView: BrowseCollectionView!
-//    var albumController: AlbumController!
     
     var searchMode = false {
         didSet {
@@ -25,18 +24,10 @@ class BrowseController: TabController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        setUpElements()
         setSearchBar()
         setSearchTableView()
         setBrowseCollectionView()
     }
-    
-//    func setUpElements() {
-//        albumController = setAlbumController()
-//        albumController.delegate = self
-//
-//        view.backgroundColor = .myBackgroundColor
-//    }
     
     func setSearchBar() {
         searchBar = UISearchBar()
@@ -85,30 +76,6 @@ class BrowseController: TabController {
         searchTableView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 }
-
-//extension BrowseController: AlbumDelegate {
-//    func didSelectAlbum(_ album: Album?) {
-//        albumController.willAppear(album ?? testAlbum)
-//
-//        searchBar.isHidden = true
-//        searchTableView.view.isHidden = true
-//        browseCollectionView.view.isHidden = true
-//        albumController.view.isHidden = false
-//    }
-//
-//    func didSelectArtist(_ artist: Artist?) {
-//
-//    }
-//
-//    @objc func backButtonTapped() {
-//        guard albumController.view.isHidden == false else { return }
-//        searchBar.isHidden = false
-//        browseCollectionView.view.isHidden = false
-//        albumController.view.isHidden = true
-//
-//        albumController.didDisappear()
-//    }
-//}
 
 extension BrowseController: UISearchBarDelegate {
     

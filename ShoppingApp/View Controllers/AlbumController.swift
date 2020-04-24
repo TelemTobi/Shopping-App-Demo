@@ -22,6 +22,9 @@ class AlbumController: UIViewController {
     
     var topViewHeightAnchor: NSLayoutConstraint!
     
+    var upSwipe: UISwipeGestureRecognizer!
+    var downSwipe: UISwipeGestureRecognizer!
+    
     var album: Album? {
         didSet {
             topView.album = album
@@ -64,16 +67,16 @@ class AlbumController: UIViewController {
     }
     
     private func setGestures() {
-        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeUp(_:)))
+        upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeUp(_:)))
         upSwipe.direction = .up
         view.addGestureRecognizer(upSwipe)
         
-        let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeDown(_:)))
+        downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeDown(_:)))
         downSwipe.direction = .down
         view.addGestureRecognizer(downSwipe)
     }
     
-    @objc private func handleSwipeUp(_ swipe: UIGestureRecognizer) {
+    @objc private func handleSwipeUp(_ swipe: UISwipeGestureRecognizer) {
         if !isCollapsed {
             isCollapsed = true
         }
