@@ -67,9 +67,10 @@ extension TabController: UIGestureRecognizerDelegate {
     @objc func handlePanGesture(_ recognizer: UIPanGestureRecognizer) {
         switch recognizer.state {
         case .changed:
-            if let albumView = recognizer.view, albumView.center.x >= view.frame.width / 2 {
-              albumView.center.x = albumView.center.x + recognizer.translation(in: view).x
-              recognizer.setTranslation(CGPoint.zero, in: view)
+            if let albumView = recognizer.view {
+                let newPosition = albumView.center.x + recognizer.translation(in: view).x
+                albumView.center.x = newPosition < view.frame.width / 2 ? view.frame.width / 2 : newPosition
+                recognizer.setTranslation(CGPoint.zero, in: view)
             }
         case .ended:
             guard let albumView = recognizer.view else { return }
