@@ -44,8 +44,8 @@
 		7D587721243E6BB900480884 /* LayoutsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587720243E6BB900480884 /* LayoutsManager.swift */; };
 		7D587724243E730F00480884 /* BrowseSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D587723243E730F00480884 /* BrowseSectionHeader.swift */; };
 		7D768A0E24537C5000AD37A7 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D768A0D24537C5000AD37A7 /* TabController.swift */; };
-		7D768A1024537E5200AD37A7 /* DemoAlbums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D768A0F24537E5200AD37A7 /* DemoAlbums.plist */; };
 		7D768A1224537E7800AD37A7 /* DemoArtists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D768A1124537E7700AD37A7 /* DemoArtists.plist */; };
+		7D768A142454DD2400AD37A7 /* DemoAlbums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D768A132454DD2300AD37A7 /* DemoAlbums.plist */; };
 		7D8EA6602442746400146B46 /* BrowseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA65F2442746400146B46 /* BrowseController.swift */; };
 		7D8EA662244275AD00146B46 /* ShopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA661244275AD00146B46 /* ShopCollectionView.swift */; };
 		7D8EA6642442FE4400146B46 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6632442FE4400146B46 /* UIViewController.swift */; };
@@ -106,8 +106,8 @@
 		7D587720243E6BB900480884 /* LayoutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutsManager.swift; sourceTree = "<group>"; };
 		7D587723243E730F00480884 /* BrowseSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseSectionHeader.swift; sourceTree = "<group>"; };
 		7D768A0D24537C5000AD37A7 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
-		7D768A0F24537E5200AD37A7 /* DemoAlbums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoAlbums.plist; sourceTree = "<group>"; };
 		7D768A1124537E7700AD37A7 /* DemoArtists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoArtists.plist; sourceTree = "<group>"; };
+		7D768A132454DD2300AD37A7 /* DemoAlbums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoAlbums.plist; sourceTree = "<group>"; };
 		7D8EA65F2442746400146B46 /* BrowseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseController.swift; sourceTree = "<group>"; };
 		7D8EA661244275AD00146B46 /* ShopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionView.swift; sourceTree = "<group>"; };
 		7D8EA6632442FE4400146B46 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -269,7 +269,7 @@
 				7D587695243A447E00480884 /* Assets.xcassets */,
 				7D277739244DE86C00575A66 /* AlbumCovers.xcassets */,
 				7D277760244EEF1A00575A66 /* ArtistPictures.xcassets */,
-				7D768A0F24537E5200AD37A7 /* DemoAlbums.plist */,
+				7D768A132454DD2300AD37A7 /* DemoAlbums.plist */,
 				7D768A1124537E7700AD37A7 /* DemoArtists.plist */,
 			);
 			path = Assests;
@@ -439,7 +439,7 @@
 				7D5876CE243A8D0000480884 /* Jura-Medium.ttf in Resources */,
 				7D8EA67D24445EFC00146B46 /* cart.json in Resources */,
 				7D5876CD243A8D0000480884 /* Jura-Bold.ttf in Resources */,
-				7D768A1024537E5200AD37A7 /* DemoAlbums.plist in Resources */,
+				7D768A142454DD2400AD37A7 /* DemoAlbums.plist in Resources */,
 				7D27773A244DE86C00575A66 /* AlbumCovers.xcassets in Resources */,
 				7D5876CF243A8D0000480884 /* Jura-SemiBold.ttf in Resources */,
 				7D5876D3243B278D00480884 /* MandatoryPlaything.ttf in Resources */,

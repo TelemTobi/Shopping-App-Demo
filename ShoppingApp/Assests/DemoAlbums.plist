@@ -2977,7 +2977,104 @@
 		<key>id</key>
 		<string>030</string>
 		<key>title</key>
-		<string>Igor</string>
+		<string>My Beautiful Dark Twisted Fantasy</string>
+		<key>artist</key>
+		<string>22</string>
+		<key>genre</key>
+		<integer>3</integer>
+		<key>price</key>
+		<integer>20</integer>
+		<key>tracks</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Dark Fantasy</string>
+				<key>duration</key>
+				<string>4:40</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Gorgeous</string>
+				<key>duration</key>
+				<string>5:57</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Power</string>
+				<key>duration</key>
+				<string>4:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>All of the Lights (Interlude)</string>
+				<key>duration</key>
+				<string>1:02</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>All of the Lights</string>
+				<key>duration</key>
+				<string>4:59</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Monster</string>
+				<key>duration</key>
+				<string>6:18</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>So Appalled</string>
+				<key>duration</key>
+				<string>6:38</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Devil in a New Dress</string>
+				<key>duration</key>
+				<string>5:52</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Runaway</string>
+				<key>duration</key>
+				<string>9:08</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Hell of a Life</string>
+				<key>duration</key>
+				<string>5:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Blame Game</string>
+				<key>duration</key>
+				<string>7:49</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Lost in the World</string>
+				<key>duration</key>
+				<string>4:16</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Who Will Survive in America</string>
+				<key>duration</key>
+				<string>1:38</string>
+			</dict>
+		</array>
+		<key>releaseDate</key>
+		<string>November 22, 2010</string>
+		<key>notes</key>
+		<string>My Beautiful Dark Twisted Fantasy is the fifth studio album by American rapper and producer Kanye West. It was released on November 22, 2010, by Def Jam Recordings and Roc-A-Fella Records.</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>031</string>
+		<key>title</key>
+		<string>The Life of Pablo</string>
 		<key>artist</key>
 		<string>22</string>
 		<key>genre</key>
@@ -2988,81 +3085,129 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>Igor&apos;s Theme</string>
+				<string>Ultralight Beam</string>
+				<key>duration</key>
+				<string>5:20</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Father Stretch My Hands, Pt. 1</string>
+				<key>duration</key>
+				<string>2:15</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pt. 2</string>
+				<key>duration</key>
+				<string>2:10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Famous</string>
+				<key>duration</key>
+				<string>3:16</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Feedback</string>
+				<key>duration</key>
+				<string>2:27</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Low Lights</string>
+				<key>duration</key>
+				<string>2:!1</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Highlights</string>
+				<key>duration</key>
+				<string>3:19</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Freestyle 4</string>
+				<key>duration</key>
+				<string>2:03</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>I Love Kanye</string>
+				<key>duration</key>
+				<string>0:44</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Waves</string>
+				<key>duration</key>
+				<string>3:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>FML</string>
+				<key>duration</key>
+				<string>3:56</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Real Friends</string>
+				<key>duration</key>
+				<string>4:11</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Wolves</string>
+				<key>duration</key>
+				<string>5:01</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Frank&apos;s Track</string>
+				<key>duration</key>
+				<string>0:38</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Siiiiiiiiilver Surffffeeeeer Intermission</string>
+				<key>duration</key>
+				<string>0:56</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>30 Hours</string>
+				<key>duration</key>
+				<string>5:23</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>No More Parties in LA</string>
+				<key>duration</key>
+				<string>6:14</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Facts</string>
 				<key>duration</key>
 				<string>3:20</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Earfquake</string>
+				<string>Fade</string>
 				<key>duration</key>
-				<string>3:10</string>
+				<string>3:13</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>I Think</string>
+				<string>Saint Pablo</string>
 				<key>duration</key>
-				<string>3:32</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Exactly What You Run from You End Up Chasing</string>
-				<key>duration</key>
-				<string>0:14</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Running Out of Time</string>
-				<key>duration</key>
-				<string>2:57</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>New Magic Wand</string>
-				<key>duration</key>
-				<string>3:15</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>A Boy is a Gun</string>
-				<key>duration</key>
-				<string>3:30</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Puppet</string>
-				<key>duration</key>
-				<string>2:59</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>What&apos;s Good</string>
-				<key>duration</key>
-				<string>3:25</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Gone, Gone / Thank You</string>
-				<key>duration</key>
-				<string>6:15</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>I Don&apos;t Love You Anymore</string>
-				<key>duration</key>
-				<string>2:41</string>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Are We strill Friends?</string>
-				<key>duration</key>
-				<string>4:25</string>
+				<string>6:!2</string>
 			</dict>
 		</array>
 		<key>releaseDate</key>
-		<string>May 17, 2019</string>
+		<string>February 14, 2016</string>
 		<key>notes</key>
-		<string>Igor is the fifth studio album by American rapper Tyler, the Creator, released on May 17, 2019, through A Boy is a Gun and distributed by Columbia Records. Produced entirely by Tyler, the album follows the 2017 release of Flower Boy.</string>
+		<string>The Life of Pablo is the seventh studio album by American rapper and producer Kanye West. It was released on February 14, 2016, through GOOD Music and distributed by Def Jam Recordings. Recording sessions took place from 2013 to 2016, in Italy, Mexico, Canada, and the United States.</string>
 	</dict>
 </array>
 </plist>

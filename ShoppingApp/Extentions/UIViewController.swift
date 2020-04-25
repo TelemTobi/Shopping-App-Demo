@@ -18,7 +18,7 @@ extension UIViewController {
         albumController.didMove(toParent: self)
         view.addSubview(albumController.view)
         
-        view.constraintToBounds(albumController.view)
+        albumController.view.frame = view.frame
         return albumController
     }
     

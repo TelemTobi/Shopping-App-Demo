@@ -28,6 +28,7 @@ class TabController: UIViewController {
     func configureAlbumController() {
         albumController = setAlbumController()
         albumController.view.center.x = view.frame.width * 1.5
+        print(albumController.view.center.x)
         albumController.delegate = self
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
@@ -45,7 +46,7 @@ extension TabController: AlbumDelegate {
     func didSelectAlbum(_ album: Album?) {
         albumController.willAppear(album ?? testAlbum)
         albumController.view.isHidden = false
-        animateAlbumView(false)
+        animateAlbumView(shouldHide: false)
     }
     
     func didSelectArtist(_ artist: Artist?) {
@@ -53,15 +54,14 @@ extension TabController: AlbumDelegate {
     }
     
     func backButtonTapped() {
-        animateAlbumView(true)
-        albumController.didDisappear()
+        animateAlbumView(shouldHide: true)
     }
 }
 
 extension TabController: UIGestureRecognizerDelegate {
     
     @objc func handleSwipeGesture(_ recognizer: UISwipeGestureRecognizer) {
-        animateAlbumView(true)
+        animateAlbumView(shouldHide: true)
     }
     
     @objc func handlePanGesture(_ recognizer: UIPanGestureRecognizer) {
@@ -75,17 +75,20 @@ extension TabController: UIGestureRecognizerDelegate {
         case .ended:
             guard let albumView = recognizer.view else { return }
             let hasMovedGreaterThanHalfway = albumView.center.x > view.bounds.size.width
-            animateAlbumView(hasMovedGreaterThanHalfway)
+            animateAlbumView(shouldHide: hasMovedGreaterThanHalfway)
         default:
             break
         }
     }
     
-    func animateAlbumView(_ shouldHide: Bool) {
+    func animateAlbumView(shouldHide: Bool) {
         UIView.animate(withDuration: 0.2, animations: {
             self.albumController.view.center.x = shouldHide ? self.view.frame.width * 1.5 : self.view.frame.width / 2
         }) { (didFinish) in
-            self.albumController.view.isHidden = shouldHide ? true : false
+            if shouldHide {
+                self.albumController.view.isHidden = true
+                self.albumController.didDisappear()
+            }
         }
     }
 }
