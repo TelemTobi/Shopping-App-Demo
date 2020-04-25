@@ -27,12 +27,17 @@ class TabController: UIViewController {
     
     func configureAlbumController() {
         albumController = setAlbumController()
+        albumController.view.center.x = view.frame.width * 1.5
         albumController.delegate = self
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         panGesture.require(toFail: albumController.upSwipe)
         panGesture.require(toFail: albumController.downSwipe)
         albumController.view.addGestureRecognizer(panGesture)
+        
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture(_:)))
+        swipeGesture.direction = .right
+        albumController.view.addGestureRecognizer(swipeGesture)
     }
 }
 
@@ -40,6 +45,7 @@ extension TabController: AlbumDelegate {
     func didSelectAlbum(_ album: Album?) {
         albumController.willAppear(album ?? testAlbum)
         albumController.view.isHidden = false
+        animateAlbumView(false)
     }
     
     func didSelectArtist(_ artist: Artist?) {
@@ -47,25 +53,38 @@ extension TabController: AlbumDelegate {
     }
     
     func backButtonTapped() {
-        guard albumController.view.isHidden == false else { return }
-        albumController.view.isHidden = true
+        animateAlbumView(true)
         albumController.didDisappear()
     }
 }
 
 extension TabController: UIGestureRecognizerDelegate {
+    
+    @objc func handleSwipeGesture(_ recognizer: UISwipeGestureRecognizer) {
+        animateAlbumView(true)
+    }
+    
     @objc func handlePanGesture(_ recognizer: UIPanGestureRecognizer) {
-        guard (recognizer.velocity(in: view).x > 0), !albumController.view.isHidden else { return }
-        
         switch recognizer.state {
-        case .began:
-            print("began")
         case .changed:
-            print("changed")
+            if let albumView = recognizer.view, albumView.center.x >= view.frame.width / 2 {
+              albumView.center.x = albumView.center.x + recognizer.translation(in: view).x
+              recognizer.setTranslation(CGPoint.zero, in: view)
+            }
         case .ended:
-            print("ended")
+            guard let albumView = recognizer.view else { return }
+            let hasMovedGreaterThanHalfway = albumView.center.x > view.bounds.size.width
+            animateAlbumView(hasMovedGreaterThanHalfway)
         default:
             break
+        }
+    }
+    
+    func animateAlbumView(_ shouldHide: Bool) {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.albumController.view.center.x = shouldHide ? self.view.frame.width * 1.5 : self.view.frame.width / 2
+        }) { (didFinish) in
+            self.albumController.view.isHidden = shouldHide ? true : false
         }
     }
 }
