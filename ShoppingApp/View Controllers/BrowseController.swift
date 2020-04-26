@@ -31,6 +31,7 @@ class BrowseController: TabController {
     
     func setSearchBar() {
         searchBar = UISearchBar()
+        searchBar = UISearchBar()
         searchBar.tintColor = .primaryColor
         searchBar.barTintColor = .myBackgroundColor
         searchBar.placeholder = "Look for an Album or an Artist"
@@ -105,6 +106,7 @@ extension BrowseController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
         searchBar.text = ""
         searchMode = false
         view.endEditing(true)

@@ -94,6 +94,7 @@ class LayoutsManager {
             let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
             let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: 3)
             sectionGroup = NSCollectionLayoutSection(group: group)
+            
 
             sectionGroup.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
             sectionGroup.orthogonalScrollingBehavior = .groupPagingCentered

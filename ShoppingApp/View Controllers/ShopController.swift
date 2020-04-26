@@ -58,6 +58,7 @@ class ShopController: TabController {
 extension ShopController: GenresDelegate {
     func didSelectGenre(_ genre: Int) {
         
+        shopCollectionView.reset()
         shopCollectionView.selectedGenre = genre
     }
 }

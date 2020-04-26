@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftEntryKit
 
 class AlbumController: UIViewController {
     
@@ -186,7 +187,19 @@ class AlbumController: UIViewController {
     
     @objc private func cartButtonTapped() {
         guard let id = album?.id else { return }
+        showAddedToCartAlert()
         CartManager.shared.addItemToCart(id)
+    }
+    
+    func showAddedToCartAlert() {
+        let title = EKProperty.LabelContent(text: album!.title, style: .init(font: .Jura(ofSize: 18, weight: "Medium"), color: .primaryColor))
+        let description = EKProperty.LabelContent(text: "has been added to the cart", style: .init(font: .Jura(ofSize: 14, weight: "Bold"), color: .primaryColor))
+        let image = EKProperty.ImageContent(image: album!.image, size: CGSize(width: 50, height: 50))
+        let simpleMessage = EKSimpleMessage(image: image, title: title, description: description)
+        let notificationMessage = EKNotificationMessage(simpleMessage: simpleMessage)
+
+        let contentView = EKNotificationMessageView(with: notificationMessage)
+        SwiftEntryKit.display(entry: contentView, using: AlertManager.shared.bottomToastAttributes)
     }
     
     func willAppear(_ album: Album) {

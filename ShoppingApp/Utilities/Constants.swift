@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftEntryKit
 
 struct TabItems {
     static let titles = ["Genres", "Browse", "Cart"]

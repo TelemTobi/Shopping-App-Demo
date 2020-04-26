@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftEntryKit
 
 class CartController: TabController {
     
@@ -28,6 +29,7 @@ class CartController: TabController {
     
     func setTitleLabel() {
         titleLabel = UILabel()
+        titleLabel.text = "Your Shopping Cart"
         titleLabel.numberOfLines = 2
         titleLabel.font = .Jura(ofSize: 26, weight: "Bold")
         titleLabel.textColor = .primaryColor
@@ -81,6 +83,7 @@ class CartController: TabController {
     func setCartTable() {
         cartTableView = CartTableView()
         cartTableView.delegate = self
+        cartTableView.cartDelegate = self
         view.addSubview(cartTableView.view)
         
         cartTableView.view.translatesAutoresizingMaskIntoConstraints = false
@@ -94,8 +97,25 @@ class CartController: TabController {
         DispatchQueue.main.async {
             self.cartTableView.tableView.reloadData()
         }
-        let totalPrice = CartManager.shared.totalPrice
-        totalLabel.text = "Total \(cartItems.count) Items - $\(totalPrice)0"
+        totalLabel.text = "Total \(cartItems.count) Items - $\(CartManager.shared.totalPrice)0"
         titleLabel.text = cartItems.count == 0 ? "Your Shopping Cart is Empty" : "Your Shopping Cart"
+    }
+}
+
+extension CartController: CartDelegate {
+    func removeItemFromCart(id: String) {
+        showRemovedFromCartAlert(id: id)
+        reloadData()
+    }
+    
+    func showRemovedFromCartAlert(id: String) {
+        let title = EKProperty.LabelContent(text: demoAlbums[id]!.title, style: .init(font: .Jura(ofSize: 18, weight: "Medium"), color: .primaryColor))
+        let description = EKProperty.LabelContent(text: "has been removed from the cart", style: .init(font: .Jura(ofSize: 14, weight: "Bold"), color: .primaryColor))
+        let image = EKProperty.ImageContent(image: demoAlbums[id]!.image, size: CGSize(width: 50, height: 50))
+        let simpleMessage = EKSimpleMessage(image: image, title: title, description: description)
+        let notificationMessage = EKNotificationMessage(simpleMessage: simpleMessage)
+
+        let contentView = EKNotificationMessageView(with: notificationMessage)
+        SwiftEntryKit.display(entry: contentView, using: AlertManager.shared.bottomToastAttributes)
     }
 }

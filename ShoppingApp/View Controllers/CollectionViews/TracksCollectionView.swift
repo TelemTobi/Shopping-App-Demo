@@ -53,6 +53,7 @@ class TracksCollectionView: UICollectionViewController {
     }
     
     func reset() {
-        
+        let indexPath = IndexPath(item: 0, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
     }
 }

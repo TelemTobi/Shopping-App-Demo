@@ -11,6 +11,7 @@ import UIKit
 class CartTableView: UITableViewController {
     
     var delegate: AlbumDelegate?
+    var cartDelegate: CartDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +47,6 @@ extension CartTableView: CartDelegate {
     func removeItemFromCart(id: String) {
         guard let index = cartItems.firstIndex(of: id) else { return }
         cartItems.remove(at: index)
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        cartDelegate?.removeItemFromCart(id: id)
     }
 }

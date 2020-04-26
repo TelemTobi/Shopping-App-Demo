@@ -42,4 +42,9 @@ class ShopCollectionView: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.didSelectAlbum(albumsByGenre[selectedGenre][indexPath.row])
     }
+    
+    func reset() {
+        let indexPath = IndexPath(item: 0, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .top, animated: false)
+    }
 }

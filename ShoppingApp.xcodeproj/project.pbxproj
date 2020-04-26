@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081507E88BF9A98159A0F0EF /* Pods_ShoppingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38550D2F7E7C92A6635EC80A /* Pods_ShoppingApp.framework */; };
 		7D213B5E2448EE0000BC6D7E /* TracksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B5D2448EE0000BC6D7E /* TracksCollectionView.swift */; };
 		7D213B602448EE4500BC6D7E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B5F2448EE4500BC6D7E /* TrackCell.swift */; };
 		7D213B622448F73300BC6D7E /* BasicSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D213B612448F73300BC6D7E /* BasicSectionHeader.swift */; };
@@ -46,6 +47,9 @@
 		7D768A0E24537C5000AD37A7 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D768A0D24537C5000AD37A7 /* TabController.swift */; };
 		7D768A1224537E7800AD37A7 /* DemoArtists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D768A1124537E7700AD37A7 /* DemoArtists.plist */; };
 		7D768A142454DD2400AD37A7 /* DemoAlbums.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D768A132454DD2300AD37A7 /* DemoAlbums.plist */; };
+		7D768A162455736A00AD37A7 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D768A152455736A00AD37A7 /* SearchController.swift */; };
+		7D768A1A2455A1A800AD37A7 /* EKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D768A192455A1A800AD37A7 /* EKColor.swift */; };
+		7D768A1E2455AED400AD37A7 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D768A1D2455AED400AD37A7 /* AlertManager.swift */; };
 		7D8EA6602442746400146B46 /* BrowseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA65F2442746400146B46 /* BrowseController.swift */; };
 		7D8EA662244275AD00146B46 /* ShopCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA661244275AD00146B46 /* ShopCollectionView.swift */; };
 		7D8EA6642442FE4400146B46 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EA6632442FE4400146B46 /* UIViewController.swift */; };
@@ -66,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38550D2F7E7C92A6635EC80A /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51581C73FA1A7CBAE28FE7C6 /* Pods-ShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7D213B5D2448EE0000BC6D7E /* TracksCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksCollectionView.swift; sourceTree = "<group>"; };
 		7D213B5F2448EE4500BC6D7E /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
@@ -108,6 +113,9 @@
 		7D768A0D24537C5000AD37A7 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		7D768A1124537E7700AD37A7 /* DemoArtists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoArtists.plist; sourceTree = "<group>"; };
 		7D768A132454DD2300AD37A7 /* DemoAlbums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DemoAlbums.plist; sourceTree = "<group>"; };
+		7D768A152455736A00AD37A7 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		7D768A192455A1A800AD37A7 /* EKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKColor.swift; sourceTree = "<group>"; };
+		7D768A1D2455AED400AD37A7 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		7D8EA65F2442746400146B46 /* BrowseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseController.swift; sourceTree = "<group>"; };
 		7D8EA661244275AD00146B46 /* ShopCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionView.swift; sourceTree = "<group>"; };
 		7D8EA6632442FE4400146B46 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081507E88BF9A98159A0F0EF /* Pods_ShoppingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +174,7 @@
 				7D58768B243A447D00480884 /* ShoppingApp */,
 				7D58768A243A447D00480884 /* Products */,
 				46B1963017F1E30C730C74F3 /* Pods */,
+				9CB04D1CD499F2B62990E628 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +208,7 @@
 				7D8EA6842445F20C00146B46 /* UILabel.swift */,
 				7D5876B8243A84B500480884 /* UIFont.swift */,
 				7D5876BF243A89C200480884 /* UIColor.swift */,
+				7D768A192455A1A800AD37A7 /* EKColor.swift */,
 				7D8EA6632442FE4400146B46 /* UIViewController.swift */,
 				7D8EA667244345B000146B46 /* UISearchBar.swift */,
 			);
@@ -234,6 +245,7 @@
 				7D5876AC243A4DAE00480884 /* ShopController.swift */,
 				7D8EA65F2442746400146B46 /* BrowseController.swift */,
 				7D213B6C244C3FB800BC6D7E /* CartController.swift */,
+				7D768A152455736A00AD37A7 /* SearchController.swift */,
 				7D8EA6752443BC8100146B46 /* AlbumController.swift */,
 				7D58771C243E009D00480884 /* CollectionViews */,
 				7D8EA6702443874900146B46 /* TableViews */,
@@ -310,6 +322,7 @@
 				7D587720243E6BB900480884 /* LayoutsManager.swift */,
 				7D27773D244E443900575A66 /* DemoDataManager.swift */,
 				7D2777632450BE5D00575A66 /* CartManager.swift */,
+				7D768A1D2455AED400AD37A7 /* AlertManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -373,6 +386,14 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		9CB04D1CD499F2B62990E628 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38550D2F7E7C92A6635EC80A /* Pods_ShoppingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -384,6 +405,7 @@
 				7D587685243A447D00480884 /* Sources */,
 				7D587686243A447D00480884 /* Frameworks */,
 				7D587687243A447D00480884 /* Resources */,
+				48D5355227E0BA7C63E11A50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,6 +472,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		48D5355227E0BA7C63E11A50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShoppingApp/Pods-ShoppingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		626419021A2946117E2323D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,13 +527,16 @@
 				7D8EA6872446FD7100146B46 /* AlbumDetailsView.swift in Sources */,
 				7D8EA6852445F20C00146B46 /* UILabel.swift in Sources */,
 				7D5876E0243CE28700480884 /* AlbumCell.swift in Sources */,
+				7D768A1A2455A1A800AD37A7 /* EKColor.swift in Sources */,
 				7D8EA6742443967900146B46 /* SearchSectionHeader.swift in Sources */,
 				7D587721243E6BB900480884 /* LayoutsManager.swift in Sources */,
+				7D768A1E2455AED400AD37A7 /* AlertManager.swift in Sources */,
 				7D5876E2243CE2C100480884 /* ArtistCell.swift in Sources */,
 				7D587691243A447D00480884 /* TabBarController.swift in Sources */,
 				7D8EA67F2444607D00146B46 /* Track.swift in Sources */,
 				7D213B69244C3DE900BC6D7E /* CartTableView.swift in Sources */,
 				7D58768D243A447D00480884 /* AppDelegate.swift in Sources */,
+				7D768A162455736A00AD37A7 /* SearchController.swift in Sources */,
 				7D213B622448F73300BC6D7E /* BasicSectionHeader.swift in Sources */,
 				7D8EA66F244384CD00146B46 /* AlbumSearchCell.swift in Sources */,
 				7D8EA6832444CEB200146B46 /* Protocols.swift in Sources */,

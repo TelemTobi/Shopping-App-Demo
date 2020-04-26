@@ -6,7 +6,8 @@
 //  Copyright © 2020 Telem Tobi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import SwiftEntryKit
 
 var cartItems: [String]!
 
@@ -35,4 +36,5 @@ class CartManager {
     func addItemToCart(_ id: String) {
         cartItems.append(id)
     }
+    
 }
