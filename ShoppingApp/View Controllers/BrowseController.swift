@@ -93,12 +93,12 @@ extension BrowseController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         var results: [[String]] = Array(repeating: [], count: 2)
         demoAlbums.forEach {
-            if $0.value.title.contains(searchText) {
+            if let _ = $0.value.title.range(of: searchText, options: .caseInsensitive) {
                 results[0].append($0.key)
             }
         }
         demoArtists.forEach {
-           if $0.value.name.contains(searchText) {
+            if let _ = $0.value.name.range(of: searchText, options: .caseInsensitive) {
                results[1].append($0.key)
            }
         }
@@ -106,7 +106,6 @@ extension BrowseController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        
         searchBar.text = ""
         searchMode = false
         view.endEditing(true)
