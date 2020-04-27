@@ -15,3 +15,9 @@ Implemented a custom designed tab bar and many compositional layouts.</br>
 </br>
 Swift, CoreData
 </p>
+
+<p align="center">
+  <img src="/images/gif1.gif" alt="vinyl shop gif">
+  <img src="/images/gif2.gif" alt="vinyl shop gif">
+</p>
+
