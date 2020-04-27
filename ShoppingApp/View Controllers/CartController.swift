@@ -105,7 +105,8 @@ class CartController: TabController {
 extension CartController: CartDelegate {
     func removeItemFromCart(id: String) {
         showRemovedFromCartAlert(id: id)
-        reloadData()
+        totalLabel.text = "Total \(cartItems.count) Items - $\(CartManager.shared.totalPrice)0"
+        titleLabel.text = cartItems.count == 0 ? "Your Shopping Cart is Empty" : "Your Shopping Cart"
     }
     
     func showRemovedFromCartAlert(id: String) {

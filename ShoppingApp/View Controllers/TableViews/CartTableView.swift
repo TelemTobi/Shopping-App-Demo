@@ -47,6 +47,7 @@ extension CartTableView: CartDelegate {
     func removeItemFromCart(id: String) {
         guard let index = cartItems.firstIndex(of: id) else { return }
         cartItems.remove(at: index)
+        tableView.deleteRows(at: [IndexPath(row: index, section: 0)], with: .right)
         cartDelegate?.removeItemFromCart(id: id)
     }
 }

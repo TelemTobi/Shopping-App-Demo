@@ -234,21 +234,11 @@
 		<key>id</key>
 		<string>22</string>
 		<key>name</key>
-		<string>Oasis</string>
+		<string>Kanye West</string>
 		<key>albums</key>
 		<array>
 			<string>030</string>
-		</array>
-	</dict>
-	<dict>
-		<key>id</key>
-		<string>17</string>
-		<key>name</key>
-		<string>Oasis</string>
-		<key>albums</key>
-		<array>
-			<string>022</string>
-			<string>023</string>
+			<string>031</string>
 		</array>
 	</dict>
 </array>
